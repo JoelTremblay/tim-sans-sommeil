@@ -1,0 +1,131 @@
+/* Header */
+
+// couleurs 
+$blue-design: 00C2FF;
+$vert-prog: 00FFD1;
+
+// Couleurs header
+$gray-header: #242323;
+$gray-shine: #3C3735;
+$white-off: #DFDBD9;
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    padding-bottom: 3%;
+    background-color: $gray-header;
+  }
+  /* img Logo */
+  .divLogo {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    right: 50%;
+  }
+  
+  /* img Maisonneuve */
+  .divMaisonneuve {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+  
+  /* The side navigation menu */ 
+  /* The navigation menu links */
+  .sidenav {
+        height: 100%; 
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $gray-header;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 10%;
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+        ul {
+            border-top: solid 1px $gray-shine;
+            list-style: none;
+        }
+
+        li {
+            border-bottom: solid 1px $gray-shine;
+        }
+
+        a {
+            padding: 1.1em 0;
+            text-decoration: none;
+            font-size: 25px;
+            color: $white-off;
+            display: block;
+            transition: 0.3s;
+
+            text{
+                text-align: center;
+                transform: lowercase;
+            }
+
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 5%;
+            font-size: 40px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+  
+  /* position of menu inline Medias*/
+    .list-inline{ 
+        overflow: hidden;
+        ul{
+            padding-left: 0%;
+        }
+        li{ 
+            float: left; 
+        }
+    }
+
+    .liensMedias {
+        border-bottom: solid 1px $gray-shine;
+        
+        li{
+            width: 25%;
+            border-left: solid 1px $gray-shine;
+            &:first-child{ border: none; }
+            list-style: none;
+        }
+        
+        a{
+            display: block;
+            height: 5.5em;
+            text-align: center;
+            color: $gray-shine;
+
+            &:hover{
+                color: $white-off;
+            }
+        }
+    }
+      
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /*
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  */
