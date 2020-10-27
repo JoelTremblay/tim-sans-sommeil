@@ -1,0 +1,41 @@
+// Couleurs typographies
+$noir: #000000;
+$gris: #A5A5A5;
+
+// Couleurs fond
+$debut-gradient: #303030;
+$temp: #A57070;
+
+.entete-stages {
+  padding: 15em;
+  background-color: $temp;
+}
+
+h1 {
+  font-family: 'Roboto';
+  color: $noir;
+}
+
+.categories {
+  padding: 15em;
+  background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
+}
+
+ul {
+  width: 50%;
+  display: grid;
+  grid-column-gap: 1em;
+  
+  li {
+    display: inline-block;
+    background-color: $noir;
+    padding: 10em;
+
+    a {
+      text-decoration: none;
+      color: $gris;
+      font-family: 'Roboto';
+      font-size: 2em;
+    }
+  }
+}
