@@ -1,31 +1,72 @@
+html {
+  height: 100%;
+}
+
 /* Header */
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 5fr;
+      grid-template-rows: 1fr 5fr;
+  height: 100%;
+  width: 100%;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   top: 0;
   width: 100%;
-  height: 15%;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
+  padding-top: 1%;
   background-color: #242323;
 }
 
 /* img Logo */
 .divLogo {
-  position: absolute;
-  top: 2%;
-  left: 50%;
-  right: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* img Maisonneuve */
 .divMaisonneuve {
-  position: absolute;
-  top: 2%;
-  right: 2%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.openbtn {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: start;
+}
+
+.openbtn img {
+  padding-top: 3%;
+  padding-left: 3%;
 }
 
 /* The side navigation menu */
 /* The navigation menu links */
+.sideNavGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 18fr 12fr 2fr 12fr;
+      grid-template-rows: 18fr 12fr 2fr 12fr;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -36,23 +77,30 @@ header {
   background-color: #242323;
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 10%;
+  overflow-y: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.sidenav .menuPrincipale {
+  padding-top: 10%;
+}
+
 .sidenav ul {
-  border-top: solid 1px #3C3735;
   list-style: none;
+  display: -ms-grid;
+  display: grid;
 }
 
 .sidenav li {
-  border-bottom: solid 1px #3C3735;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .sidenav a {
-  padding: 1.1em 0;
+  padding: 0.5em 0;
   text-decoration: none;
   font-size: 25px;
   color: #DFDBD9;
@@ -76,46 +124,70 @@ header {
   top: 0;
   right: 5%;
   font-size: 40px;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5%;
 }
 
-/* position of menu inline Medias*/
-.list-inline {
-  overflow: hidden;
+.divBandesCouleurs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
-.list-inline ul {
-  padding-left: 0%;
+.divBandesCouleurs .div-bande-couleur-vert {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
 }
 
-.list-inline li {
-  float: left;
+.divBandesCouleurs .div-bande-couleur-bleu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.divBandesCouleurs .bande-couleur-vert {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.divBandesCouleurs .bande-couleur-bleu {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.titreReseauxSociaux {
+  text-align: center;
+  color: #DFDBD9;
+  font-size: 25px;
 }
 
 .liensMedias {
-  border-bottom: solid 1px #3C3735;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .liensMedias li {
   width: 25%;
-  border-left: solid 1px #3C3735;
   list-style: none;
-}
-
-.liensMedias li:first-child {
-  border: none;
 }
 
 .liensMedias a {
   display: block;
   height: 5.5em;
   text-align: center;
-  color: #3C3735;
 }
 
-.liensMedias a:hover {
-  color: #DFDBD9;
+.liensMedias img {
+  width: 150%;
+  height: 150%;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -123,6 +195,7 @@ header {
   -webkit-transition: margin-left .5s;
   transition: margin-left .5s;
   padding: 20px;
+  height: 100%;
 }
 
 /*
