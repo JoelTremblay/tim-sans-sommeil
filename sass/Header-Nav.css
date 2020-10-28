@@ -140,4 +140,28 @@ header {
     .sidenav a {font-size: 18px;}
   }
   */
+/* ======================== STYLES MOBILES ======= */
+@media (max-width: 520px) {
+  header .logoHeader {
+    width: 5%;
+    margin: -5% auto auto auto;
+    padding-bottom: 1%;
+  }
+  header .logoTIM img, header .logoMaisonneuve img {
+    width: 45%;
+    min-width: 80px;
+    margin-top: -75%;
+  }
+  header .logoTIM {
+    position: relative;
+    left: -5%;
+    top: -15%;
+  }
+  header .logoMaisonneuve {
+    margin-left: 80%;
+  }
+  header .logoMaisonneuve img {
+    padding-bottom: 100%;
+  }
+}
 /*# sourceMappingURL=Header-Nav.css.map */
