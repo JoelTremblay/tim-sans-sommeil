@@ -1,5 +1,6 @@
 <?php
   // Inclut le haut de page.
+  $page = "accueil";
   include("Header-navigation.php");
 
 ?>
@@ -74,7 +75,7 @@
             </div>
         </section>
     </div>
-    <footer class="acronym-footer">
+    <footer class="mainFooter" class="acronym-footer">
             <div class="conteneurReseaux">
                 <h3>Reseaux Sociaux...</h3>
                 <ul>

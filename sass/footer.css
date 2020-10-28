@@ -1,47 +1,20 @@
-/*footer
-{
-    background-color: gray;
-    position: static;
-    bottom: 0;
-
-    height: 5%;
+.pageFooter {
+  position: absolute;
+  bottom: 0%;
 }
 
-ul
-{
-    width: 98%;
-    text-align: right;
-    list-style: none;
-    text-shadow: 1px 1px #111111;
-}*/
-footer {
-  background-image: url(../medias/images/motifs-pied.png);
-}
-
-.conteneurReseaux {
-  padding-top: 10%;
-  text-align: center;
-}
-
-.conteneurReseaux h3 {
+.pageFooter div {
+  height: 4em;
   padding-bottom: 2%;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
 }
 
-.conteneurReseaux ul {
-  width: 80%;
-  margin: auto;
+.pageFooter ul {
+  width: 98%;
+  text-align: left;
   list-style: none;
-  padding-bottom: 10%;
-}
-
-.conteneurReseaux ul li {
-  display: inline-block;
-  margin: auto;
-}
-
-.conteneurReseaux ul li img {
-  cursor: pointer;
-  min-width: 20px;
-  margin: auto;
+  text-shadow: 1px 1px #111111;
 }
 /*# sourceMappingURL=footer.css.map */

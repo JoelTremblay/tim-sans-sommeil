@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* ======================== STYLES GÉNÉRAUX ======= */
+html
+{
+    background-color: #0d0d0d;
+}
+
+body
+{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    max-height: 700px;
+}
+
+.contenuCours
+{
+    margin-top: 5%;
+    padding-bottom: 10%;
+
+    .conteneurCours
+    {
+        width: 85%;
+        margin: auto;
+    
+        text-align: center;
+    
+        display: grid;
+        grid-template-columns: 6;
+        grid-template-rows: 5;
+        grid-gap: 2%;
+    
+        .coursProg
+        {
+            background-color: #E86F6F;
+    
+            //height: 120px;
+            height: 8em;
+            margin-bottom: 6%;
+        }
+        .coursProg:hover
+        {
+            cursor: pointer;
+            box-shadow: 2px -3px #00FFD1;
+
+            width: 105%;
+        }
+    
+        .rangee1
+        {
+            grid-row-start: 1;
+        }
+        .rangee2
+        {
+            grid-row-start: 2; 
+        }
+        .rangee3
+        {
+            grid-row-start: 3;
+        }
+        .rangee4
+        {
+            grid-row-start: 4;
+        }
+        .rangee5
+        {
+            grid-row-start: 5;
+        }
+    }
+}
+
+/* ======================== STYLES MOBILES ======= */
+@media (max-width: 520px) 
+{
+
+    .contenuCours
+{
+    margin-top: 5%;
+    padding-bottom: 10%;
+
+    .conteneurCours
+    {
+        width: 85%;
+        margin: auto;
+    
+        text-align: center;
+    
+        display: grid;
+        grid-template-columns: 6;
+        grid-template-rows: 9;
+        grid-gap: 2%;
+    
+        .coursProg
+        {
+            background-color: wheat;
+    
+            //height: 120px;
+            height: 4em;
+            margin-bottom: 6%;
+        }
+        .coursProg:hover
+        {
+            cursor: pointer;
+            box-shadow: 2px -3px #00FFD1;
+
+            width: 105%;
+        }
+        .rangee1
+        {
+            grid-row-start: 1;
+        }
+        .coursProg :nth-child(3)
+        {
+            background-color: red;
+        }
+        .rangee2
+        {
+            grid-row-start: 3; 
+        }
+        .rangee3
+        {
+            grid-row-start: 5;
+        }
+        .rangee4
+        {
+            grid-row-start: 7;
+        }
+        .rangee5
+        {
+            grid-row-start: 9;
+        }
+    }
+}
+}

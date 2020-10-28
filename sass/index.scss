@@ -145,3 +145,39 @@ body
     width: 50%;
     margin: 10% auto auto auto;
 }
+
+.mainFooter
+{
+    background-image: url(../medias/images/motifs-pied.png);
+    
+    .conteneurReseaux
+    {
+        padding-top: 10%;
+        text-align: center;
+    
+        h3
+        {
+            padding-bottom: 2%;
+        }
+        ul
+        {
+            width: 80%;
+            margin: auto;
+            list-style: none;
+            padding-bottom: 10%;
+    
+            li
+            {
+                display: inline-block;
+                margin: auto;
+    
+                img
+                {
+                    cursor: pointer;
+                    min-width: 20px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

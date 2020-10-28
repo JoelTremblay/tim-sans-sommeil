@@ -1,5 +1,5 @@
 
-        <footer class="acronym-footer">
+        <footer class="pageFooter acronym-footer">
             <div>
                 <ul>
                     <li>Technique</li>

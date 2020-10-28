@@ -9,8 +9,14 @@
         <meta name="author" content="SansSommeil">
         <link rel="stylesheet" href="sass/initialize.css">
         <link rel="stylesheet" href="sass/Header-Nav.css">
-        <link rel="stylesheet" href="sass/index.css">
-        <link rel="stylesheet" href="sass/footer.css">
+        <?php 
+            if ($page == "accueil") echo'<link rel="stylesheet" href="sass/index.css">' ;
+            else if ($page == "cours")
+            {
+                echo'<link rel="stylesheet" href="sass/cours.css">
+                <link rel="stylesheet" href="sass/footer.css">';
+            }
+        ?>
         <script type="text/javascript" src="js/jssor.slider.min.js"></script>
         <script type="text/javascript" src="js/scriptCarrousel.js"></script>
         <link rel="stylesheet" href="sass/carrouselCSS.css">
@@ -26,7 +32,7 @@
             <nav id="mySidenav" class="sidenav" role="navigation">
                 <a href="javascript:void(0)" class="closebtn">&times;</a>
                 <ul class="menuPrincipale">
-                    <li><a href="#">Cours</a></li>
+                    <li><a href="coursProg.php">Cours</a></li>
                     <li><a href="#">Professeurs</a></li>
                     <li><a href="#">Évenements</a></li>
                     <li><a href="#">Étudiants</a></li>
@@ -57,7 +63,12 @@
             
             <!-- logo TIM -->
             <div class="logoHeader logoTIM">
-                <img src="medias/images/timLogo.png" alt="" class="imgLogo">
+                <a href="index.php">
+                    <img src="<?php 
+                    if ($page == "accueil") echo'medias/images/timLogo.png';
+                    else if ($page == "cours") echo'medias/images/_LogoTIM_Prog 1.png';
+                    ?>" alt="" class="imgLogo">
+                </a>
             </div>
 
             <!-- logo Maisonneuve -->
