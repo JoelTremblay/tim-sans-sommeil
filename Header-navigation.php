@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
     <head>
 
@@ -9,6 +9,12 @@
         <meta name="author" content="SansSommeil">
         <link rel="stylesheet" href="sass/initialize.css">
         <link rel="stylesheet" href="sass/Header-Nav.css">
+        <link rel="stylesheet" href="sass/index.css">
+        <link rel="stylesheet" href="sass/footer.css">
+        <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+        <script type="text/javascript" src="js/scriptCarrousel.js"></script>
+        <link rel="stylesheet" href="sass/carrouselCSS.css">
+        <title>TIM-2020</title>
 
     </head>
 
@@ -46,25 +52,18 @@
             </nav>
             
             <!-- Use any element to open the sidenav -->
-            <span class="openbtn">&#9776; open</span>
+            <span class="openbtn">&#9776;</span>
 
             
             <!-- logo TIM -->
-            <div class="divLogo">
-                <img class="imgLogo">
+            <div class="logoHeader logoTIM">
+                <img src="medias/images/timLogo.png" alt="" class="imgLogo">
             </div>
 
             <!-- logo Maisonneuve -->
-            <div class="divMaisonneuve">
-                <img class="imgMaisonneuve">
+            <div class="logoHeader logoMaisonneuve">
+                <img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve">
             </div>
 
         </header>
-
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div id="main">
-            ...
-        </div>
         <script src="js/fonctions.js"></script>
-    </body>
-</html>

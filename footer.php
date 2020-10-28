@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="template">
-        <meta name="keywords" content="Footer">
-        <meta name="author" content="SansSommeil">
-    </head>
 
-    <body>
-
-        <!-- footer -->
         <footer class="acronym-footer">
             <div>
                 <ul>
@@ -19,6 +8,5 @@
                 </ul>
             </div>
         </footer>
-        
     </body>
 </html>
