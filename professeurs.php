@@ -1,24 +1,11 @@
-<!doctype html>
+<?php
+  // Inclut le haut de page.
+  $page = "professeurs";
+  include("Header-navigation.php");
 
-<html lang="fr-CA">
-<head>
-  <meta charset="utf-8">
-
-  <title>TIM - Professeurs</title>
-  <meta name="description" content="Galerie et profils des professeurs.">
-  <meta name="author" content="SansSommeil">
-
-  <link rel="stylesheet" href="../sass/styles.css">
-
-</head>
-
-<body id="professeurs">
-        <header>
-
-        </header>
-
+?>
         <section>
-          <div class="gallerie">
+          <div class="galerie">
             <a href="#" class="item"></a>
             <a href="#" class="item"></a>
             <a href="#" class="item"></a>
@@ -36,10 +23,8 @@
             <a href="#" class="item"></a>
         </div>
         </section>
+<?php
+  // Inclut le bas de page.
+  include("footer.php");
 
-        <footer>
-            
-        </footer>
-  <script src="../js/fonctions.js"></script>
-</body>
-</html>
+?>

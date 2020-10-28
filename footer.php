@@ -8,5 +8,6 @@
                 </ul>
             </div>
         </footer>
+      <script src="js/fonctions.js"></script>
     </body>
 </html>

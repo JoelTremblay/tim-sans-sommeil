@@ -39,7 +39,7 @@
   </div>
 </section>
 <?php
-  // Inclut le haut de page.
+  // Inclut le bas de page.
   include("footer.php");
 
 ?>

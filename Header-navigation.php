@@ -16,6 +16,11 @@
                 echo'<link rel="stylesheet" href="sass/cours.css">
                 <link rel="stylesheet" href="sass/footer.css">';
             }
+            else if ($page == "professeurs")
+            {
+                echo'<link rel="stylesheet" href="sass/styles.css">
+                <link rel="stylesheet" href="sass/footer.css">';
+            }
         ?>
         <script type="text/javascript" src="js/jssor.slider.min.js"></script>
         <script type="text/javascript" src="js/scriptCarrousel.js"></script>
@@ -24,7 +29,12 @@
 
     </head>
 
-    <body>
+    <body <?php 
+            if ($page == "professeurs")
+            {
+                echo'id="professeurs"';
+            }
+        ?>>
 
         <!-- header -->
         <header>
@@ -33,7 +43,7 @@
                 <a href="javascript:void(0)" class="closebtn">&times;</a>
                 <ul class="menuPrincipale">
                     <li><a href="coursProg.php">Cours</a></li>
-                    <li><a href="#">Professeurs</a></li>
+                    <li><a href="professeurs.php">Professeurs</a></li>
                     <li><a href="#">Évenements</a></li>
                     <li><a href="#">Étudiants</a></li>
                     <li><a href="#">Projets</a></li>
@@ -82,7 +92,3 @@
         <div id="main">
             ...
         </div>
-        
-        <script src="js/fonctions.js"></script>
-    </body>
-</html>
