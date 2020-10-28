@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 /* Header */
 
 // couleurs 
@@ -9,33 +13,78 @@ $gray-header: #242323;
 $gray-shine: #3C3735;
 $white-off: #DFDBD9;
 
-header {
-    position: sticky;
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+    width: 100%;
+}
+
+header 
+{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     top: 0;
     width: 100%;
-    height: 15%;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     background-color: $gray-header;
+    z-index: 1;
   }
+
   /* img Logo */
-  .divLogo {
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    right: 50%;
+  .divLogo 
+  {
+    justify-self: center;
+    align-self: center;
   }
   
   /* img Maisonneuve */
-  .divMaisonneuve {
-    position: absolute;
-    top: 2%;
-    right: 2%;
+  .divMaisonneuve 
+  {
+    justify-self: end;
+    align-self: center;
+  }
+  .logoTIM img, .logoMaisonneuve img
+    {
+        width: 25%;
+        min-width: 80px;
+    }
+.divLogo a
+{
+    margin-left: 11em;
+}
+.divMaisonneuve a
+{
+    margin-left: 20em;
+}
+    
+
+  .openbtn{
+      display: grid;
+      align-items: start;
+      justify-items: start;
+      
+      img{
+          padding-top: 3%;
+          padding-left: 3%;
+      }
   }
   
+.openbtn
+{
+    font-size: 4em;
+    cursor: pointer;
+}
   /* The side navigation menu */ 
   /* The navigation menu links */
+  .sideNavGrid {
+      display: grid;
+      grid-template-rows: 18fr 12fr 2fr 12fr;
+  }
   .sidenav {
-        height: 100%; 
+        height: 100%;
         width: 0;
         position: fixed;
         z-index: 1;
@@ -43,32 +92,38 @@ header {
         left: 0;
         background-color: $gray-header;
         overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 10%;
+        overflow-y: hidden;
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 
+        .menuPrincipale {
+            padding-top: 10%;
+        }
+
         ul {
-            border-top: solid 1px $gray-shine;
             list-style: none;
+            display: grid;
         }
 
         li {
-            border-bottom: solid 1px $gray-shine;
+            align-self: center;
         }
 
         a {
-            padding: 1.1em 0;
+            padding: 0.5em 0;
             text-decoration: none;
             font-size: 25px;
             color: $white-off;
             display: block;
             transition: 0.3s;
 
-            text{
+            text
+            {
                 text-align: center;
                 transform: lowercase;
             }
 
-            &:hover{
+            &:hover
+            {
                 color: #fff;
             }
         }
@@ -78,29 +133,45 @@ header {
             top: 0;
             right: 5%;
             font-size: 40px;
-            padding-top: 5%;
-            padding-bottom: 5%;
-        }
-    }
-  
-  /* position of menu inline Medias*/
-    .list-inline{ 
-        overflow: hidden;
-        ul{
-            padding-left: 0%;
-        }
-        li{ 
-            float: left; 
+            padding: 5%;
         }
     }
 
+    .divBandesCouleurs {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        .div-bande-couleur-vert {
+            align-self: center;
+            width: 100%;
+        }
+        .div-bande-couleur-bleu {
+            align-self: center;
+        }
+
+        .bande-couleur-vert {
+            width: 100%;
+            align-self: center;
+        }
+
+        .bande-couleur-bleu {
+            width: 100%;
+            align-self: center;
+        }
+    }
+
+    .titreReseauxSociaux {
+        text-align: center;
+        color: $white-off;
+        font-size: 25px;
+    }
+
     .liensMedias {
-        border-bottom: solid 1px $gray-shine;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         
         li{
             width: 25%;
-            border-left: solid 1px $gray-shine;
-            &:first-child{ border: none; }
             list-style: none;
         }
         
@@ -108,11 +179,11 @@ header {
             display: block;
             height: 5.5em;
             text-align: center;
-            color: $gray-shine;
+        }
 
-            &:hover{
-                color: $white-off;
-            }
+        img {
+            width: 150%;
+            height: 150%;
         }
     }
       
@@ -121,6 +192,7 @@ header {
   #main {
     transition: margin-left .5s;
     padding: 20px;
+    height: 100%;
   }
   
   /*
@@ -129,3 +201,41 @@ header {
     .sidenav a {font-size: 18px;}
   }
   */
+  /* ======================== STYLES MOBILES ======= */
+@media (max-width: 520px) 
+{
+    header
+    {
+
+        //Logos
+        .logoHeader
+        {
+            width: 5%;
+            margin: -5% auto auto auto;
+            padding-bottom: 1%;
+        }
+        .logoTIM img, .logoMaisonneuve img
+        {
+            width: 45%;
+            min-width: 80px;
+    
+            margin-top: -75%;
+        }
+    
+        .logoTIM
+        {
+            position: relative;
+            left: -5%;
+            top: -15%;
+        }
+        .logoMaisonneuve
+        {
+            margin-left: 80%;
+        }
+        .logoMaisonneuve img
+        {
+            padding-bottom: 100%;
+        }
+    }
+
+}

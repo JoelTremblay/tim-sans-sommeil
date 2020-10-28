@@ -1,0 +1,26 @@
+
+
+.pageFooter
+{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    
+    div
+    {
+        height: 4em;
+        padding-bottom: 2%;
+    
+        position: absolute;
+        bottom: 1%;
+        right: 1%;
+    }
+
+    ul
+    {
+        width: 98%;
+        text-align: left;
+        list-style: none;
+        text-shadow: 1px 1px #111111;
+    }
+}
