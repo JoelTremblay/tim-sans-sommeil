@@ -5,6 +5,10 @@ $gris: #A5A5A5;
 // Couleurs fond
 $debut-gradient: #303030;
 $temp: #A57070;
+$rose-creation: #FF00B8;
+$vert-creation: #B8FF01;
+$orange-prog: #FF9F00;
+$mauve-prog: #A000FF;
 
 .entete-stages {
   padding: 15em;
@@ -13,6 +17,7 @@ $temp: #A57070;
 
 h1 {
   font-family: 'Roboto';
+  font-size: 5em;
   color: $noir;
 }
 
@@ -37,5 +42,23 @@ ul {
       font-family: 'Roboto';
       font-size: 2em;
     }
+
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
   }
+}
+
+li:first-child {
+  border: 0.3em solid;
+  border-image-source: linear-gradient($rose-creation, $vert-creation);
+  border-image-slice: 1;
+}
+
+li:last-child {
+  border: 0.3em solid;
+  border-image-source: linear-gradient($orange-prog, $mauve-prog);
+  border-image-slice: 1;
 }
