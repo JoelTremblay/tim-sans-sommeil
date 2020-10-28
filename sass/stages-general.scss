@@ -1,0 +1,84 @@
+// Couleurs typographies
+$noir: #000000;
+$gris: #A5A5A5;
+$blanc: #ffffff;
+
+// Couleurs fond
+$debut-gradient: #303030;
+$temp: #A57070;
+$rose-creation: #FF00B8;
+$vert-creation: #B8FF01;
+$orange-prog: #FF9F00;
+$mauve-prog: #A000FF;
+
+
+
+h1 {
+  font-family: 'Roboto';
+  font-size: 5em;
+  color: $blanc;
+  position: absolute;
+  z-index: 1;
+}
+
+.arriere-plan {
+  display: flex;
+  justify-content: center;
+  background-color: $noir;
+
+  img {
+    opacity: 50%;
+  }
+}
+
+.categories {
+  padding: 15em;
+  background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
+}
+
+ul {
+  position: relative;
+  bottom: 20em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+  li {
+    // display: inline-block;
+    background-color: $noir;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    z-index: 1;
+
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: $gris;
+      font-family: 'Roboto';
+      font-size: 2em;
+    }
+  }
+}
+
+li:first-child {
+  border: 0.3em solid;
+  border-image-source: linear-gradient($rose-creation, $vert-creation);
+  border-image-slice: 1;
+}
+
+li:last-child {
+  border: 0.3em solid;
+  border-image-source: linear-gradient($orange-prog, $mauve-prog);
+  border-image-slice: 1;
+}
+
+.ligne-pattern {
+  position: relative;
+  bottom: 38em;
+  width: 100%;
+  height: 100%;
+}
