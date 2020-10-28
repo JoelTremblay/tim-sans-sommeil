@@ -14,27 +14,42 @@ header {
     top: 0;
     width: 100%;
     height: 15%;
-    padding-bottom: 3%;
+    //padding-bottom: 3%;
     background-color: $gray-header;
-  }
-  /* img Logo */
-  .divLogo {
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    right: 50%;
+    z-index: 100;
   }
   
-  /* img Maisonneuve */
-  .divMaisonneuve {
-    position: absolute;
-    top: 2%;
-    right: 2%;
-  }
+//Logos
+.logoHeader
+{
+    width: 15%;
+    margin: -5% auto auto auto;
+    padding-bottom: 1%;
+}
+.logoTIM img, .logoMaisonneuve img
+{
+    width: 65%;
+    min-width: 80px;
+}
+
+.logoMaisonneuve
+{
+    margin-left: 85%;
+}
+.logoMaisonneuve img
+{
+    padding-bottom: 10%;
+}
   
+.openbtn
+{
+    font-size: 4em;
+    cursor: pointer;
+}
   /* The side navigation menu */ 
   /* The navigation menu links */
-  .sidenav {
+  .sidenav 
+  {
         height: 100%; 
         width: 0;
         position: fixed;
@@ -63,12 +78,14 @@ header {
             display: block;
             transition: 0.3s;
 
-            text{
+            text
+            {
                 text-align: center;
                 transform: lowercase;
             }
 
-            &:hover{
+            &:hover
+            {
                 color: #fff;
             }
         }
@@ -129,3 +146,41 @@ header {
     .sidenav a {font-size: 18px;}
   }
   */
+  /* ======================== STYLES MOBILES ======= */
+@media (max-width: 520px) 
+{
+    header
+    {
+
+        //Logos
+        .logoHeader
+        {
+            width: 5%;
+            margin: -5% auto auto auto;
+            padding-bottom: 1%;
+        }
+        .logoTIM img, .logoMaisonneuve img
+        {
+            width: 45%;
+            min-width: 80px;
+    
+            margin-top: -75%;
+        }
+    
+        .logoTIM
+        {
+            position: relative;
+            left: -5%;
+            top: -15%;
+        }
+        .logoMaisonneuve
+        {
+            margin-left: 80%;
+        }
+        .logoMaisonneuve img
+        {
+            padding-bottom: 100%;
+        }
+    }
+
+}

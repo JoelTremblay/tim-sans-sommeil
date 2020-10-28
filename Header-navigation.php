@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
     <head>
 
@@ -9,6 +9,18 @@
         <meta name="author" content="SansSommeil">
         <link rel="stylesheet" href="sass/initialize.css">
         <link rel="stylesheet" href="sass/Header-Nav.css">
+        <?php 
+            if ($page == "accueil") echo'<link rel="stylesheet" href="sass/index.css">' ;
+            else if ($page == "cours")
+            {
+                echo'<link rel="stylesheet" href="sass/cours.css">
+                <link rel="stylesheet" href="sass/footer.css">';
+            }
+        ?>
+        <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+        <script type="text/javascript" src="js/scriptCarrousel.js"></script>
+        <link rel="stylesheet" href="sass/carrouselCSS.css">
+        <title>TIM-2020</title>
 
     </head>
 
@@ -20,7 +32,7 @@
             <nav id="mySidenav" class="sidenav" role="navigation">
                 <a href="javascript:void(0)" class="closebtn">&times;</a>
                 <ul class="menuPrincipale">
-                    <li><a href="#">Cours</a></li>
+                    <li><a href="coursProg.php">Cours</a></li>
                     <li><a href="#">Professeurs</a></li>
                     <li><a href="#">Évenements</a></li>
                     <li><a href="#">Étudiants</a></li>
@@ -46,17 +58,22 @@
             </nav>
             
             <!-- Use any element to open the sidenav -->
-            <span class="openbtn">&#9776; open</span>
+            <span class="openbtn">&#9776;</span>
 
             
             <!-- logo TIM -->
-            <div class="divLogo">
-                <img class="imgLogo">
+            <div class="logoHeader logoTIM">
+                <a href="index.php">
+                    <img src="<?php 
+                    if ($page == "accueil") echo'medias/images/timLogo.png';
+                    else if ($page == "cours") echo'medias/images/_LogoTIM_Prog 1.png';
+                    ?>" alt="" class="imgLogo">
+                </a>
             </div>
 
             <!-- logo Maisonneuve -->
-            <div class="divMaisonneuve">
-                <img class="imgMaisonneuve">
+            <div class="logoHeader logoMaisonneuve">
+                <img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve">
             </div>
 
         </header>
