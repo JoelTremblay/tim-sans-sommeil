@@ -20,8 +20,9 @@ body {
     width: 100%;
 }
 
-header {
-    position: sticky;
+header 
+{
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     top: 0;
@@ -29,18 +30,36 @@ header {
     padding-bottom: 1%;
     padding-top: 1%;
     background-color: $gray-header;
+    z-index: 1;
   }
+
   /* img Logo */
-  .divLogo {
+  .divLogo 
+  {
     justify-self: center;
     align-self: center;
   }
   
   /* img Maisonneuve */
-  .divMaisonneuve {
+  .divMaisonneuve 
+  {
     justify-self: end;
     align-self: center;
   }
+  .logoTIM img, .logoMaisonneuve img
+    {
+        width: 25%;
+        min-width: 80px;
+    }
+.divLogo a
+{
+    margin-left: 11em;
+}
+.divMaisonneuve a
+{
+    margin-left: 20em;
+}
+    
 
   .openbtn{
       display: grid;
@@ -53,6 +72,11 @@ header {
       }
   }
   
+.openbtn
+{
+    font-size: 4em;
+    cursor: pointer;
+}
   /* The side navigation menu */ 
   /* The navigation menu links */
   .sideNavGrid {
@@ -92,12 +116,14 @@ header {
             display: block;
             transition: 0.3s;
 
-            text{
+            text
+            {
                 text-align: center;
                 transform: lowercase;
             }
 
-            &:hover{
+            &:hover
+            {
                 color: #fff;
             }
         }
@@ -175,3 +201,41 @@ header {
     .sidenav a {font-size: 18px;}
   }
   */
+  /* ======================== STYLES MOBILES ======= */
+@media (max-width: 520px) 
+{
+    header
+    {
+
+        //Logos
+        .logoHeader
+        {
+            width: 5%;
+            margin: -5% auto auto auto;
+            padding-bottom: 1%;
+        }
+        .logoTIM img, .logoMaisonneuve img
+        {
+            width: 45%;
+            min-width: 80px;
+    
+            margin-top: -75%;
+        }
+    
+        .logoTIM
+        {
+            position: relative;
+            left: -5%;
+            top: -15%;
+        }
+        .logoMaisonneuve
+        {
+            margin-left: 80%;
+        }
+        .logoMaisonneuve img
+        {
+            padding-bottom: 100%;
+        }
+    }
+
+}
