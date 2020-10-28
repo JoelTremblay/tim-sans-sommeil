@@ -1,6 +1,7 @@
 // Couleurs typographies
 $noir: #000000;
 $gris: #A5A5A5;
+$blanc: #ffffff;
 
 // Couleurs fond
 $debut-gradient: #303030;
@@ -11,14 +12,23 @@ $orange-prog: #FF9F00;
 $mauve-prog: #A000FF;
 
 .entete-stages {
-  padding: 15em;
-  background-color: $temp;
+  // padding: 15em;
+  // background-color: $temp;
 }
 
 h1 {
   font-family: 'Roboto';
   font-size: 5em;
-  color: $noir;
+  color: $blanc;
+  position: absolute;
+}
+
+.arriere-plan {
+  background-color: $noir;
+
+  img {
+    opacity: 75%;
+  }
 }
 
 .categories {
@@ -28,11 +38,11 @@ h1 {
 
 ul {
   width: 50%;
-  display: grid;
+  display: flex;
   grid-column-gap: 1em;
   
   li {
-    display: inline-block;
+    // display: inline-block;
     background-color: $noir;
     padding: 10em;
 
@@ -44,9 +54,8 @@ ul {
     }
 
     img {
-      display: inline-block;
       width: 100%;
-      height: 100%;
+      // height: 100%;
     }
   }
 }

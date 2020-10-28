@@ -1,12 +1,16 @@
-.entete-stages {
-  padding: 15em;
-  background-color: #A57070;
-}
-
 h1 {
   font-family: 'Roboto';
   font-size: 5em;
-  color: #000000;
+  color: #ffffff;
+  position: absolute;
+}
+
+.arriere-plan {
+  background-color: #000000;
+}
+
+.arriere-plan img {
+  opacity: 75%;
 }
 
 .categories {
@@ -16,12 +20,11 @@ h1 {
 
 ul {
   width: 50%;
-  display: grid;
+  display: flex;
   grid-column-gap: 1em;
 }
 
 ul li {
-  display: inline-block;
   background-color: #000000;
   padding: 10em;
 }
@@ -34,9 +37,7 @@ ul li a {
 }
 
 ul li img {
-  display: inline-block;
   width: 100%;
-  height: 100%;
 }
 
 li:first-child {
