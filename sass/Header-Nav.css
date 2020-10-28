@@ -13,8 +13,7 @@ body {
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -24,6 +23,7 @@ header {
   padding-bottom: 1%;
   padding-top: 1%;
   background-color: #242323;
+  z-index: 1;
 }
 
 /* img Logo */
@@ -42,6 +42,19 @@ header {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.logoTIM img, .logoMaisonneuve img {
+  width: 25%;
+  min-width: 80px;
+}
+
+.divLogo a {
+  margin-left: 11em;
+}
+
+.divMaisonneuve a {
+  margin-left: 20em;
 }
 
 .openbtn {

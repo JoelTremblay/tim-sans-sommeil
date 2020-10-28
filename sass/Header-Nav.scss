@@ -20,8 +20,9 @@ body {
     width: 100%;
 }
 
-header {
-    position: sticky;
+header 
+{
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     top: 0;
@@ -29,18 +30,36 @@ header {
     padding-bottom: 1%;
     padding-top: 1%;
     background-color: $gray-header;
+    z-index: 1;
   }
+
   /* img Logo */
-  .divLogo {
+  .divLogo 
+  {
     justify-self: center;
     align-self: center;
   }
   
   /* img Maisonneuve */
-  .divMaisonneuve {
+  .divMaisonneuve 
+  {
     justify-self: end;
     align-self: center;
   }
+  .logoTIM img, .logoMaisonneuve img
+    {
+        width: 25%;
+        min-width: 80px;
+    }
+.divLogo a
+{
+    margin-left: 11em;
+}
+.divMaisonneuve a
+{
+    margin-left: 20em;
+}
+    
 
   .openbtn{
       display: grid;

@@ -62,7 +62,7 @@
 
             
             <!-- logo TIM -->
-            <div class="logoHeader logoTIM">
+            <div class="divLogo logoHeader logoTIM">
                 <a href="index.php">
                     <img src="<?php 
                     if ($page == "accueil") echo'medias/images/timLogo.png';
@@ -72,8 +72,8 @@
             </div>
 
             <!-- logo Maisonneuve -->
-            <div class="logoHeader logoMaisonneuve">
-                <img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve">
+            <div class="divMaisonneuve logoHeader logoMaisonneuve">
+                <a href="https://www.cmaisonneuve.qc.ca/"><img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve"></a>
             </div>
 
         </header>
