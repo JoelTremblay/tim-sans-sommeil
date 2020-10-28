@@ -67,7 +67,7 @@ body {
 }
 
 /* ======================== STYLES MOBILES ======= */
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .contenuCours {
     margin-top: 5%;
     padding-bottom: 10%;
