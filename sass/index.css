@@ -154,4 +154,73 @@ body {
   min-width: 20px;
   margin: auto;
 }
+
+@media (max-width: 520px) {
+  body {
+    font-size: 0.6rem;
+  }
+  body h2 {
+    font-size: 0.9em;
+  }
+  body #logoSite {
+    margin: auto auto 5% auto;
+  }
+  body #intro > :first-child {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  body #intro > :nth-child(2) {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-bottom: 5%;
+  }
+  body #intro > :nth-child(2) {
+    margin-top: -16%;
+  }
+  body #poss > :first-child {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    margin-right: 20%;
+  }
+  body #poss > :nth-child(2) {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    margin-top: -25%;
+  }
+  body #eleves {
+    padding-top: 10%;
+    width: 80%;
+    margin: auto;
+  }
+  body #eleves > :first-child {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: 20%;
+    margin-top: -7%;
+  }
+  body #eleves > :nth-child(2) {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+}
 /*# sourceMappingURL=index.css.map */

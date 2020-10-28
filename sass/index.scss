@@ -181,3 +181,97 @@ body
         }
     }
 }
+
+@media (max-width: 520px) 
+{
+    body
+    {
+        h2
+        {
+            font-size: 0.9em;
+        }
+        font-size: 0.6rem;
+
+        #logoSite 
+        {
+            margin: auto auto 5% auto;
+        }
+
+        #intro > :first-child
+        {
+            //background-color: salmon;;
+
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+
+
+        }
+        #intro > :nth-child(2)
+        {
+            //background-color: darkkhaki;;
+
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+
+            margin-bottom: 5%;
+        }
+        #intro > :nth-child(2)
+        {
+            margin-top: -16%;
+        }
+
+        #poss > :first-child
+        {
+            //background-color: salmon;;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            margin-right: 20%;
+
+        }
+        #poss > :nth-child(2)
+        {
+            //background-color: darkkhaki;;
+
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+
+            margin-top: -25%;
+        }
+
+        #eleves 
+        {
+            padding-top: 10%;
+            width: 80%;
+            margin: auto;
+        }
+        #eleves > :first-child
+        {
+            //background-color: salmon;;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            margin-right: 20%;
+            margin-top: -7%;
+
+        }
+        #eleves > :nth-child(2)
+        {
+            //background-color: darkkhaki;;
+
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+
+        }
+    }
+}

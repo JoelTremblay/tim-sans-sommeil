@@ -50,11 +50,11 @@ header {
 }
 
 .divLogo a {
-  margin-left: 11em;
+  margin-left: 9em;
 }
 
 .divMaisonneuve a {
-  margin-left: 20em;
+  margin-left: 18em;
 }
 
 .openbtn {
@@ -222,7 +222,61 @@ header {
     .sidenav a {font-size: 18px;}
   }
   */
-/* ======================== STYLES MOBILES ======= */
+/* ======================== STYLES ORDINATEURS (Petits) ======= */
+@media (min-width: 980px) and (max-width: 1200px) {
+  header .logoHeader {
+    width: 5%;
+    margin: -5% auto auto auto;
+    padding-bottom: 1%;
+  }
+  header .logoTIM img, header .logoMaisonneuve img {
+    width: 65%;
+    min-width: 90px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  header .divLogo a {
+    margin-left: -2.6rem;
+  }
+  header .divLogo a img {
+    margin-top: 3rem;
+  }
+  header .divMaisonneuve a {
+    margin-left: 4rem;
+  }
+  header .divMaisonneuve a img {
+    margin-top: 3.5rem;
+  }
+}
+
+/* ======================== STYLES TABLETTE ======= */
+@media (min-width: 520px) and (max-width: 980px) {
+  header .logoHeader {
+    width: 5%;
+    margin: -5% auto auto auto;
+    padding-bottom: 1%;
+  }
+  header .logoTIM img, header .logoMaisonneuve img {
+    width: 45%;
+    min-width: 80px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  header .divLogo a {
+    margin-left: -2.6rem;
+  }
+  header .divLogo a img {
+    margin-top: 2.5rem;
+  }
+  header .divMaisonneuve a {
+    margin-left: 0.5rem;
+  }
+  header .divMaisonneuve a img {
+    margin-top: 3rem;
+  }
+}
+
+/* ======================== STYLES MOBILE ======= */
 @media (max-width: 520px) {
   header .logoHeader {
     width: 5%;
@@ -232,18 +286,20 @@ header {
   header .logoTIM img, header .logoMaisonneuve img {
     width: 45%;
     min-width: 80px;
-    margin-top: -75%;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
-  header .logoTIM {
-    position: relative;
-    left: -5%;
-    top: -15%;
+  header .divLogo a {
+    margin-left: -2.2rem;
   }
-  header .logoMaisonneuve {
-    margin-left: 80%;
+  header .divLogo a img {
+    margin-top: 2rem;
   }
-  header .logoMaisonneuve img {
-    padding-bottom: 100%;
+  header .divMaisonneuve a {
+    margin-left: -0.6em;
+  }
+  header .divMaisonneuve a img {
+    margin-top: 2.5rem;
   }
 }
 /*# sourceMappingURL=Header-Nav.css.map */

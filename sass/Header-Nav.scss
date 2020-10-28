@@ -53,11 +53,11 @@ header
     }
 .divLogo a
 {
-    margin-left: 11em;
+    margin-left: 9em;
 }
 .divMaisonneuve a
 {
-    margin-left: 20em;
+    margin-left: 18em;
 }
     
 
@@ -201,12 +201,98 @@ header
     .sidenav a {font-size: 18px;}
   }
   */
-  /* ======================== STYLES MOBILES ======= */
+
+  /* ======================== STYLES ORDINATEURS (Petits) ======= */
+  @media (min-width: 980px) and (max-width: 1200px)
+  {
+      header
+      {
+          //background-color: antiquewhite;
+          //Logos
+          .logoHeader
+          {
+              width: 5%;
+              margin: -5% auto auto auto;
+              padding-bottom: 1%;
+          }
+          .logoTIM img, .logoMaisonneuve img
+          {
+              width: 65%;
+              min-width: 90px;
+      
+              justify-self: center;
+          }
+      
+          .divLogo a
+          {
+              margin-left: -2.6rem;
+  
+              img
+              {
+                  margin-top: 3rem;
+              }
+          }
+          .divMaisonneuve a
+          {
+              margin-left: 4rem;
+  
+              img
+              {
+                  margin-top: 3.5rem;
+              }
+          }
+      }
+  
+  }
+
+  /* ======================== STYLES TABLETTE ======= */
+  @media (min-width: 520px) and (max-width: 980px)
+  {
+      header
+      {
+          //background-color: antiquewhite;
+          //Logos
+          .logoHeader
+          {
+              width: 5%;
+              margin: -5% auto auto auto;
+              padding-bottom: 1%;
+          }
+          .logoTIM img, .logoMaisonneuve img
+          {
+              width: 45%;
+              min-width: 80px;
+      
+              justify-self: center;
+          }
+      
+          .divLogo a
+          {
+              margin-left: -2.6rem;
+  
+              img
+              {
+                  margin-top: 2.5rem;
+              }
+          }
+          .divMaisonneuve a
+          {
+              margin-left: 0.5rem;
+  
+              img
+              {
+                  margin-top: 3rem;
+              }
+          }
+      }
+  
+  }
+
+/* ======================== STYLES MOBILE ======= */
 @media (max-width: 520px) 
 {
     header
     {
-
         //Logos
         .logoHeader
         {
@@ -219,22 +305,26 @@ header
             width: 45%;
             min-width: 80px;
     
-            margin-top: -75%;
+            justify-self: center;
         }
     
-        .logoTIM
+        .divLogo a
         {
-            position: relative;
-            left: -5%;
-            top: -15%;
+            margin-left: -2.2rem;
+
+            img
+            {
+                margin-top: 2rem;
+            }
         }
-        .logoMaisonneuve
+        .divMaisonneuve a
         {
-            margin-left: 80%;
-        }
-        .logoMaisonneuve img
-        {
-            padding-bottom: 100%;
+            margin-left: -0.6em;
+
+            img
+            {
+                margin-top: 2.5rem;
+            }
         }
     }
 
