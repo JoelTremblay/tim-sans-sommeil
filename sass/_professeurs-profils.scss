@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+
+#professeurs {
+    
+    margin: 0 auto;
+    background-color: black;
+
+        section {
+
+            .galerie {
+                display: flex;
+                max-width:600px;
+                width:70vw;
+                flex-wrap: wrap;
+                margin:0 auto;
+                transform: translateY(55%) translateX(2.5%)rotate(90deg);
+
+                .item {
+                    flex: 1 0 auto;
+                    height:auto;
+                    width: 25%;
+                    background-color: white;
+
+                    &:nth-child(1) {
+                        transform: translateY(25%) translateX(-75%) rotate(45deg);
+                      }
+                    &:nth-child(2) {
+                        transform: translateY(25%) translateX(-25%) rotate(45deg);
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(25%) translateX(25%) rotate(45deg);
+                    }
+                    &:nth-child(4) {
+                        transform: translateY(25%) translateX(75%) rotate(45deg);
+                    }
+                    &:nth-child(5) {
+                        transform: translateY(0%) translateX(0%) rotate(45deg);
+                      }
+                    &:nth-child(6) {
+                        transform: translateY(0%) translateX(200%) rotate(45deg);
+                    }
+                    &:nth-child(7) {
+                        transform: translateY(150%) translateX(-200%) rotate(45deg);
+                    }
+                    &:nth-child(8) {
+                        transform: translateY(150%) translateX(0%) rotate(45deg);
+                    }
+                    &:nth-child(9) {
+                        transform: translateY(125%) translateX(-75%) rotate(45deg);
+                      }
+                    &:nth-child(10) {
+                        transform: translateY(125%) translateX(-25%) rotate(45deg);
+                    }
+                    &:nth-child(11) {
+                        transform: translateY(125%) translateX(25%) rotate(45deg);
+                    }
+                    &:nth-child(12) {
+                        transform: translateY(125%) translateX(75%) rotate(45deg);
+                    }
+                    &:nth-child(13) {
+                        transform: translateY(-106.5%) translateX(-125%) rotate(45deg) scale(1.5);
+                    }
+                    &:nth-child(14) {
+                        transform: translateY(-106.5%) translateX(0%) rotate(45deg) scale(1.5);
+                    }
+                    &:nth-child(15) {
+                        transform: translateY(-106.5%) translateX(125%) rotate(45deg) scale(1.5);
+                    }
+                    &:before {
+                        content:'';
+                        float:left;
+                        padding-top:100%;
+                    }
+                    &:hover {
+                        background-color: #3e9eff;
+                        transition: all .3s ease;
+                      }
+                 }
+
+              }
+ 
+        }
+
+    @media only screen and (min-width:981px){
+        section .gallerie {
+            width: 40vw;
+            transform: translateY(1%) rotate(360deg);
+        }
+    }
+
+}
