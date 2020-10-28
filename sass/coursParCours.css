@@ -1,7 +1,45 @@
 .carousel {
-  z-index: 9;
   background-color: gray;
   height: 400px;
   width: 100%;
+}
+
+.carousel-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.ficheCours {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: row1-start;
+      grid-row-start: row1-start;
+  grid-row-end: row1-end;
+  background-color: gray;
+}
+
+.prerequisCours {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: row1-start;
+      grid-row-start: row1-start;
+  grid-row-end: row1-end;
+  background-color: lightgray;
+}
+
+.descriptionCours {
+  -ms-grid-column: start;
+      grid-column-start: start;
+  grid-column-end: end;
+  -ms-grid-row: row2-start;
+      grid-row-start: row2-start;
+  grid-row-end: row2-end;
+  background-color: lightgray;
 }
 /*# sourceMappingURL=coursParCours.css.map */

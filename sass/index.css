@@ -16,6 +16,25 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*The footer
+.acronym-footer {
+    position: fixed;  Stay in place 
+    bottom: 0;  Stay at the bottom 
+    height: 10%;
+    width: 100%;
+    z-index: 1;  Stay on top 
+    background-color:transparent; transparent
+    ul {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+    }
+    div {
+        position: absolute;
+        bottom: 2%;  Stay at the bottom 
+        right: 1%;  Stay at the right 
+    }
+}*/
 #logoSite {
   width: 55%;
   margin: auto auto 15% auto;

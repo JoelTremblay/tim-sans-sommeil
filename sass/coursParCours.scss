@@ -1,6 +1,35 @@
 .carousel{
-    z-index: 9;
     background-color: gray;
     height: 400px;
     width: 100%;
 }
+
+.carousel-item {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+.ficheCours {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+    background-color: gray;
+  }
+
+  .prerequisCours {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+    background-color: lightgray;
+  }
+
+.descriptionCours {
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: row2-start;
+    grid-row-end: row2-end;
+    background-color: lightgray;
+  }
