@@ -11,23 +11,23 @@ $vert-creation: #B8FF01;
 $orange-prog: #FF9F00;
 $mauve-prog: #A000FF;
 
-.entete-stages {
-  // padding: 15em;
-  // background-color: $temp;
-}
+
 
 h1 {
   font-family: 'Roboto';
   font-size: 5em;
   color: $blanc;
   position: absolute;
+  z-index: 1;
 }
 
 .arriere-plan {
+  display: flex;
+  justify-content: center;
   background-color: $noir;
 
   img {
-    opacity: 75%;
+    opacity: 50%;
   }
 }
 
@@ -37,25 +37,29 @@ h1 {
 }
 
 ul {
-  width: 50%;
+  position: relative;
+  bottom: 20em;
+  width: 100%;
+  height: 100%;
   display: flex;
-  grid-column-gap: 1em;
+  justify-content: space-around;
   
   li {
     // display: inline-block;
     background-color: $noir;
-    padding: 10em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    z-index: 1;
 
     a {
+      display: flex;
+      justify-content: center;
       text-decoration: none;
       color: $gris;
       font-family: 'Roboto';
       font-size: 2em;
-    }
-
-    img {
-      width: 100%;
-      // height: 100%;
     }
   }
 }
@@ -70,4 +74,11 @@ li:last-child {
   border: 0.3em solid;
   border-image-source: linear-gradient($orange-prog, $mauve-prog);
   border-image-slice: 1;
+}
+
+.ligne-pattern {
+  position: relative;
+  bottom: 38em;
+  width: 100%;
+  height: 100%;
 }
