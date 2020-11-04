@@ -11,8 +11,15 @@ $vert-creation: #B8FF01;
 $orange-prog: #FF9F00;
 $mauve-prog: #A000FF;
 
+#stages {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .entete-stages {
   background-color: $noir;
+  padding-top: 1em;
   padding-bottom: 4em;
 }
 
@@ -20,8 +27,10 @@ h1 {
   font-family: 'Roboto';
   font-size: 5em;
   color: $blanc;
-  position: absolute;
-  text-align: center;
+  // text-align: center;
+  padding-left: 3%;
+  padding-bottom: 0.5%;
+  background-image: linear-gradient(to right, $debut-gradient, $noir);
   z-index: 1;
 }
 
@@ -31,23 +40,21 @@ h1 {
   background-color: $noir;
 
   img {
-    width: 100%;
-    height: 50%;
+    padding-top: 2%;
     opacity: 50%;
   }
 }
 
 .categories {
-  // width: 100%;
-  // height: 0%;
   padding-top: 15em;
   background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
 }
 
 ul {
   position: relative;
+  left: 12%;
   bottom: 20em;
-  width: 100%;
+  width: 75%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -86,9 +93,11 @@ li:last-child {
 
 .ligne-pattern {
   position: relative;
-  right:  50em;
-  bottom: 45em;
-  width: 150%;
+  right:  22%;
+  bottom: 47em;
+  width: 125%;
+  max-width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
 }
