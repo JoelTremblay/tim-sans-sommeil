@@ -28,6 +28,7 @@
   height: auto;
   width: 25%;
   background-color: white;
+  position: relative;
 }
 
 #professeurs section .galerie .item:nth-child(1) {
@@ -115,6 +116,19 @@
   background-color: #3e9eff;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+#professeurs section .galerie .item img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media only screen and (min-width: 981px) {

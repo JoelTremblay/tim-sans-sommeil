@@ -6,7 +6,9 @@
 ?>
         <section>
           <div class="galerie">
-            <a href="#" class="item"></a>
+            <a href="#" class="item">
+              <img src="medias/images/dom.png" alt="Dominic">
+            </a>
             <a href="#" class="item"></a>
             <a href="#" class="item"></a>
             <a href="#" class="item"></a>

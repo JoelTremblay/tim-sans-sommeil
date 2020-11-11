@@ -22,6 +22,7 @@
                     height:auto;
                     width: 25%;
                     background-color: white;
+                    position: relative;
 
                     &:nth-child(1) {
                         transform: translateY(25%) translateX(-75%) rotate(45deg);
@@ -77,6 +78,18 @@
                         background-color: #3e9eff;
                         transition: all .3s ease;
                       }
+                    
+                    img {
+                        max-height: 100%;  
+                        max-width: 100%; 
+                        position: absolute;  
+                        top: 0;  
+                        bottom: 0;  
+                        left: 0;  
+                        right: 0;  
+                        margin: auto;
+                        transform: rotate(-45deg);
+                    }
                  }
 
               }
