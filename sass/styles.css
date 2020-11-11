@@ -5,7 +5,10 @@
 
 #professeurs {
   margin: 0 auto;
-  background-color: black;
+  background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.5%, #252525 12.5%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.5%, #131313 37.5%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.5%, #252525 62.5%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.5%, #131313 87.5%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
+  background-size: 100% 600%;
+  background-repeat: no-repeat;
+  background-color: #0d0d0d;
 }
 
 #professeurs section .galerie {
@@ -29,6 +32,7 @@
   width: 25%;
   background-color: white;
   position: relative;
+  overflow: hidden;
 }
 
 #professeurs section .galerie .item:nth-child(1) {
@@ -97,11 +101,13 @@
 }
 
 #professeurs section .galerie .item:nth-child(14) {
+  background-color: #00FFD1;
   -webkit-transform: translateY(-106.5%) translateX(0%) rotate(45deg) scale(1.5);
           transform: translateY(-106.5%) translateX(0%) rotate(45deg) scale(1.5);
 }
 
 #professeurs section .galerie .item:nth-child(15) {
+  background-color: #00C2FF;
   -webkit-transform: translateY(-106.5%) translateX(125%) rotate(45deg) scale(1.5);
           transform: translateY(-106.5%) translateX(125%) rotate(45deg) scale(1.5);
 }
@@ -112,10 +118,34 @@
   padding-top: 100%;
 }
 
-#professeurs section .galerie .item:hover {
-  background-color: #3e9eff;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+#professeurs section .galerie .item:hover .overlay::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#professeurs section .galerie .item:hover .overlay::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#professeurs section .galerie .item p {
+  text-align: left;
+  font-size: 1.5vmin;
+}
+
+#professeurs section .galerie .item .texte::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+#professeurs section .galerie .item .centre {
+  -webkit-transform: rotate(-45deg) translateY(45%);
+          transform: rotate(-45deg) translateY(45%);
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #professeurs section .galerie .item img {
@@ -127,8 +157,56 @@
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg) scale(2) translateY(15%);
+          transform: rotate(-45deg) scale(2) translateY(15%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  mix-blend-mode: luminosity;
+}
+
+#professeurs section .galerie .item .adjust {
+  -webkit-transform: rotate(-45deg) scale(1.5);
+          transform: rotate(-45deg) scale(1.5);
+}
+
+#professeurs section .galerie .item .overlay {
+  opacity: 1;
+}
+
+#professeurs section .galerie .item .overlay::before {
+  background-color: #00FFD1;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+#professeurs section .galerie .item .overlay::after {
+  background-color: #23278a;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
 }
 
 @media only screen and (min-width: 981px) {
@@ -136,6 +214,29 @@
     width: 40vw;
     -webkit-transform: translateY(1%) rotate(360deg);
             transform: translateY(1%) rotate(360deg);
+  }
+  #professeurs section .galerie .item.texte .centre {
+    -webkit-transform: rotate(-45deg) translateX(10%) translateY(40%);
+            transform: rotate(-45deg) translateX(10%) translateY(40%);
+    margin-top: 20px;
+  }
+  #professeurs section .galerie .item.texte .centre p {
+    font-size: 0.85vmax;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #professeurs section .galerie .item img {
+    -webkit-transform: rotate(-135deg) scale(2) translateY(15%);
+            transform: rotate(-135deg) scale(2) translateY(15%);
+  }
+  #professeurs section .galerie .item .adjust {
+    -webkit-transform: rotate(-135deg) scale(1.5);
+            transform: rotate(-135deg) scale(1.5);
+  }
+  #professeurs section .galerie .item.texte .centre {
+    -webkit-transform: rotate(-135deg) translateX(-110%) translateY(5%);
+            transform: rotate(-135deg) translateX(-110%) translateY(5%);
   }
 }
 /*# sourceMappingURL=styles.css.map */
