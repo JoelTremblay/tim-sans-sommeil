@@ -16,8 +16,10 @@ h1 {
   color: #ffffff;
   padding-left: 3%;
   padding-bottom: 0.5%;
+  border-left: 0.1em solid;
+  border-image-source: linear-gradient(#00B8FF, #00FF9F);
+  border-image-slice: 1;
   background-image: linear-gradient(to right, #303030, #000000);
-  z-index: 1;
 }
 
 .arriere-plan {
@@ -79,7 +81,7 @@ li:last-child {
 
 .ligne-pattern {
   position: relative;
-  right: 22%;
+  right: 23%;
   bottom: 47em;
   width: 125%;
   max-width: auto;

@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "sass/styles.scss"
+        "sass/stages-art.scss"
     ],
     "names": [],
-    "file": "styles.css"
+    "file": "stages-art.css"
 }
