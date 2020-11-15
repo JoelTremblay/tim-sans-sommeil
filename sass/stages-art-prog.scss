@@ -1,0 +1,182 @@
+@import "utilities/variables";
+
+html {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.vecteurs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+.vecteurs2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+.ligne-pattern1 {
+  width: 30%;
+  height: auto;
+  position: relative;
+  right: 26em;
+  top: 17em;
+}
+
+.ligne-pattern2 {
+  width: 30%;
+  position: relative;
+  left: 20em;
+  top: 39em;
+}
+
+.ligne-pattern3 {
+  width: 30%;
+  position: relative;
+  right: 26em;
+  bottom: 39em;
+}
+
+.ligne-pattern4 {
+  width: 30%;
+  position: relative;
+  left: 20em;
+  bottom: 17em;
+}
+
+#stages-art {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.liste-compagnies {
+  display: flex;
+  flex-direction: column;
+}
+
+article:nth-child(odd) {
+  margin-left: 25%;
+}
+
+article:nth-child(even) {
+  margin-left: 11%;
+}
+
+.art {
+  width: 60%;
+  background-color: $noir;
+  border: 0.3em solid;
+  border-image-source: linear-gradient($rose-creation, $vert-creation);
+  border-image-slice: 1;
+  margin-top: 2em;
+}
+
+.prog {
+  width: 60%;
+  background-color: $noir;
+  border: 0.3em solid;
+  border-image-source: linear-gradient($orange-prog, $mauve-prog);
+  border-image-slice: 1;
+  margin-top: 2em;
+}
+
+.infos {
+  height: 100%;
+  margin-left: 1.5%;
+}
+
+.img-compagnies {
+  margin-top: 2%;
+}
+
+a {
+  margin-left: 12%;
+  font-size: large;
+  text-decoration: none;
+  color: $gris;
+  // position: relative;
+  // bottom: 33%;
+  // left: 13%;
+}
+
+h3 {
+  position: relative;
+  left: 13%;
+  bottom: 30%;
+  color: $blanc; 
+}
+
+p {
+  width: 90%;
+  position: relative;
+  bottom: 10%;
+  color: $blanc;
+}
+
+@media only screen and (max-width:450px) {
+  #stages-art {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  article {
+    margin: 0 auto;
+    overflow-wrap: break-word;
+  }
+
+  // article:nth-child(odd) {
+  //   margin-left: 0;
+  // }
+  
+  // article:nth-child(even) {
+  //   margin-left: 0;
+  // }
+
+  .ligne-pattern1, .ligne-pattern2, .ligne-pattern3, .ligne-pattern4 {
+    display: none;
+  }
+
+  h3 {
+    margin-top: 2em;
+    position: relative;
+    left: 13%;
+    bottom: 30%;
+    color: $blanc; 
+  }
+
+  a {
+    margin-bottom: 2em;
+  }
+
+  .art {
+    width: 95%;
+    height: 95%;
+    overflow-x: hidden;
+    background-color: $noir;
+    border: 0.3em solid;
+    border-image-source: linear-gradient($rose-creation, $vert-creation);
+    border-image-slice: 1;
+  }
+  
+  .prog {
+    width: 100%;
+    background-color: $noir;
+    border: 0.3em solid;
+    border-image-source: linear-gradient($orange-prog, $mauve-prog);
+    border-image-slice: 1;
+    margin-top: 2em;
+  }
+}

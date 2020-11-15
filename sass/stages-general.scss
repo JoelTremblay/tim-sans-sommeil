@@ -1,17 +1,10 @@
-// Couleurs typographies
-$noir: #000000;
-$gris: #A5A5A5;
-$blanc: #ffffff;
+@import "utilities/variables";
 
-// Couleurs fond
-$debut-gradient: #303030;
-$temp: #A57070;
-$vert-site: #00FF9F;
-$bleu-site: #00B8FF;
-$rose-creation: #FF00B8;
-$vert-creation: #B8FF01;
-$orange-prog: #FF9F00;
-$mauve-prog: #A000FF;
+html {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
+}
 
 #stages {
   width: 100%;
@@ -31,8 +24,6 @@ h1 {
   color: $blanc;
   padding-left: 3%;
   padding-bottom: 0.5%;
-  // border-left-style: solid;
-  // border-left-color: $blanc;
   border-left: 0.1em solid;
   border-image-source: linear-gradient($bleu-site, $vert-site);
   border-image-slice: 1;
@@ -52,7 +43,6 @@ h1 {
 
 .categories {
   padding-top: 15em;
-  background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
 }
 
 ul {
