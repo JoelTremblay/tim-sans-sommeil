@@ -79,11 +79,13 @@
             <div class="conteneurReseaux">
                 <h3>Reseaux Sociaux...</h3>
                 <ul>
-                    <li><img src="medias/images/discord-logo-png-transparent.png" alt=""></li>
-                    <li><img src="medias/images/discord-logo-png-transparent.png" alt=""></li>
-                    <li><img src="medias/images/discord-logo-png-transparent.png" alt=""></li>
-                    <li><img src="medias/images/discord-logo-png-transparent.png" alt=""></li>
-                    <li><img src="medias/images/discord-logo-png-transparent.png" alt=""></li>
+                    <p>test texte</p>
+                    <br>
+                    <li><a href="" target="_blank"><img src="medias/images/logos/discord.png" alt=""></a></li>
+                    <li><a href="" target="_blank"><img src="medias/images/logos/facebook.png" alt=""></a></li>
+                    <li><a href="" target="_blank"><img src="medias/images/logos/linkedin.png" alt=""></a></li>
+                    <li><a href="" target="_blank"><img src="medias/images/logos/instagram.png" alt=""></a></li>
+                    <li><a href="" target="_blank"><img src="medias/images/logos/youtube.png" alt=""></a></li>
                 </ul>
             </div>
         </footer>

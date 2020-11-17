@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="sass/initialize.css">
         <link rel="stylesheet" href="sass/Header-Nav.css">
         <?php 
-            if ($page == "accueil") echo'<link rel="stylesheet" href="sass/index.css">' ;
+            if ($page == "accueil") echo'<link rel="stylesheet" href="sass/index.css">';
             else if ($page == "cours")
             {
                 echo'<link rel="stylesheet" href="sass/cours.css">
@@ -66,14 +66,14 @@
                 <a href="index.php">
                     <img src="<?php 
                     if ($page == "accueil") echo'medias/images/timLogo.png';
-                    else if ($page == "cours") echo'medias/images/_LogoTIM_Prog 1.png';
+                    else if ($page == "cours") echo'medias/images/timLogo_Prog.png';
                     ?>" alt="" class="imgLogo">
                 </a>
             </div>
 
             <!-- logo Maisonneuve -->
             <div class="divMaisonneuve logoHeader logoMaisonneuve">
-                <a href="https://www.cmaisonneuve.qc.ca/"><img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve"></a>
+                <a href="https://www.cmaisonneuve.qc.ca/" target="_blank"><img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve"></a>
             </div>
 
         </header>
