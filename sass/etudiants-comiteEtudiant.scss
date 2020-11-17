@@ -1,0 +1,226 @@
+
+html, 
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template: 
+        'main'
+        'side';
+    background-color: #2A2929;
+    .mainEtudiantDeroulant {
+        background-image: url(../medias/images/Group1motifsGroupEtudiant.png);
+        grid-area: main;
+        section {
+            display: grid;
+            div{
+                background-color: #242323;
+                margin-bottom: 2vh;
+                width: 85%;
+                display: grid;
+            }
+            div:nth-child(odd) {
+                justify-self: start;
+                margin-left: 2vw;
+                box-shadow: 1vw 1vh #00FFD1;
+            }
+            div:nth-child(even) {
+                justify-self: end;
+                margin-right: 2vw;
+                box-shadow: -1vw 1vh #00C2FF;
+            }
+        }
+    }
+    .sideEtudiantFixe{
+        background-color: #545353;
+        display: grid;
+        grid-template: 
+        'MC'
+        'horaire';
+        grid-area: side;
+        box-shadow: -1vw 0 10px black;
+        .divMotCle{
+            display: grid;
+            grid-template: 
+            'MC1 MC2';
+            grid-area: MC;
+            background-image: url(../medias/images/vector-etudiants1.png), url(../medias/images/vector-etudiants2.png);
+            background-position: 100% 90%, 10% 40%;
+            background-repeat: no-repeat, no-repeat;
+            .motsCles1{
+                grid-area: MC1;
+                ul{
+                    list-style: none;
+                    padding-inline-start: 2vw;
+                }
+            }
+            .motsCles2{
+                grid-area: MC2;
+                ul{
+                    list-style: none;
+                }
+            }
+        }
+        .divHoraire{
+            grid-area: horaire;
+            display: grid;
+        }
+    }
+}
+
+.imagePrincipale {
+    width: 98vw;
+    height: 98vw;
+}
+
+li {
+    margin-bottom: 1vh;
+    background-color: #242323;
+    width: fit-content;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    p:not(:last-child) {
+        padding-bottom: 1vh;
+    }
+}
+
+p {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0vh 1vw;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  h5 {
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 1vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
+
+  }
+
+  video {
+      width: 70vw;
+      height: auto;
+      justify-self: center;
+  }
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    p {
+        font-size: 1.1rem;
+    }
+
+    .imagePrincipale {
+        width: 51vh;
+        height: auto;
+        align-self: end;
+    }
+
+    video {
+        width: 30vw;
+        height: auto;
+    }
+
+    body {
+        grid-template: 'main side';
+        overflow: hidden;
+        .mainEtudiantDeroulant::-webkit-scrollbar {
+            display: none;
+        }
+        .mainEtudiantDeroulant{
+            overflow-y: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            div{
+                width: 50vw;
+            }
+            div:nth-child(even) {
+                margin-right: 1vw;
+            }
+        }
+        .sideEtudiantFixe{
+            height: 100%;
+            .divMotCle{
+                height: 100%;
+                grid-template: 
+                'MC1 MC2';
+                .motsCles1{
+                    grid-area: MC1;
+                }
+                .motsCles2{
+                    grid-area: MC2;
+                }
+            }
+        }
+    }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    p {
+        font-size: 1.3rem;
+    }
+
+    .imagePrincipale {
+        width: 65vh;
+        height: auto;
+        align-self: end;
+    }
+
+    video {
+        width: 40vw;
+        height: auto;
+    }
+
+    body {
+        grid-template: 'main side';
+        overflow: hidden;
+        .mainEtudiantDeroulant::-webkit-scrollbar {
+            display: none;
+        }
+        .mainEtudiantDeroulant{
+            overflow-y: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            div{
+                width: 50vw;
+            }
+            div:nth-child(even) {
+                margin-right: 1vw;
+            }
+        }
+        .sideEtudiantFixe{
+            height: 100%;
+            .divMotCle{
+                position: sticky;
+                grid-template: 
+                'MC1 MC2';
+                .motsCles1{
+                    grid-area: MC1;
+                }
+                .motsCles2{
+                    grid-area: MC2;
+                }
+            }
+        }
+    }
+}
