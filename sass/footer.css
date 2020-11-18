@@ -1,5 +1,6 @@
 /* The footer*/
-.acronym-footer {
+.pageFooter {
+  color: white;
   position: fixed;
   /* Stay in place */
   bottom: 0;
@@ -12,23 +13,18 @@
   /* transparent*/
 }
 
-.acronym-footer ul {
+.pageFooter ul {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
 }
 
-.acronym-footer div {
+.pageFooter div {
   position: absolute;
   bottom: 2%;
   /* Stay at the bottom */
   right: 2%;
   /* Stay at the right */
-}
-
-.pageFooter {
-  bottom: 1%;
-  right: 1%;
 }
 
 .pageFooter div {

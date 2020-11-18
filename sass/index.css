@@ -1,12 +1,17 @@
 html {
-  height: 200%;
+  height: 100%;
+  z-index: -5;
+}
+
+#accueil {
+  height: 100%;
   background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.5%, #252525 12.5%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.5%, #131313 37.5%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.5%, #252525 62.5%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.5%, #131313 87.5%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
-  background-size: 100% 600%;
+  background-size: 100% 150%;
   background-repeat: no-repeat;
   background-color: #0d0d0d;
 }
 
-body {
+#accueil #accueilBody {
   background-image: url("../medias/images/motifs-entete.png");
   background-repeat: no-repeat;
   background-position: 0px -55px;
@@ -16,36 +21,17 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*The footer
-.acronym-footer {
-    position: fixed;  Stay in place 
-    bottom: 0;  Stay at the bottom 
-    height: 10%;
-    width: 100%;
-    z-index: 1;  Stay on top 
-    background-color:transparent; transparent
-    ul {
-        list-style-type: none;
-        margin: 0%;
-        padding: 0%;
-    }
-    div {
-        position: absolute;
-        bottom: 2%;  Stay at the bottom 
-        right: 1%;  Stay at the right 
-    }
-}*/
-#logoSite {
+#accueil #accueilBody #logoSite {
   width: 55%;
   margin: auto auto 15% auto;
 }
 
-#logoSite img {
+#accueil #accueilBody #logoSite img {
   width: 90%;
   margin: auto auto 15% auto;
 }
 
-.contenu {
+#accueil #accueilBody .contenu {
   margin-top: 15%;
   background-image: url("../medias/images/ligne-pattern.png");
   background-repeat: no-repeat;
@@ -53,7 +39,7 @@ body {
   background-size: 88%;
 }
 
-.presentation {
+#accueil #accueilBody .presentation {
   width: 88%;
   margin: auto;
   background-color: rgba(17, 17, 17, 0.2);
@@ -67,11 +53,11 @@ body {
   grid-gap: 10px;
 }
 
-.presentation img {
+#accueil #accueilBody .presentation img {
   width: 80%;
 }
 
-#intro > :first-child {
+#accueil #accueilBody #intro > :first-child {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 1;
@@ -81,7 +67,7 @@ body {
   margin-right: 20%;
 }
 
-#intro > :nth-child(2) {
+#accueil #accueilBody #intro > :nth-child(2) {
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 5;
@@ -90,11 +76,11 @@ body {
   margin-bottom: 7%;
 }
 
-#intro > :nth-child(2) {
+#accueil #accueilBody #intro > :nth-child(2) {
   margin-top: -16%;
 }
 
-#poss > :first-child {
+#accueil #accueilBody #poss > :first-child {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -104,7 +90,7 @@ body {
   margin-right: 20%;
 }
 
-#poss > :nth-child(2) {
+#accueil #accueilBody #poss > :nth-child(2) {
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 5;
@@ -113,13 +99,13 @@ body {
   margin-top: -25%;
 }
 
-#eleves {
+#accueil #accueilBody #eleves {
   padding-top: 10%;
   width: 80%;
   margin: auto;
 }
 
-#eleves > :first-child {
+#accueil #accueilBody #eleves > :first-child {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -130,7 +116,7 @@ body {
   margin-top: -7%;
 }
 
-#eleves > :nth-child(2) {
+#accueil #accueilBody #eleves > :nth-child(2) {
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 5;
@@ -138,78 +124,78 @@ body {
       grid-row-start: 1;
 }
 
-.conteneurCarrousel {
+#accueil #accueilBody .conteneurCarrousel {
   width: 50%;
   margin: 10% auto auto auto;
 }
 
-.mainFooter {
+#accueil #accueilBody .reseauxAccueil {
   background-image: url(../medias/images/motifs-pied.png);
 }
 
-.mainFooter .conteneurReseaux {
+#accueil #accueilBody .reseauxAccueil .conteneurReseaux {
   padding-top: 10%;
   text-align: center;
 }
 
-.mainFooter .conteneurReseaux h3 {
+#accueil #accueilBody .reseauxAccueil .conteneurReseaux h3 {
   padding-bottom: 2%;
 }
 
-.mainFooter .conteneurReseaux ul {
+#accueil #accueilBody .reseauxAccueil .conteneurReseaux ul {
   width: 25%;
   margin: auto;
   list-style: none;
   padding-bottom: 10%;
 }
 
-.mainFooter .conteneurReseaux ul li {
+#accueil #accueilBody .reseauxAccueil .conteneurReseaux ul li {
   display: inline-block;
   width: 15%;
   margin: auto;
 }
 
-.mainFooter .conteneurReseaux ul li img {
+#accueil #accueilBody .reseauxAccueil .conteneurReseaux ul li img {
   cursor: pointer;
   min-width: 20px;
   margin: auto;
 }
 
 @media (max-width: 520px) {
-  body {
+  #accueilBody {
     text-align: center;
     background-position: 0px 0px;
     font-size: 0.7rem;
   }
-  body h2 {
+  #accueilBody h2 {
     font-size: 0.9em;
   }
-  body p {
+  #accueilBody p {
     white-space: pre-line;
   }
-  body #logoSite {
+  #accueilBody #logoSite {
     margin: auto auto 5% auto;
   }
-  body .contenu {
+  #accueilBody .contenu {
     margin-top: 40%;
     background-image: url("../medias/images/ligne-pattern2.png");
     background-position: 110% 65%;
   }
-  body .contenu #intro > :first-child {
+  #accueilBody .contenu #intro > :first-child {
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column: 1;
         grid-column-start: 1;
     margin: auto;
   }
-  body .contenu #intro > :nth-child(2) {
+  #accueilBody .contenu #intro > :nth-child(2) {
     -ms-grid-row: 3;
         grid-row-start: 3;
     -ms-grid-column: 1;
         grid-column-start: 1;
     margin: 10% auto;
   }
-  body .contenu #poss > :first-child {
+  #accueilBody .contenu #poss > :first-child {
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column: 1;
@@ -217,26 +203,26 @@ body {
     margin-left: 50%;
     width: 100%;
   }
-  body .contenu #poss > :nth-child(2) {
+  #accueilBody .contenu #poss > :nth-child(2) {
     -ms-grid-row: 2;
         grid-row-start: 2;
     -ms-grid-column: 1;
         grid-column-start: 1;
     margin: auto;
   }
-  body .contenu #eleves {
+  #accueilBody .contenu #eleves {
     padding-top: 10%;
     margin: auto;
     width: 100%;
   }
-  body .contenu #eleves > :first-child {
+  #accueilBody .contenu #eleves > :first-child {
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column: 1;
         grid-column-start: 1;
     margin: 0% 0% 15% 0%;
   }
-  body .contenu #eleves > :nth-child(2) {
+  #accueilBody .contenu #eleves > :nth-child(2) {
     -ms-grid-row: 3;
         grid-row-start: 3;
     -ms-grid-column: 1;

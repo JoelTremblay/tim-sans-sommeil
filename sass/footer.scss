@@ -1,44 +1,39 @@
 /* The footer*/
-.acronym-footer {
-    position: fixed; /* Stay in place */
-    bottom: 0; /* Stay at the bottom */
-    height: 10%;
-    width: 100%;
-    z-index: 1; /* Stay on top */
-    background-color:transparent; /* transparent*/
-    ul {
-        list-style-type: none;
-        margin: 0%;
-        padding: 0%;
-    }
-    div {
-        position: absolute;
-        bottom: 2%; /* Stay at the bottom */
-        right: 2%; /* Stay at the right */
-    }
-}
-
 .pageFooter
-{
-    //position: absolute;
-    bottom: 1%;
-    right: 1%;
-    
-    div
     {
-        height: 4em;
-        padding-bottom: 2%;
+        color: white;
+        position: fixed; /* Stay in place */
+        bottom: 0; /* Stay at the bottom */
+        height: 10%;
+        width: 100%;
+        z-index: 1; /* Stay on top */
+        background-color:transparent; /* transparent*/
+        ul {
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+        }
+        div {
+            position: absolute;
+            bottom: 2%; /* Stay at the bottom */
+            right: 2%; /* Stay at the right */
+        }
+        
+        div
+        {
+            height: 4em;
+            padding-bottom: 2%;
+        
+            position: absolute;
+            bottom: 1%;
+            right: 1%;
+        }
     
-        position: absolute;
-        bottom: 1%;
-        right: 1%;
+        ul
+        {
+            width: 98%;
+            text-align: left;
+            list-style: none;
+            text-shadow: 1px 1px #111111;
+        }
     }
-
-    ul
-    {
-        width: 98%;
-        text-align: left;
-        list-style: none;
-        text-shadow: 1px 1px #111111;
-    }
-}

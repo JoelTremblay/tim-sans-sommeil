@@ -1,21 +1,19 @@
 @charset "UTF-8";
 /* ======================== STYLES GÉNÉRAUX ======= */
-html {
+#grilleCours {
+  width: 100%;
   background-color: #0d0d0d;
-}
-
-body {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  max-height: 700px;
+  z-index: -2;
 }
 
-.contenuCours {
+#grilleCours .contenuCours {
   margin-top: 5%;
   padding-bottom: 10%;
 }
 
-.contenuCours .conteneurCours {
+#grilleCours .contenuCours .conteneurCours {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -28,7 +26,7 @@ body {
   grid-gap: 2%;
 }
 
-.contenuCours .conteneurCours .session {
+#grilleCours .contenuCours .conteneurCours .session {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
@@ -38,37 +36,38 @@ body {
   height: 50vh;
 }
 
-.contenuCours .conteneurCours .session h2 {
+#grilleCours .contenuCours .conteneurCours .session h2 {
   background-color: #00C2FF;
   height: 15vh;
   width: 80vw;
   position: absolute;
   text-align: left;
-  z-index: -1;
+  z-index: 0;
   display: inline;
 }
 
-.contenuCours .conteneurCours .session .cours {
+#grilleCours .contenuCours .conteneurCours .session .cours {
+  z-index: 1;
   background-color: #E86F6F;
   width: 100%;
   margin-top: 10vh;
 }
 
-.contenuCours .conteneurCours .session .cours h3 {
+#grilleCours .contenuCours .conteneurCours .session .cours h3 {
   height: 30%;
   font-size: 2.3vh;
   text-shadow: 1px 1px gray;
 }
 
-.contenuCours .conteneurCours .session .cours p {
+#grilleCours .contenuCours .conteneurCours .session .cours p {
   font-size: 2.3vh;
 }
 
-.contenuCours .conteneurCours .session .cours p:last-child {
+#grilleCours .contenuCours .conteneurCours .session .cours p:last-child {
   font-size: 2vh;
 }
 
-.contenuCours .conteneurCours .session .cours:hover {
+#grilleCours .contenuCours .conteneurCours .session .cours:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px -3px #00FFD1;
           box-shadow: 0px -3px #00FFD1;
@@ -76,12 +75,12 @@ body {
 
 /* ======================== STYLES MOBILES ======= */
 @media (max-width: 600px) {
-  .contenuCours {
+  #grilleCours .contenuCours {
     margin-top: 20%;
     margin-bottom: 10%;
     padding-bottom: 15%;
   }
-  .contenuCours .conteneurCours {
+  #grilleCours .contenuCours .conteneurCours {
     width: 40%;
     margin: auto;
     text-align: center;
@@ -90,22 +89,22 @@ body {
     -ms-grid-rows: 6;
         grid-template-rows: 6;
   }
-  .contenuCours .conteneurCours .session {
+  #grilleCours .contenuCours .conteneurCours .session {
     margin-bottom: 5vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  .contenuCours .conteneurCours .session h2 {
+  #grilleCours .contenuCours .conteneurCours .session h2 {
     display: none;
   }
-  .contenuCours .conteneurCours .session .cours {
+  #grilleCours .contenuCours .conteneurCours .session .cours {
     width: 30vw;
     height: 50vh;
     margin-bottom: 5vh;
   }
-  .contenuCours .conteneurCours .session .cours:hover {
+  #grilleCours .contenuCours .conteneurCours .session .cours:hover {
     -webkit-box-shadow: 1px -2px #00FFD1;
             box-shadow: 1px -2px #00FFD1;
     width: 105%;
