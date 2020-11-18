@@ -6,15 +6,14 @@ html {
 }
 
 .vecteurs {
-  width: 100%;
-  height: auto;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   z-index: -1;
 }
 
 .vecteurs2 {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   z-index: -1;
@@ -24,29 +23,36 @@ html {
   width: 30%;
   height: auto;
   position: relative;
-  right: 26em;
+  right: 19%;
   top: 17em;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .ligne-pattern2 {
   width: 30%;
+  height: auto;
   position: relative;
-  left: 20em;
-  top: 39em;
+  left: 15%;
+  top: 350%;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .ligne-pattern3 {
   width: 30%;
+  height: auto;
   position: relative;
-  right: 26em;
-  bottom: 39em;
+  right: 19%;
+  bottom: 350%;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .ligne-pattern4 {
   width: 30%;
+  height: auto;
   position: relative;
-  left: 20em;
-  bottom: 17em;
+  left: 15%;
+  bottom: 175%;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs1 {
@@ -55,27 +61,34 @@ html {
   position: relative;
   right: 10%;
   top: 150%;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs2 {
   width: 20%;
+  height: auto;
   position: relative;
-  left: 10%;
-  top: 325%;
+  left: 5%;
+  top: 300%;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs3 {
   width: 20%;
+  height: auto;
   position: relative;
   right: 10%;
   bottom: 300%;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs4 {
   width: 20%;
+  height: auto;
   position: relative;
-  left: 10%;
-  bottom: 17em;
+  left: 5%;
+  bottom: 125%;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art {
@@ -83,6 +96,7 @@ html {
   height: 100%;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 #stages-prog {
@@ -90,6 +104,7 @@ html {
   height: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .liste-compagnies {
@@ -99,10 +114,12 @@ html {
 
 article:nth-child(odd) {
   margin-left: 25%;
+  animation: zoomIn ease 1s;
 }
 
 article:nth-child(even) {
   margin-left: 11%;
+  animation: zoomIn ease 1s;
 }
 
 .art {
@@ -210,6 +227,30 @@ p {
     border-image-source: linear-gradient(#FF9F00, #A000FF);
     border-image-slice: 1;
     margin-top: 2em;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.25;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /*# sourceMappingURL=stages-art-prog.css.map */
