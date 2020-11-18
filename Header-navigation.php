@@ -18,9 +18,10 @@
             else if ($page == "coursParCours")
             {
                 echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-                <link rel="stylesheet" href="sass/coursParCours.css">';
+                <link rel="stylesheet" href="sass/coursParCours.css">
+                <link rel="stylesheet" href="sass/footer.css">';
             }
-            ?>
+        ?>
         <script type="text/javascript" src="js/jssor.slider.min.js"></script>
         <script type="text/javascript" src="js/scriptCarrousel.js"></script>
         <link rel="stylesheet" href="sass/carrouselCSS.css">

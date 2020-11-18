@@ -15,7 +15,7 @@
     foreach ($coursTab as $sessionTab => $laSession) 
     {
       $colonneNum = 1;
-      echo"<div style='grid-row-start: $rangeeNum;' class='session'><>";
+      echo"<div style='grid-row-start: $rangeeNum;' class='session'><h2>Session ".$rangeeNum.'</h2>';
       foreach ($laSession as $coursDelaSession) 
       {
         $colonneNum++;
