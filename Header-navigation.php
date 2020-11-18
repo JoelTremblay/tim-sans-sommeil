@@ -16,10 +16,13 @@
                 echo'<link rel="stylesheet" href="sass/cours.css">
                 <link rel="stylesheet" href="sass/footer.css">';
             }
-            else if ($page == "professeurs")
+            else if ($page == "galerie-page")
             {
                 echo'<link rel="stylesheet" href="sass/styles.css">
-                <link rel="stylesheet" href="sass/footer.css">';
+                <link rel="stylesheet" href="sass/footer.css">
+                <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>';
             }
         ?>
         <script type="text/javascript" src="js/jssor.slider.min.js"></script>
@@ -30,9 +33,9 @@
     </head>
 
     <body <?php 
-            if ($page == "professeurs")
+            if ($page == "galerie-page")
             {
-                echo'id="professeurs"';
+                echo'class="galerie-page"';
             }
         ?>>
 
