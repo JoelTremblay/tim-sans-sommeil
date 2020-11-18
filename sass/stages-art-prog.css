@@ -211,6 +211,7 @@ p {
   }
   #stages-art, #stages-prog {
     display: inline-block;
+    overflow: visible;
   }
   article {
     overflow-wrap: break-word;
