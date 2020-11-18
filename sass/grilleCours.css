@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* ======================== STYLES GÉNÉRAUX ======= */
+html {
+  background-color: #0d0d0d;
+}
+
+body {
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-height: 700px;
+}
+
+.contenuCours {
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+
+.contenuCours .conteneurCours {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 5;
+      grid-template-rows: 5;
+  grid-gap: 2%;
+}
+
+.contenuCours .conteneurCours .session {
+  background-color: lightblue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  height: 14em;
+}
+
+.contenuCours .conteneurCours .session .cours {
+  background-color: #E86F6F;
+  width: 100%;
+  margin-bottom: 6%;
+  margin-top: 0%;
+}
+
+.contenuCours .conteneurCours .session .cours h3 {
+  height: 25%;
+  font-size: 0.8em;
+  text-shadow: 1px 1px gray;
+}
+
+.contenuCours .conteneurCours .session .cours p {
+  font-size: 0.9em;
+}
+
+.contenuCours .conteneurCours .session .cours p:last-child {
+  font-size: 0.7em;
+}
+
+.contenuCours .conteneurCours .session .cours:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px -3px #00FFD1;
+          box-shadow: 0px -3px #00FFD1;
+}
+
+/* ======================== STYLES MOBILES ======= */
+@media (max-width: 600px) {
+  .contenuCours {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding-bottom: 15%;
+  }
+  .contenuCours .conteneurCours {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 26;
+        grid-template-rows: 26;
+  }
+  .contenuCours .conteneurCours .coursProg {
+    height: 8em;
+    margin-top: 1%;
+    margin-bottom: 0%;
+  }
+  .contenuCours .conteneurCours .coursProg:hover {
+    -webkit-box-shadow: 1px -2px #00FFD1;
+            box-shadow: 1px -2px #00FFD1;
+    width: 105%;
+  }
+  .contenuCours .conteneurCours :nth-child(1) {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .contenuCours .conteneurCours :nth-child(2) {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .contenuCours .conteneurCours :nth-child(3) {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .contenuCours .conteneurCours :nth-child(4) {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  .contenuCours .conteneurCours :nth-child(5) {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+  }
+  .contenuCours .conteneurCours :nth-child(6) {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+  }
+  .contenuCours .conteneurCours :nth-child(7) {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+  }
+  .contenuCours .conteneurCours :nth-child(8) {
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+  }
+  .contenuCours .conteneurCours :nth-child(9) {
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+  }
+  .contenuCours .conteneurCours :nth-child(10) {
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+  }
+  .contenuCours .conteneurCours :nth-child(11) {
+    -ms-grid-row: 11;
+        grid-row-start: 11;
+  }
+  .contenuCours .conteneurCours :nth-child(12) {
+    -ms-grid-row: 12;
+        grid-row-start: 12;
+  }
+  .contenuCours .conteneurCours :nth-child(13) {
+    -ms-grid-row: 13;
+        grid-row-start: 13;
+  }
+  .contenuCours .conteneurCours :nth-child(14) {
+    -ms-grid-row: 14;
+        grid-row-start: 14;
+  }
+  .contenuCours .conteneurCours :nth-child(15) {
+    -ms-grid-row: 15;
+        grid-row-start: 15;
+  }
+  .contenuCours .conteneurCours :nth-child(16) {
+    -ms-grid-row: 16;
+        grid-row-start: 16;
+  }
+  .contenuCours .conteneurCours :nth-child(17) {
+    -ms-grid-row: 17;
+        grid-row-start: 17;
+  }
+  .contenuCours .conteneurCours :nth-child(18) {
+    -ms-grid-row: 18;
+        grid-row-start: 18;
+  }
+  .contenuCours .conteneurCours :nth-child(19) {
+    -ms-grid-row: 19;
+        grid-row-start: 19;
+  }
+  .contenuCours .conteneurCours :nth-child(20) {
+    -ms-grid-row: 20;
+        grid-row-start: 20;
+  }
+  .contenuCours .conteneurCours :nth-child(21) {
+    -ms-grid-row: 21;
+        grid-row-start: 21;
+  }
+  .contenuCours .conteneurCours :nth-child(22) {
+    -ms-grid-row: 22;
+        grid-row-start: 22;
+  }
+  .contenuCours .conteneurCours :nth-child(23) {
+    -ms-grid-row: 23;
+        grid-row-start: 23;
+  }
+  .contenuCours .conteneurCours :nth-child(24) {
+    -ms-grid-row: 24;
+        grid-row-start: 24;
+  }
+  .contenuCours .conteneurCours :nth-child(25) {
+    -ms-grid-row: 25;
+        grid-row-start: 25;
+  }
+  .contenuCours .conteneurCours :nth-child(26) {
+    -ms-grid-row: 26;
+        grid-row-start: 26;
+  }
+}
+/*# sourceMappingURL=grilleCours.css.map */

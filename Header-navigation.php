@@ -8,18 +8,23 @@
         <meta name="keywords" content="Header, Navbar">
         <meta name="author" content="SansSommeil">
         <link rel="stylesheet" href="sass/initialize.css">
-        <link rel="stylesheet" href="sass/Header-Nav.css">
         <?php 
             if ($page == "accueil") echo'<link rel="stylesheet" href="sass/index.css">';
-            else if ($page == "cours")
+            else if ($page == "grilleCours")
             {
-                echo'<link rel="stylesheet" href="sass/cours.css">
+                echo'<link rel="stylesheet" href="sass/grilleCours.css">
                 <link rel="stylesheet" href="sass/footer.css">';
             }
-        ?>
+            else if ($page == "coursParCours")
+            {
+                echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+                <link rel="stylesheet" href="sass/coursParCours.css">';
+            }
+            ?>
         <script type="text/javascript" src="js/jssor.slider.min.js"></script>
         <script type="text/javascript" src="js/scriptCarrousel.js"></script>
         <link rel="stylesheet" href="sass/carrouselCSS.css">
+        <link rel="stylesheet" href="sass/Header-Nav.css">
         <title>TIM-2020</title>
 
     </head>
@@ -32,7 +37,7 @@
             <nav id="mySidenav" class="sidenav" role="navigation">
                 <a href="javascript:void(0)" class="closebtn">&times;</a>
                 <ul class="menuPrincipale">
-                    <li><a href="coursProg.php">Cours</a></li>
+                    <li><a href="grilleCours.php">Cours</a></li>
                     <li><a href="#">Professeurs</a></li>
                     <li><a href="#">Évenements</a></li>
                     <li><a href="#">Étudiants</a></li>
@@ -66,7 +71,8 @@
                 <a href="index.php">
                     <img src="<?php 
                     if ($page == "accueil") echo'medias/images/timLogo.png';
-                    else if ($page == "cours") echo'medias/images/timLogo_Prog.png';
+                    else if ($page == "grilleCours") echo'medias/images/timLogo_Prog.png';
+                    else echo'medias/images/timLogo.png';
                     ?>" alt="" class="imgLogo">
                 </a>
             </div>

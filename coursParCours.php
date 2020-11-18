@@ -3,6 +3,7 @@
   $page = "coursParCours";
   include("Header-navigation.php");
 ?>
+<br><br><br><br>
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div class="carouselCountainer">
         <div id="carouselExampleCaptions" class="carousel slide" data-interval="false" data-ride="carousel">

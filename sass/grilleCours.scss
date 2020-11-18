@@ -18,54 +18,64 @@ body
     margin-top: 5%;
     padding-bottom: 10%;
 
+
     .conteneurCours
     {
-        width: 85%;
+        width: 90%;
         margin: auto;
     
         text-align: center;
     
         display: grid;
-        grid-template-columns: 6;
+        grid-template-columns: 1fr;
         grid-template-rows: 5;
         grid-gap: 2%;
-    
-        .coursProg
-        {
-            background-color: #E86F6F;
-    
-            //height: 120px;
-            height: 8em;
-            margin-bottom: 6%;
-        }
-        .coursProg:hover
-        {
-            cursor: pointer;
-            box-shadow: 2px -3px #00FFD1;
 
-            width: 105%;
+        .session
+        {
+            background-color: lightblue;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            height: 14em;
+
+            .cours
+            {
+                background-color: #E86F6F;
+        
+                //height: 120px;
+                width: 100%;
+                //height: 14em;
+                margin-bottom: 6%;
+                margin-top: 0%;
+
+
+                h3
+                {
+                    height: 25%;
+                    font-size: 0.8em;
+                    text-shadow: 1px 1px gray;
+                }
+
+                p
+                {
+                    font-size: 0.9em;
+                }
+                p:last-child
+                {
+                    font-size: 0.7em;
+                }
+            }
+            .cours:hover
+            {
+                cursor: pointer;
+                box-shadow: 0px -3px #00FFD1;
+            }
         }
     
-        .rangee1
-        {
-            grid-row-start: 1;
-        }
-        .rangee2
-        {
-            grid-row-start: 2; 
-        }
-        .rangee3
-        {
-            grid-row-start: 3;
-        }
-        .rangee4
-        {
-            grid-row-start: 4;
-        }
-        .rangee5
-        {
-            grid-row-start: 5;
-        }
+        
     }
 }
 
