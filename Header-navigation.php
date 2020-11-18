@@ -48,8 +48,8 @@
                     <li><a href="coursProg.php">Cours</a></li>
                     <li><a href="professeurs.php">Professeurs</a></li>
                     <li><a href="#">Évenements</a></li>
-                    <li><a href="#">Étudiants</a></li>
-                    <li><a href="#">Projets</a></li>
+                    <li><a href="etudiants.php">Étudiants</a></li>
+                    <li><a href="projets.php">Projets</a></li>
                     <li><a href="#">Stages</a></li>
                 </ul>
                 

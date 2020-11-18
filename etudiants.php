@@ -6,35 +6,35 @@
         <section>
           <div class="galerie">
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/1-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/3-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/4-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/5-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/6-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/7-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/8-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/9-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
