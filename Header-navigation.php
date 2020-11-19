@@ -60,10 +60,10 @@
                     <ul class="menuPrincipale">
                         <li><a href="grilleCours.php">Grille Cours</a></li>
                         <li><a href="coursParCours.php">Cours</a></li>
-                        <li><a href="#">Professeurs</a></li>
+                        <li><a href="professeurs.php">Professeurs</a></li>
                         <li><a href="#">Évenements</a></li>
-                        <li><a href="#">Étudiants</a></li>
-                        <li><a href="#">Projets</a></li>
+                        <li><a href="etudiants-tim.html">Étudiants</a></li>
+                        <li><a href="projets.php">Projets</a></li>
                         <li><a href="stages.php">Stages</a></li>
                     </ul>
                     
