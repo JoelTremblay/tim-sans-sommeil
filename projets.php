@@ -59,9 +59,9 @@
             </a>
             <a class="item texte">
               <div class="centre">
-                <p>Voici</p>
-                <p>les</p>
-                <p>professeurs!</p>
+                <p>Exemple</p>
+                <p>de</p>
+                <p>projets</p>
               </div>
             </a>
             <a href="#" class="item">

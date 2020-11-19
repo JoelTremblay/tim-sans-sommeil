@@ -37,34 +37,30 @@
               <img src="medias/images/9-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
+            <a href="#" class="item triangle">
+              
+            </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/10-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
             <a href="#" class="item">
-              <img src="medias/images/" alt="">
+              <img src="medias/images/11-1.jpg" alt="">
               <div class="overlay"></div>
             </a>
-            <a href="#" class="item">
-              <img src="medias/images/" alt="">
-              <div class="overlay"></div>
+            <a href="#" class="item triangle">
+              
             </a>
-            <a href="#" class="item">
-              <img src="medias/images/" alt="">
-              <div class="overlay"></div>
-            </a>
-            <a href="#" class="item">
-              <img src="medias/images/" alt="">
-              <div class="overlay"></div>
+            <a href="#" class="item triangle">
+              
             </a>
             <a class="item texte">
               <div class="centre">
-                <p>Voici</p>
-                <p>les</p>
-                <p>professeurs!</p>
+                <p>Vie</p>
+                <p>étudiante</p>
               </div>
             </a>
-            <a href="#" class="item">
+            <a href="#" class="item triangle">
               
             </a>      
         </div>
