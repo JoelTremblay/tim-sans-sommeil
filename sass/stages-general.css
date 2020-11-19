@@ -1,7 +1,6 @@
 #stagesConteneur {
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#303030), to(#000000));
   background-image: linear-gradient(to bottom right, #303030, #000000);
   background-repeat: no-repeat;
 }
@@ -28,34 +27,30 @@
   color: #ffffff;
   padding-left: 3%;
   padding-bottom: 0.5%;
+  margin-top: 7%;
+  margin-bottom: 0;
   border-left: 0.1em solid;
   border-image-source: linear-gradient(#00B8FF, #00FF9F);
   border-image-slice: 1;
-  background-image: -webkit-gradient(linear, left top, right top, from(#303030), to(#000000));
   background-image: linear-gradient(to right, #303030, #000000);
-  -webkit-animation: fadeIn ease 2s;
-          animation: fadeIn ease 2s;
+  animation: fadeIn ease 2s;
 }
 
 #stagesConteneur .arriere-plan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #000000;
 }
 
 #stagesConteneur .arriere-plan img {
   padding-top: 2%;
   opacity: 50%;
-  -webkit-animation: fadeIn2 ease 6s;
-          animation: fadeIn2 ease 6s;
+  animation: fadeIn2 ease 6s;
 }
 
 #stagesConteneur .categories {
   padding-top: 15em;
+  background-image: linear-gradient(to right, #303030, #000000);
 }
 
 #stagesConteneur ul {
@@ -64,11 +59,8 @@
   bottom: 20em;
   width: 75%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 #stagesConteneur ul li {
@@ -79,23 +71,17 @@
   padding-left: 9%;
   padding-right: 9%;
   z-index: 1;
-  -webkit-animation: zoomIn ease 0.5s;
-          animation: zoomIn ease 0.5s;
+  animation: zoomIn ease 0.5s;
 }
 
 #stagesConteneur ul li li:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   background-color: white;
 }
 
 #stagesConteneur ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-decoration: none;
   color: #A5A5A5;
   font-family: 'Roboto';
@@ -119,8 +105,7 @@
   right: 23%;
   bottom: 47em;
   width: 125%;
-  -webkit-animation: fadeIn3 ease 6s infinite;
-          animation: fadeIn3 ease 6s infinite;
+  animation: fadeIn3 ease 6s infinite;
 }
 
 #stagesConteneur .ligne-pattern2 {
@@ -129,8 +114,7 @@
   right: 23%;
   bottom: 47em;
   width: 125%;
-  -webkit-animation: fadeIn3 ease 6s infinite;
-          animation: fadeIn3 ease 6s infinite;
+  animation: fadeIn3 ease 6s infinite;
 }
 
 @media only screen and (max-width: 450px) {
@@ -155,17 +139,11 @@
     height: 100%;
   }
   #stagesConteneur .categories {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#303030), to(#000000));
     background-image: linear-gradient(to bottom right, #303030, #000000);
   }
   #stagesConteneur ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #stagesConteneur ul li {
     width: 90%;
@@ -190,15 +168,6 @@
   }
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -208,36 +177,12 @@
   }
 }
 
-@-webkit-keyframes fadeIn2 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-
 @keyframes fadeIn2 {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 0.5;
-  }
-}
-
-@-webkit-keyframes fadeIn3 {
-  0% {
-    opacity: 0.25;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -256,41 +201,18 @@
   }
 }
 
-@-webkit-keyframes zoomIn {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  25% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes zoomIn {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   25% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    transform: scale(0.9);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 /*# sourceMappingURL=stages-general.css.map */

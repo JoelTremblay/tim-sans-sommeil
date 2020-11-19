@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../sass/initialize.css">
-  <link rel="stylesheet" href="../stages-art-prog.css">
-  <title>Stages - Programmation</title>
-</head>
+<?php
+  // Inclut le haut de page.
+  $page = "stages-prog";
+  include("Header-navigation.php");
+?>
 <body id="stages-prog">
   <main class="liste-compagnies">
     <div class="vecteurs">
-      <img class="motifs1" src="../medias/images/motifs.png" alt="">
-      <img class="motifs2" src="../medias/images/motifs2.png" alt="">
+      <img class="motifs1" src="../tim-sans-sommeil/medias/images/motifs.png" alt="">
+      <img class="motifs2" src="../tim-sans-sommeil/medias/images/motifs2.png" alt="">
     </div>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../medias/images/compagnies/chocolatMedia.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/chocolatMedia.png" alt="">
         <h3>Chocolat média</h3>
         <a href="https://cdnassets.chocolatmedia.com/wp-content/uploads/2020/05/offre-emploi-programmeur-php.pdf">- Intégrateur multimédia</a>
         <p>'Chocolat Média est une agence web spécialisée en conception de site web e-commerce et sur mesure.
@@ -30,7 +25,7 @@
     </article>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../medias/images/compagnies/sidlee.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/sidlee.png" alt="">
         <h3>Sid Lee</h3>
         <a href="https://sidleeland.com/fr/montreal/listing?gh_jid=2437608">- Développeur/développeuse back-end</a>
         <p>'Sid Lee est une entreprise internationale de services créatifs fondée à Montréal, Québec, Canada. Elle exploite des bureaux à Toronto, 
@@ -39,7 +34,7 @@
     </article>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../medias/images/compagnies/limaCharlie.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/limaCharlie.png" alt="">
         <h3>Lima Charlie</h3>
         <a href="https://limacharlie.ca/fr/contact">- Lien vers l'offre d'emploi</a>
         <p> 'Lima Charlie est un studio de programmation spécialisé dans les technologies web-based.
@@ -48,7 +43,7 @@
     </article>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../medias/images/compagnies/edoki.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/edoki.png" alt="">
         <h3>Edoki Academy</h3>
         <a href="https://montessori.edokiacademy.com/fr/jobs/">- Développeur Web</a>
         <p>'Edoki met sa créativité au service de l’épanouissement des enfants.
@@ -59,9 +54,13 @@
       </div>
     </article>
     <div class="vecteurs2">
-      <img class="motifs3" src="../medias/images/motifs.png" alt="">
-      <img class="motifs4" src="../medias/images/motifs2.png" alt="">
+      <img class="motifs3" src="../tim-sans-sommeil/medias/images/motifs.png" alt="">
+      <img class="motifs4" src="../tim-sans-sommeil/medias/images/motifs2.png" alt="">
     </div>
   </main>
 </body>
-</html>
+<?php
+  // Inclut le haut de page.
+  include("footer.php");
+
+?>

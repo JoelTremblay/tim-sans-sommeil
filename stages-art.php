@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../sass/initialize.css">
-  <link rel="stylesheet" href="../stages-art-prog.css">
-  <title>Stages - Artistique</title>
-</head>
+<?php
+  // Inclut le haut de page.
+  $page = "stages-art";
+  include("Header-navigation.php");
+?>
 <body id="stages-art">
   <main class="liste-compagnies">
     <div class="vecteurs">
-      <img class="ligne-pattern1" src="../medias/images/ligne-pattern-art1.png" alt="">
-      <img class="ligne-pattern2" src="../medias/images/ligne-pattern-art2.png" alt="">
+      <img class="ligne-pattern1" src="../tim-sans-sommeil/medias/images/ligne-pattern-art1.png" alt="">
+      <img class="ligne-pattern2" src="../tim-sans-sommeil/medias/images/ligne-pattern-art2.png" alt="">
     </div>
     <article class="art">
       <div class="infos">
-        <img class="img-compagnies" src="../medias/images/compagnies/aptitudeX.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/aptitudeX.png" alt="">
         <h3>Aptitude X</h3>
         <a href="https://www.aptitudex.com/intern?lang=fr">- Artiste 3D Junior</a>
         <p>'Né de Bug-Tracker Labs (créé en 1999), nous sommes fiers de nos normes de qualité et de notre efficacité.
@@ -29,7 +24,7 @@
     </article>
     <article class="art">
       <div class="infos">
-          <img class="img-compagnies" src="../medias/images/compagnies/sidlee.png" alt="">
+          <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/sidlee.png" alt="">
           <h3>Sid Lee</h3>
           <a href="https://sidleeland.com/fr/montreal/listing?gh_jid=2437613">- Développeur/développeuse front-end</a>
           <p>'Sid Lee est une entreprise internationale de services créatifs fondée à Montréal, Québec, Canada. Elle exploite des bureaux à Toronto, 
@@ -38,7 +33,7 @@
     </article>
     <article class="art">
       <div class="infos">
-        <img class="img-compagnies" src="../medias/images/compagnies/coachingOurselves.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/coachingOurselves.png" alt="">
         <h3>CoachingOurselves</h3>
         <a href="https://emplois.ca.indeed.com/emplois?q=Stage&l=Province%20de%20Qu%C3%A9bec&vjk=2e9af01315674971">- Designer graphique</a>
         <p>'La méthodologie CoachingOurselves pour le coaching entre pairs est une solution rentable au développement
@@ -50,7 +45,7 @@
     </article>
     <article class="art">
       <div class="infos">
-        <img class="img-compagnies" src="../medias/images/compagnies/mlbw.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/mlbw.png" alt="">
         <h3>My Little Big Web</h3>
         <a href="https://mylittlebigweb.com/emplois/stagiaire-designer-web-2/">- Designer Web</a>
         <p>'My Little Big Web est une agence Web spécialisée en création de sites Web, référencement sur Google (SEO)
@@ -62,9 +57,13 @@
       </div>
     </article>
     <div class="vecteurs2">
-      <img class="ligne-pattern3" src="../medias/images/ligne-pattern-art1.png" alt="">
-      <img class="ligne-pattern4" src="../medias/images/ligne-pattern-art2.png" alt="">
+      <img class="ligne-pattern3" src="../tim-sans-sommeil/medias/images/ligne-pattern-art1.png" alt="">
+      <img class="ligne-pattern4" src="../tim-sans-sommeil/medias/images/ligne-pattern-art2.png" alt="">
     </div>
   </main>
 </body>
-</html>
+<?php
+  // Inclut le haut de page.
+  include("footer.php");
+
+?>

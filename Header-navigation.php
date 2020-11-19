@@ -7,6 +7,7 @@
         <meta name="description" content="template">
         <meta name="keywords" content="Header, Navbar">
         <meta name="author" content="SansSommeil">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="stylesheet" href="sass/initialize.css">
         <?php 
             if ($page == "accueil") echo'<link rel="stylesheet" href="sass/index.css">';
@@ -22,6 +23,10 @@
             else if ($page == "stages")
             {
                 echo'<link rel="stylesheet" href="sass/stages-general.css">';
+            }
+            else if ($page == "stages-art" || "stages-prog")
+            {
+                echo'<link rel="stylesheet" href="../tim-sans-sommeil/sass/stages-art-prog.css">';
             }
             echo '<link rel="stylesheet" href="sass/footer.css">';
         ?>

@@ -1,30 +1,21 @@
 html {
   width: 100%;
   height: auto;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#303030), to(#000000));
   background-image: linear-gradient(to bottom right, #303030, #000000);
   overflow-x: hidden;
 }
 
 .vecteurs {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   z-index: -1;
 }
 
 .vecteurs2 {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   z-index: -1;
 }
 
@@ -34,8 +25,7 @@ html {
   position: relative;
   right: 19%;
   top: 17em;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .ligne-pattern2 {
@@ -44,8 +34,7 @@ html {
   position: relative;
   left: 15%;
   top: 350%;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .ligne-pattern3 {
@@ -54,8 +43,7 @@ html {
   position: relative;
   right: 19%;
   bottom: 350%;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .ligne-pattern4 {
@@ -64,8 +52,7 @@ html {
   position: relative;
   left: 15%;
   bottom: 175%;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs1 {
@@ -74,8 +61,7 @@ html {
   position: relative;
   right: 10%;
   top: 150%;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs2 {
@@ -84,8 +70,7 @@ html {
   position: relative;
   left: 5%;
   top: 300%;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs3 {
@@ -94,8 +79,7 @@ html {
   position: relative;
   right: 10%;
   bottom: 300%;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 .motifs4 {
@@ -104,54 +88,38 @@ html {
   position: relative;
   left: 5%;
   bottom: 125%;
-  -webkit-animation: fadeIn ease-in 6s infinite;
-          animation: fadeIn ease-in 6s infinite;
+  animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   overflow-x: hidden;
 }
 
 #stages-prog {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 .liste-compagnies {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 article:nth-child(odd) {
   margin-left: 25%;
-  -webkit-animation: zoomIn ease 1s;
-          animation: zoomIn ease 1s;
+  animation: zoomIn ease 1s;
 }
 
 article:nth-child(even) {
   margin-left: 11%;
-  -webkit-animation: zoomIn ease 1s;
-          animation: zoomIn ease 1s;
+  animation: zoomIn ease 1s;
 }
 
 .art {
@@ -263,21 +231,6 @@ p {
   }
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0.25;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0.25;
@@ -293,25 +246,12 @@ p {
   }
 }
 
-@-webkit-keyframes zoomIn {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes zoomIn {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 /*# sourceMappingURL=stages-art-prog.css.map */

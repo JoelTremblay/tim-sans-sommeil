@@ -30,6 +30,8 @@
     color: $blanc;
     padding-left: 3%;
     padding-bottom: 0.5%;
+    margin-top: 5%;
+    margin-bottom: 0 auto;
     border-left: 0.1em solid;
     border-image-source: linear-gradient($bleu-site, $vert-site);
     border-image-slice: 1;
@@ -51,6 +53,7 @@
   
   .categories {
     padding-top: 15em;
+    background-image: linear-gradient(to right, $debut-gradient, $noir);
   }
   
   ul {
