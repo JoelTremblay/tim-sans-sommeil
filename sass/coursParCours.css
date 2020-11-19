@@ -1,7 +1,167 @@
-.carousel {
-  z-index: 9;
-  background-color: gray;
-  height: 400px;
+#coursParCours, #coursParCoursBody {
+  height: 100%;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+}
+
+#coursParCours .carousel-inner::-webkit-scrollbar, #coursParCoursBody .carousel-inner::-webkit-scrollbar {
+  display: none;
+}
+
+#coursParCours .carouselCountainer, #coursParCoursBody .carouselCountainer {
+  height: 100%;
+}
+
+#coursParCours .carousel, #coursParCoursBody .carousel {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #00C2FF), color-stop(85%, #00FFD1), color-stop(90%, #242323));
+  background-image: linear-gradient(#00C2FF 10%, #00FFD1 85%, #242323 90%);
+  height: auto;
   width: 100%;
+  height: 100%;
+}
+
+#coursParCours .carousel-grid, #coursParCoursBody .carousel-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template: 'divTitreCours' 'ficheCours' 'prerequisCours' 'descriptionCours';
+  -ms-grid-rows: 7vh auto auto auto;
+      grid-template-rows: 7vh auto auto auto;
+  height: 100%;
+  grid-row-gap: 1vh;
+}
+
+#coursParCours .divTitreCours, #coursParCoursBody .divTitreCours {
+  grid-area: divTitreCours;
+  background-color: #2A2929;
+  height: 100%;
+}
+
+#coursParCours .titreCours, #coursParCoursBody .titreCours {
+  text-align: center;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+#coursParCours .ficheCours, #coursParCoursBody .ficheCours {
+  grid-area: ficheCours;
+  background-color: #242323;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  height: 100%;
+}
+
+#coursParCours .prerequisCours, #coursParCoursBody .prerequisCours {
+  grid-area: prerequisCours;
+  background-color: #242323;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  height: 100%;
+}
+
+#coursParCours .descriptionCours, #coursParCoursBody .descriptionCours {
+  grid-area: descriptionCours;
+  background-color: #242323;
+  height: 100%;
+}
+
+#coursParCours .divDescriptionCoursImage, #coursParCoursBody .divDescriptionCoursImage {
+  background: url(../medias/images/motif-pattern.png) no-repeat center;
+  background-size: 105% 115%;
+  height: 100%;
+}
+
+#coursParCours .carousel-control-prev, #coursParCoursBody .carousel-control-prev {
+  grid-area: btnPrev;
+  height: 2vh;
+  width: 2vh;
+  color: #00FFD1;
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+}
+
+#coursParCours .carousel-control-next, #coursParCoursBody .carousel-control-next {
+  grid-area: btnNext;
+  height: 2vh;
+  width: 2vh;
+  color: #00C2FF;
+  top: 2.5%;
+  right: 5%;
+}
+
+#coursParCours .carousel-inner, #coursParCoursBody .carousel-inner {
+  grid-area: inner;
+  height: 100%;
+  padding-right: 0%;
+  padding-left: 0%;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-y: scroll;
+}
+
+#coursParCours .carousel-item, #coursParCoursBody .carousel-item {
+  height: 100%;
+}
+
+#coursParCours a:not([href]):not([class]), #coursParCoursBody a:not([href]):not([class]) {
+  color: white;
+  text-decoration: none;
+}
+
+#coursParCours p, #coursParCoursBody p {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2vh;
+  padding: 2vh 2vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#coursParCours h5, #coursParCoursBody h5 {
+  color: white;
+  font-size: 1.4rem;
+  padding-top: 1vh;
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #coursParCours p {
+    font-size: 1.1rem;
+  }
+  #coursParCours .carousel-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template: 'divTitreCours divTitreCours' 'prerequisCours ficheCours' 'descriptionCours descriptionCours';
+    -ms-grid-rows: 7vh auto auto;
+        grid-template-rows: 7vh auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.3vh;
+  }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #coursParCours p {
+    font-size: 1.3rem;
+  }
+  #coursParCours .carousel-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template: 'divTitreCours divTitreCours' 'prerequisCours ficheCours' 'descriptionCours descriptionCours';
+    -ms-grid-rows: 7vh auto auto;
+        grid-template-rows: 7vh auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.3vh;
+  }
 }
 /*# sourceMappingURL=coursParCours.css.map */

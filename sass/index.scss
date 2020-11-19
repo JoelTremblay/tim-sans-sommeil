@@ -1,183 +1,283 @@
 
-
 html
 {
-    height: 200%;
+    height: 100%;
+    z-index: -5;
+}
+#accueil
+{
+    height: 100%;
     background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.50%, #252525 12.50%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.50%, #131313 37.50%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.50%, #252525 62.50%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.50%, #131313 87.50%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
-    background-size: 100% 600%;
+    background-size: 100% 150%;
     background-repeat:no-repeat;
     background-color: #0d0d0d;
-}
-body
-{
-    background-image: url("../medias/images/motifs-entete.png");
-    background-repeat:no-repeat;
-    background-position: 0px -55px;
-    background-size: 100%;
-    margin-top: 0%;
 
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-//Debut des elements body----------------------------------
-#logoSite
-{
-    width: 55%;
-    margin: auto auto 15% auto;
-}
-#logoSite img
-{
-    width: 90%;
-    margin: auto auto 15% auto;
-}
-
-.contenu
-{
-    margin-top: 15%;
-    background-image: url("../medias/images/ligne-pattern.png");
-    background-repeat:no-repeat;
-    background-position: 100% 0%;
-    background-size: 88%;
-}
-
-
-.presentation
-{
-    width: 88%;
-    margin: auto;
-
-    background-color: rgba(17, 17, 17, 0.2);
-
-    font-size: 1em;
-
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: 3;
-    grid-gap: 10px;
-}
-.presentation img
-{
-    width: 80%;
-}
-
-#intro > :first-child
-{
-    //background-color: salmon;;
-
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    margin-right: 20%;
-
-}
-#intro > :nth-child(2)
-{
-    //background-color: darkkhaki;;
-
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-
-    margin-bottom: 7%;
-}
-#intro > :nth-child(2)
-{
-    margin-top: -16%;
-}
-
-#poss > :first-child
-{
-    //background-color: salmon;;
-
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    margin-right: 20%;
-
-}
-#poss > :nth-child(2)
-{
-    //background-color: darkkhaki;;
-
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-
-    margin-top: -25%;
-}
-
-#eleves 
-{
-    padding-top: 10%;
-    width: 80%;
-    margin: auto;
-}
-#eleves > :first-child
-{
-    //background-color: salmon;;
-
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    margin-right: 20%;
-    margin-top: -7%;
-
-}
-#eleves > :nth-child(2)
-{
-    //background-color: darkkhaki;;
-
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-
-}
-
-.conteneurCarrousel
-{
-    width: 50%;
-    margin: 10% auto auto auto;
-}
-
-.mainFooter
-{
-    background-image: url(../medias/images/motifs-pied.png);
-    
-    .conteneurReseaux
+    #accueilBody
     {
-        padding-top: 10%;
-        text-align: center;
-    
-        h3
+        background-image: url("../medias/images/motifs-entete.png");
+        background-repeat:no-repeat;
+        background-position: 0px -55px;
+        background-size: 100%;
+        margin-top: 0%;
+
+        color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        //Debut des elements body----------------------------------
+        #logoSite
         {
-            padding-bottom: 2%;
+            width: 55%;
+            margin: auto auto 15% auto;
         }
-        ul
+        #logoSite img
+        {
+            width: 90%;
+            margin: auto auto 15% auto;
+        }
+        
+        .contenu
+        {
+            margin-top: 15%;
+            background-image: url("../medias/images/ligne-pattern.png");
+            background-repeat:no-repeat;
+            background-position: 100% 0%;
+            background-size: 88%;
+            //background-color: //;
+        }
+        
+        
+        .presentation
+        {
+            width: 88%;
+            margin: auto;
+        
+            background-color: rgba(17, 17, 17, 0.2);
+        
+            font-size: 1em;
+        
+            display: grid;
+            grid-template-columns: 5;
+            grid-template-rows: 3;
+            grid-gap: 10px;
+        }
+        .presentation img
         {
             width: 80%;
+        }
+        
+        #intro > :first-child
+        {
+            //background-color: salmon;;
+        
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        
+            margin-right: 20%;
+        
+        }
+        #intro > :nth-child(2)
+        {
+            //background-color: darkkhaki;;
+        
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+        
+            margin-bottom: 7%;
+        }
+        #intro > :nth-child(2)
+        {
+            margin-top: -16%;
+        }
+        
+        #poss > :first-child
+        {
+            //background-color: salmon;;
+        
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        
+            margin-right: 20%;
+        
+        }
+        #poss > :nth-child(2)
+        {
+            //background-color: darkkhaki;;
+        
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+        
+            margin-top: -25%;
+        }
+        
+        #eleves 
+        {
+            padding-top: 10%;
+            width: 80%;
             margin: auto;
-            list-style: none;
-            padding-bottom: 10%;
-    
-            li
+        }
+        #eleves > :first-child
+        {
+            //background-color: salmon;;
+        
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        
+            margin-right: 20%;
+            margin-top: -7%;
+        
+        }
+        #eleves > :nth-child(2)
+        {
+            //background-color: darkkhaki;;
+        
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+        
+        }
+        
+        .conteneurCarrousel
+        {
+            width: 50%;
+            margin: 10% auto auto auto;
+        }
+        
+        .reseauxAccueil
+        {
+            background-image: url(../medias/images/motifs-pied.png);
+            
+            .conteneurReseaux
             {
-                display: inline-block;
-                margin: auto;
-    
-                img
+                padding-top: 10%;
+                text-align: center;
+            
+                h3
                 {
-                    cursor: pointer;
-                    min-width: 20px;
+                    padding-bottom: 2%;
+                }
+                ul
+                {
+                    width: 25%;
                     margin: auto;
+                    list-style: none;
+                    padding-bottom: 10%;
+            
+                    li
+                    {
+                        display: inline-block;
+                        width: 15%;
+                        margin: auto;
+            
+                        img
+                        {
+                            cursor: pointer;
+                            min-width: 20px;
+                            margin: auto;
+                        }
+                    }
                 }
             }
         }
+    }
+}
+
+@media (max-width: 520px) 
+{
+    #accueilBody
+    {
+        text-align: center;
+        background-position: 0px 0px;
+        //color: red;
+        h2
+        {
+            font-size: 0.9em;
+        }
+        font-size: 0.7rem;
+        p {
+            white-space: pre-line;
+        }
+
+        #logoSite 
+        {
+            margin: auto auto 5% auto;
+        }
+
+        .contenu
+        {
+            margin-top: 40%;
+            background-image: url("../medias/images/ligne-pattern2.png");
+            background-position: 110% 65%;
+
+            #intro > :first-child
+            {
+                //background-color: salmon;;
+                grid-row-start: 1;
+                grid-column-start: 1;
+    
+                margin: auto;
+            }
+            #intro > :nth-child(2)
+            {
+                //background-color: darkkhaki;;
+                grid-row-start: 3;
+                grid-column-start: 1;
+    
+                margin: 10% auto;
+            }
+    
+            #poss > :first-child
+            {
+                //background-color: salmon;;
+    
+                grid-row-start: 1;
+                grid-column-start: 1;
+    
+                margin-left: 50%;
+                width: 100%;
+            }
+            #poss > :nth-child(2)
+            {
+                //background-color: darkkhaki;;
+                grid-row-start: 2;
+                grid-column-start: 1;
+    
+                margin: auto;
+            }
+    
+            #eleves 
+            {
+                padding-top: 10%;
+                margin: auto;
+                width: 100%;
+            }
+            #eleves > :first-child
+            {
+                //background-color: salmon;;
+                grid-row-start: 1;
+                grid-column-start: 1;
+    
+                margin: 0% 0% 15% 0%;
+    
+            }
+            #eleves > :nth-child(2)
+            {
+                //background-color: darkkhaki;;
+                grid-row-start: 3;
+                grid-column-start: 1;
+    
+                width: 50%;
+                margin: auto;
+    
+            }
+        }
+
+
     }
 }

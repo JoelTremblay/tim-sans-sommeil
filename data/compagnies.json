@@ -1,0 +1,40 @@
+{
+  "Compagnies": [
+    {
+      "nom": "Gologic",
+      "role": "Intégrateur multimédia",
+      "description": ["L'équipe de Gologic recherche une personne ouverte d'esprit, autonome et créative.",
+                      "Dans un environnement DevOps, elle aura pour mission de nous aider dans la création",
+                      "de contenu vidéo pour nos formations."
+      ]
+    },
+    {
+      "nom": "Sid Lee",
+      "role": "Développeur/développeuse front-end",
+      "description": ["Travaillant en collaboration avec différentes équipes créatives et techniques,",
+                      "le.la développeur.euse participe à la réalisation de projets numériques de toutes envergures.",
+                      "Passionné.e par les technologies, il.elle possède un grand souci du détail et sait s'adapter aux contraintes de temps et aux demandes du client."
+      ]
+    },
+    {
+      "nom": "CoachingOurselves",
+      "role": "Designer graphique",
+      "description": ["Recherche d’un(e) stagiaire pour combler un poste de 2 à 4 mois en tant que designer graphique dès que possible.",
+                      "La personne sélectionnée travaillera principalement en étroite collaboration avec le directeur des communications et du marketing",
+                      "afin de réaliser divers projets liés aux besoins en design graphique de l’organisation."
+      ]
+    },
+    {
+      "nom": "My Little Big Web",
+      "role": "Designer Web",
+      "description": ["Temps plein",
+                      "stage de 6 mois,",
+                      "possibilité d’embauche à la fin du stage,",
+                      "création de maquettes de sites Web WordPress via Photoshop,",
+                      "suivi avec les équipes internes,",
+                      "rencontres clients à l’agence avec un des chargés de projets,",
+                      "intégration de contenu via le CMS WordPress."
+      ]
+    }
+  ]
+}

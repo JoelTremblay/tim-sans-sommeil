@@ -1,7 +1,30 @@
+/* The footer*/
 .pageFooter {
+  color: white;
+  position: fixed;
+  /* Stay in place */
+  bottom: 0;
+  /* Stay at the bottom */
+  height: 10%;
+  width: 100%;
+  z-index: 1;
+  /* Stay on top */
+  background-color: transparent;
+  /* transparent*/
+}
+
+.pageFooter ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.pageFooter div {
   position: absolute;
-  bottom: 1%;
-  right: 1%;
+  bottom: 2%;
+  /* Stay at the bottom */
+  right: 2%;
+  /* Stay at the right */
 }
 
 .pageFooter div {
