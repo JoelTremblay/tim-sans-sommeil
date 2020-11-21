@@ -121,7 +121,7 @@
                         margin: auto;
                         transform: rotate(-45deg) scale(2) translateY(15%);
                         backface-visibility: hidden;
-                        mix-blend-mode: luminosity;
+                        filter: grayscale(100%);
                     }
 
                     .adjust {
