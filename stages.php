@@ -13,8 +13,8 @@
   </section>
   <section class="categories">
     <ul>
-      <li><a href="stages-art.html">Artistique</a><img class="img-categorie" src="../medias/images/art.png" alt=""></li>
-      <li><a href="stages-prog.html">Programmation</a><img class="img-categorie" src="../medias/images/prog.png" alt=""></li>  
+      <li><a href="stages-art.php">Artistique</a><img class="img-categorie" src="../tim-sans-sommeil/medias/images/art.png" alt=""></li>
+      <li><a href="stages-prog.php">Programmation</a><img class="img-categorie" src="../tim-sans-sommeil/medias/images/prog.png" alt=""></li>  
     </ul>
     <img class="ligne-pattern1" src="medias/images/lignes-pattern-stages.png" alt="">
     <img class="ligne-pattern2" src="medias/images/lignes-pattern-stages.png" alt="">

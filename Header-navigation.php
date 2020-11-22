@@ -7,6 +7,7 @@
         <meta name="description" content="template">
         <meta name="keywords" content="Header, Navbar">
         <meta name="author" content="SansSommeil">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="stylesheet" href="sass/initialize.css">
         <?php 
             if ($page == "accueil") echo'<link rel="stylesheet" href="sass/index.css">';
@@ -23,6 +24,18 @@
             {
                 echo'<link rel="stylesheet" href="sass/stages-general.css">';
             }
+            else if ($page == "galerie-page")
+            {
+                echo'<link rel="stylesheet" href="sass/styles.css">
+                <link rel="stylesheet" href="sass/footer.css">
+                <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>';
+            }
+            else if ($page == "stages-art" || "stages-prog")
+            {
+                echo'<link rel="stylesheet" href="../tim-sans-sommeil/sass/stages-art-prog.css">';
+            }
             echo '<link rel="stylesheet" href="sass/footer.css">';
         ?>
         <script type="text/javascript" src="js/jssor.slider.min.js"></script>
@@ -33,7 +46,12 @@
 
     </head>
 
-    <body>
+    <body <?php 
+            if ($page == "galerie-page")
+            {
+                echo'class="galerie-page"';
+            }
+        ?>>
         <div id="header">
 
             <header>
@@ -42,10 +60,10 @@
                     <ul class="menuPrincipale">
                         <li><a href="grilleCours.php">Grille Cours</a></li>
                         <li><a href="coursParCours.php">Cours</a></li>
-                        <li><a href="#">Professeurs</a></li>
+                        <li><a href="professeurs.php">Professeurs</a></li>
                         <li><a href="#">Évenements</a></li>
-                        <li><a href="#">Étudiants</a></li>
-                        <li><a href="#">Projets</a></li>
+                        <li><a href="etudiants-tim.html">Étudiants</a></li>
+                        <li><a href="projets.php">Projets</a></li>
                         <li><a href="stages.php">Stages</a></li>
                     </ul>
                     
