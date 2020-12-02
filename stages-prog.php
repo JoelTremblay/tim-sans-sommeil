@@ -12,45 +12,45 @@
     <article class="prog">
       <div class="infos">
         <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/chocolatMedia.png" alt="">
-        <h3>Chocolat média</h3>
+        <h3>Pierre Leblanc</h3>
         <a href="https://cdnassets.chocolatmedia.com/wp-content/uploads/2020/05/offre-emploi-programmeur-php.pdf">- Intégrateur multimédia</a>
-        <p>'Chocolat Média est une agence web spécialisée en conception de site web e-commerce et sur mesure.
-           Nous intégrons des CMS Tel que Wordpress à nos travaux de sorte à ce que les clients puissent éditer
-            et participer à la gestion de leur site web. En affaire depuis 2004, Chocolat Média compte plus de
-             300 sites web à son actif. Les projets sont optimisés pour les moteurs de recherche et les clients bénéficient
-              de précieux conseils et d'une équipe de concepteurs séniors pour la réalisation de leur projet.
-               Tous les projets sont clés en main. Les sites web sont aussi hébergés dans le Cloud afin de bénéficier
-                de la plus grande évolutivité possible et ainsi profiter des dernières technologies web.'</p>
+        <p><i>" Tout au long de ma participation intensive à ce programme, 
+          j'ai découvert ma passion pour la programmation. Au début, cela semblait être un travail fastidieux, 
+          mais j'ai appris à l'adorer et grâce ça m'a permis d'avoir une longue carrière en programmation. " 
+        </i></p>
         </div>
     </article>
     <article class="prog">
       <div class="infos">
         <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/sidlee.png" alt="">
-        <h3>Sid Lee</h3>
+        <h3>Julia Mike</h3>
         <a href="https://sidleeland.com/fr/montreal/listing?gh_jid=2437608">- Développeur/développeuse back-end</a>
-        <p>'Sid Lee est une entreprise internationale de services créatifs fondée à Montréal, Québec, Canada. Elle exploite des bureaux à Toronto, 
-            New York, Los Angeles, Seattle et Paris.'</p>
+        <p><i>" J'ai toujours rêvé d'être programmeur pour une entreprise prospère. 
+          Grâce à l'éducation et aux opportunités que ce programme m'a offertes, 
+          je pourrai peut-être acquérir l'emploi de mes rêves. "
+        </i></p>
       </div>
     </article>
     <article class="prog">
       <div class="infos">
         <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/limaCharlie.png" alt="">
-        <h3>Lima Charlie</h3>
-        <a href="https://limacharlie.ca/fr/contact">- Lien vers l'offre d'emploi</a>
-        <p> 'Lima Charlie est un studio de programmation spécialisé dans les technologies web-based.
-            Nos projets sont variés et prennent forme autant sur le web que dans les musées et les espaces commerciaux.'</p>
+        <h3>Jake Milard</h3>
+        <a href="https://limacharlie.ca/fr/contact">- Webmestre</a>
+        <p><i>" Je suis ravi d'avoir pu faire part d'une merveilleuse technique qui m'a mené là où j'en
+          suis présentement. Une très belle expérience! "
+        </i></p>
       </div>
     </article>
     <article class="prog">
       <div class="infos">
         <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/edoki.png" alt="">
-        <h3>Edoki Academy</h3>
-        <a href="https://montessori.edokiacademy.com/fr/jobs/">- Développeur Web</a>
-        <p>'Edoki met sa créativité au service de l’épanouissement des enfants.
-           Son équipe internationale d’experts Montessori apporte un soin particulier à ses programmes éducatifs.
-            Les développeurs, graphistes et animateurs répartis dans nos 3 bureaux à travers le monde sont également
-             impliqués dans ce processus. Edoki Academy est soutenue par les fonds Elaïa et ACG.'
-        </p>
+        <h3>Zoe Blanchard</h3>
+        <a href="https://montessori.edokiacademy.com/fr/jobs/">- Développeuse Web</a>
+        <p><i>
+          " C'était un peu difficile pour moi de m'intégrer dans le monde de la programmation,
+          mais avec le temps et l'effort que j'ai mis, j'aime ce que je fais dorénavant et j'espère
+          que mon témoignage encouragera les autres à ne pas lâcher et continuer à toujours faire de son mieux. "
+        </i></p>
       </div>
     </article>
     <div class="vecteurs2">
