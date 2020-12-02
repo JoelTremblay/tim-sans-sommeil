@@ -5,10 +5,7 @@ html {
 /* Header */
 #header {
   color: white;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 5fr;
-      grid-template-rows: 1fr 5fr;
   height: 100%;
   width: 100%;
   /* img Logo */
@@ -20,10 +17,8 @@ html {
 
 #header header {
   position: fixed;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   top: 0;
   width: 100%;
   padding-bottom: 1%;
@@ -33,19 +28,13 @@ html {
 }
 
 #header .divLogo {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: center;
+  align-self: center;
 }
 
 #header .divMaisonneuve {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: end;
+  align-self: center;
 }
 
 #header .logoTIM img, #header .logoMaisonneuve img {
@@ -62,11 +51,8 @@ html {
 }
 
 #header .openbtn {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
   justify-items: start;
 }
 
@@ -81,10 +67,8 @@ html {
 }
 
 #header .sideNavGrid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 18fr 12fr 2fr 12fr;
-      grid-template-rows: 18fr 12fr 2fr 12fr;
+  grid-template-rows: 18fr 12fr 2fr 12fr;
 }
 
 #header .sidenav {
@@ -98,7 +82,6 @@ html {
   overflow-x: hidden;
   /* Disable horizontal scroll */
   overflow-y: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
 }
@@ -109,14 +92,11 @@ html {
 
 #header .sidenav ul {
   list-style: none;
-  display: -ms-grid;
   display: grid;
 }
 
 #header .sidenav li {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 #header .sidenav a {
@@ -125,14 +105,12 @@ html {
   font-size: 25px;
   color: #DFDBD9;
   display: block;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 #header .sidenav a text {
   text-align: center;
-  -webkit-transform: lowercase;
-          transform: lowercase;
+  transform: lowercase;
 }
 
 #header .sidenav a:hover {
@@ -148,37 +126,27 @@ html {
 }
 
 #header .divBandesCouleurs {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 #header .divBandesCouleurs .div-bande-couleur-vert {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   width: 100%;
 }
 
 #header .divBandesCouleurs .div-bande-couleur-bleu {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 #header .divBandesCouleurs .bande-couleur-vert {
   width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 #header .divBandesCouleurs .bande-couleur-bleu {
   width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 #header .titreReseauxSociaux {
@@ -188,10 +156,8 @@ html {
 }
 
 #header .liensMedias {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #header .liensMedias li {
@@ -211,7 +177,6 @@ html {
 }
 
 #header #main {
-  -webkit-transition: margin-left .5s;
   transition: margin-left .5s;
   padding: 20px;
   height: 100%;
@@ -233,8 +198,7 @@ html {
   header .logoTIM img, header .logoMaisonneuve img {
     width: 65%;
     min-width: 90px;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   header .divLogo a {
     margin-left: -2.6rem;
@@ -260,8 +224,7 @@ html {
   header .logoTIM img, header .logoMaisonneuve img {
     width: 45%;
     min-width: 80px;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   header .divLogo a {
     margin-left: -2.6rem;
@@ -287,8 +250,7 @@ html {
   #header header .logoTIM img, #header header .logoMaisonneuve img {
     width: 45%;
     min-width: 80px;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   #header header .divLogo a {
     margin-left: -2.2rem;

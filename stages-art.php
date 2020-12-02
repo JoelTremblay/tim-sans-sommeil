@@ -11,9 +11,9 @@
     </div>
     <article class="art">
       <div class="infos">
-        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/aptitudeX.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/homme1.png" title="People vector created by freepik - www.freepik.com" alt="">
         <h3>Paul Boisvert</h3>
-        <a href="https://www.aptitudex.com/intern?lang=fr">- Artiste 3D Junior</a>
+        <a href="#">- Artiste 3D Junior</a>
         <p><i>" Ce programme m'a permis de découvrir mon talent pour la modélisation 3D. 
           Je n'aurais même jamais pensé devenir animateur 3D plus tard, mais avec l'aide de ce programme et de sa formation approfondie,
            j'ai découvert ma future carrière. "</i></p>
@@ -21,9 +21,9 @@
     </article>
     <article class="art">
       <div class="infos">
-          <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/sidlee.png" alt="">
+          <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/femme1.png" title="People vector created by freepik - www.freepik.com" alt="">
           <h3>Marie Lafleur</h3>
-          <a href="https://sidleeland.com/fr/montreal/listing?gh_jid=2437613">- Développeur/développeuse front-end</a>
+          <a href="#">- Développeur/développeuse front-end</a>
           <p><i>" Une super expérience dans l'ensemble. Cela a permis de nombreuses opportunités éducatives qui bénéficieront 
             absolument non seulement dans ma future carrière,
              mais aussi dans ma vie quotidienne, me permettant d'être une meilleure personne dans l'ensemble.
@@ -33,9 +33,9 @@
     </article>
     <article class="art">
       <div class="infos">
-        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/coachingOurselves.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/femme2.png" title="People vector created by freepik - www.freepik.com" alt="">
         <h3>Nelly Lester</h3>
-        <a href="https://emplois.ca.indeed.com/emplois?q=Stage&l=Province%20de%20Qu%C3%A9bec&vjk=2e9af01315674971">- Designer graphique</a>
+        <a href="#">- Designer graphique</a>
         <p><i>" La technique m'a permis de faire ce que j'ai toujours voulu faire dans la vie, j'en serais toujours
           reconnaissante à mes professeurs et à la cohorte qui m'étaient venus en aide lorsque j'en avais besoin. "
         </i></p>
@@ -43,9 +43,9 @@
     </article>
     <article class="art">
       <div class="infos">
-        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/mlbw.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/homme2.png" title="People vector created by freepik - www.freepik.com" alt="">
         <h3>Kai Tran</h3>
-        <a href="https://mylittlebigweb.com/emplois/stagiaire-designer-web-2/">- Designer Web</a>
+        <a href="#">- Designer Web</a>
         <p><i>" Ce programme m'a donné de l'inspiration sous forme d'art et de praticité.
           Cela m'a aidé à m'adapter au stress et à devenir un meilleur résolveur de problèmes,
            m'aidant à devenir une meilleure personne pour moi et la communauté en général. "

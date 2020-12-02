@@ -11,9 +11,9 @@
     </div>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/chocolatMedia.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/homme3.png" title="People vector created by freepik - www.freepik.com" alt="">
         <h3>Pierre Leblanc</h3>
-        <a href="https://cdnassets.chocolatmedia.com/wp-content/uploads/2020/05/offre-emploi-programmeur-php.pdf">- Intégrateur multimédia</a>
+        <a alt="People vector created by freepik - www.freepik.com" href="#">- Intégrateur multimédia</a>
         <p><i>" Tout au long de ma participation intensive à ce programme, 
           j'ai découvert ma passion pour la programmation. Au début, cela semblait être un travail fastidieux, 
           mais j'ai appris à l'adorer et grâce ça m'a permis d'avoir une longue carrière en programmation. " 
@@ -22,9 +22,9 @@
     </article>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/sidlee.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/femme4.png" title="People vector created by freepik - www.freepik.com" alt="">
         <h3>Julia Mike</h3>
-        <a href="https://sidleeland.com/fr/montreal/listing?gh_jid=2437608">- Développeur/développeuse back-end</a>
+        <a alt="People vector created by freepik - www.freepik.com" href="#">- Développeur/développeuse back-end</a>
         <p><i>" J'ai toujours rêvé d'être programmeur pour une entreprise prospère. 
           Grâce à l'éducation et aux opportunités que ce programme m'a offertes, 
           je pourrai peut-être acquérir l'emploi de mes rêves. "
@@ -33,9 +33,9 @@
     </article>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/limaCharlie.png" alt="">
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/homme4.png" title="People vector created by freepik - www.freepik.com" alt="">
         <h3>Jake Milard</h3>
-        <a href="https://limacharlie.ca/fr/contact">- Webmestre</a>
+        <a alt="People vector created by freepik - www.freepik.com" href="#">- Webmestre</a>
         <p><i>" Je suis ravi d'avoir pu faire part d'une merveilleuse technique qui m'a mené là où j'en
           suis présentement. Une très belle expérience! "
         </i></p>
@@ -43,9 +43,9 @@
     </article>
     <article class="prog">
       <div class="infos">
-        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/compagnies/edoki.png" alt="">
-        <h3>Zoe Blanchard</h3>
-        <a href="https://montessori.edokiacademy.com/fr/jobs/">- Développeuse Web</a>
+        <img class="img-compagnies" src="../tim-sans-sommeil/medias/images/avatars/femme3.png" title="People vector created by freepik - www.freepik.com" alt="">
+        <h3>Zoe Eid</h3>
+        <a alt="People vector created by freepik - www.freepik.com" href="#">- Développeuse Web</a>
         <p><i>
           " C'était un peu difficile pour moi de m'intégrer dans le monde de la programmation,
           mais avec le temps et l'effort que j'ai mis, j'aime ce que je fais dorénavant et j'espère
