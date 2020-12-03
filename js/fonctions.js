@@ -1,16 +1,22 @@
-/* navigation ouvre et ferme le menu POUR que cela fonctionne il 
-faut absolument que la classe main soit attribué a la balise 
-du corps principale de vos page*/
+var intFrameWidth = window.innerWidth;
+console.log(intFrameWidth);
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-    document.querySelector("#mySidenav").style.width = "28%";
-    document.querySelector("#main").style.marginLeft = "28%";
+  document.querySelector("#mySidenav").style.opacity = "100";
+  if (intFrameWidth <= 425){
+    document.querySelector("#mySidenav").style.width = "60%";
   }
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  else if (intFrameWidth > 425 & intFrameWidth <= 1023){
+    document.querySelector("#mySidenav").style.width = "45%";
+  }
+  else {
+    document.querySelector("#mySidenav").style.width = "30%";
+  }
+  }
+
   function closeNav() {
     document.querySelector("#mySidenav").style.width = "0";
-    document.querySelector("#main").style.marginLeft = "0";
+    document.querySelector("#mySidenav").style.opacity = "0";
   }
   
   document.querySelector(".openbtn").addEventListener("click", openNav);
