@@ -16,11 +16,15 @@
       foreach ($coursTab as $sessionTab => $laSession) 
       {
         $colonneNum = 1;
-        echo"<div style='grid-row-start: $rangeeNum;' class='session'><h2>Session ".$rangeeNum.'</h2>';
+        $tailleStr = "";
+        $tailleAdaptee = (13 * count($laSession));
+        $tailleStr = $tailleAdaptee . "vw";
+        //echo $tailleAdaptee;
+        echo"<div style='grid-row-start: $rangeeNum;' class='session sessionInactive'><h2 class='numSession' style='width: $tailleStr;'>Session ".$rangeeNum.'</h2>';
         foreach ($laSession as $coursDelaSession) 
         {
           $colonneNum++;
-          echo "<div grid-column-end: $colonneNum;' class = 'cours'><h3>".$coursDelaSession["nom"]."</h3>
+          echo "<div grid-column-end: $colonneNum;' class = 'cours coursInactif'><h3>".$coursDelaSession["nom"]."</h3>
           <p>".$coursDelaSession["ponderation"]."</p>
           <p>".$coursDelaSession["prealable"]."</p></div>";
         }

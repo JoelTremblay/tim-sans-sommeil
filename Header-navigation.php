@@ -101,7 +101,7 @@
     
                 <!-- logo Maisonneuve -->
                 <div class="divMaisonneuve logoHeader logoMaisonneuve">
-                    <a href="https://www.cmaisonneuve.qc.ca/" target="_blank"><img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve"></a>
+                    <a href="https://www.cmaisonneuve.qc.ca/" target="_blank"><img src="medias/images/logos/logoMaisonneuveSansTxt.png" alt="" class="imgMaisonneuve"></a>
                 </div>
     
             </header>
