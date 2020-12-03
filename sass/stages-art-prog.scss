@@ -35,7 +35,7 @@ html {
   height: auto;
   position: relative;
   left: 15%;
-  top: 350%;
+  top: 400%;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -44,7 +44,7 @@ html {
   height: auto;
   position: relative;
   right: 19%;
-  bottom: 350%;
+  bottom: 400%;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -145,7 +145,8 @@ article:nth-child(even) {
 
 .infos {
   height: 100%;
-  margin-left: 1.5%;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 .img-compagnies {
@@ -153,7 +154,7 @@ article:nth-child(even) {
 }
 
 a {
-  margin-left: 12%;
+  margin-left: 15%;
   font-size: large;
   text-decoration: none;
   color: $gris;
@@ -163,7 +164,7 @@ a {
 
 h3 {
   position: relative;
-  left: 13%;
+  left: 15%;
   bottom: 30%;
   color: $blanc; 
 }
@@ -173,9 +174,10 @@ p {
   position: relative;
   bottom: 10%;
   color: $blanc;
+  line-height: 1.7;
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:520px) {
 
   html {
     width: 100%;
@@ -185,6 +187,12 @@ p {
   #stages-art, #stages-prog {
     display: inline-block;
     overflow: visible;
+  }
+
+  .liste-compagnies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
   }
 
   article {
@@ -241,7 +249,6 @@ p {
     border: 0.3em solid;
     border-image-source: linear-gradient($orange-prog, $mauve-prog);
     border-image-slice: 1;
-    margin-top: 2em;
   }
 }
 
