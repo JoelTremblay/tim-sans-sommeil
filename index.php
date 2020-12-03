@@ -79,7 +79,7 @@
         </div>
         <div class="reseauxAccueil">
             <div class="conteneurReseaux">
-                <h3>Reseaux Sociaux...</h3>
+                <h3>Réseaux Sociaux...</h3>
                 <ul>
                     <br>
                     <li><a href="" target="_blank"><img src="medias/images/logos/discord.png" alt=""></a></li>
