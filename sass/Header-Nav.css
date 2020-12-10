@@ -75,6 +75,7 @@ html {
   cursor: pointer;
   -ms-grid-row-align: center;
       align-self: center;
+  color: #DFDBD9;
 }
 
 #header .openbtn img {
@@ -156,6 +157,7 @@ html {
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
+  color: #DFDBD9;
 }
 
 #header .divBandesCouleurs {
