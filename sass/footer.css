@@ -1,7 +1,7 @@
 /* The footer*/
 .pageFooter {
   color: white;
-  position: fixed;
+  position: relative;
   /* Stay in place */
   bottom: 0;
   /* Stay at the bottom */

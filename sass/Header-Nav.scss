@@ -1,4 +1,4 @@
-html{
+html {
     height: 100%;
 }
 
@@ -13,326 +13,349 @@ $gray-header: #242323;
 $gray-shine: #3C3735;
 $white-off: #DFDBD9;
 
-#header 
-{
+#header {
     color: white;
     display: grid;
     grid-template-rows: 1fr 5fr;
     height: 100%;
     width: 100%;
-    header 
-    {
+
+    header {
         position: fixed;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         top: 0;
         width: 100%;
-        padding-bottom: 1%;
-        padding-top: 1%;
         background-color: $gray-header;
         z-index: 10;
-      }
-    
-      /* img Logo */
-      .divLogo 
-      {
+    }
+
+    /* img Logo */
+    .divLogo {
         justify-self: center;
         align-self: center;
-      }
-      
-      /* img Maisonneuve */
-      .divMaisonneuve 
-      {
+    }
+
+    /* img Maisonneuve */
+    .divMaisonneuve {
         justify-self: end;
         align-self: center;
-      }
-      .logoTIM img, .logoMaisonneuve img
-        {
-            width: 25%;
-            min-width: 80px;
+    }
+
+    .divLogo a {
+        display: grid;
+    }
+
+    .divMaisonneuve a {
+        display: grid;
+        margin-right: 1em;
+
+        .imgMaisonneuve {
+            justify-self: end;
+            width: auto;
         }
-    .divLogo a
-    {
-        margin-left: 9em;
     }
-    .divMaisonneuve a
-    {
-        margin-left: 18em;
+
+    .imgLogo {
+        width: auto;
     }
-        
-    
-      .openbtn{
-          display: grid;
-          align-items: start;
-          justify-items: start;
-          
-          img{
-              padding-top: 3%;
-              padding-left: 3%;
-          }
-      }
-      
-    .openbtn
-    {
-        font-size: 4em;
+
+
+    .openbtn {
+        display: grid;
+        margin-left: 0.2em;
+        font-size: 3rem;
         cursor: pointer;
+        align-self: center;
+        color: $white-off;
+
+        img {
+            padding-top: 3%;
+            padding-left: 3%;
+            height: auto;
+        }
     }
-      /* The side navigation menu */ 
-      /* The navigation menu links */
-      .sideNavGrid {
-          display: grid;
-          grid-template-rows: 18fr 12fr 2fr 12fr;
-      }
-      .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: $gray-header;
-            overflow-x: hidden; /* Disable horizontal scroll */
-            overflow-y: hidden;
-            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    
-            .menuPrincipale {
-                padding-top: 10%;
-            }
-    
-            ul {
-                list-style: none;
-                display: grid;
-            }
-    
-            li {
-                align-self: center;
-            }
-    
-            a {
-                padding: 0.5em 0;
-                text-decoration: none;
-                font-size: 25px;
-                color: $white-off;
-                display: block;
-                transition: 0.3s;
-    
-                text
-                {
-                    text-align: center;
-                    transform: lowercase;
-                }
-    
-                &:hover
-                {
-                    color: #fff;
-                }
-            }
-    
-            .closebtn {
-                position: absolute;
-                top: 0;
-                right: 5%;
-                font-size: 40px;
-                padding: 5%;
-            }
-        }
-    
-        .divBandesCouleurs {
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-    
-            .div-bande-couleur-vert {
-                align-self: center;
-                width: 100%;
-            }
-            .div-bande-couleur-bleu {
-                align-self: center;
-            }
-    
-            .bande-couleur-vert {
-                width: 100%;
-                align-self: center;
-            }
-    
-            .bande-couleur-bleu {
-                width: 100%;
-                align-self: center;
-            }
-        }
-    
-        .titreReseauxSociaux {
-            text-align: center;
-            color: $white-off;
-            font-size: 25px;
-        }
-    
-        .liensMedias {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            
-            li{
-                width: 25%;
-                list-style: none;
-            }
-            
-            a{
-                display: block;
-                height: 5.5em;
-                text-align: center;
-            }
-    
-            img {
-                width: 150%;
-                height: 150%;
-            }
-        }
-          
-      
-      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-      #main 
-      {
-        transition: margin-left .5s;
-        padding: 20px;
+
+    /* The side navigation menu */
+    /* The navigation menu links */
+
+    .sidenav {
         height: 100%;
-      }
-}
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $gray-header;
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        overflow-y: hidden;
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+        display: grid;
 
-  
-  /*
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  */
+        .menuPrincipale {
+            padding-inline-start: 1em;
+            margin-block-start: 0em;
+            font-weight: bold;
+        }
 
-  /* ======================== STYLES ORDINATEURS (Petits) ======= */
-  @media (min-width: 980px) and (max-width: 1200px)
-  {
-      header
-      {
-          //background-color: antiquewhite;
-          //Logos
-          .logoHeader
-          {
-              width: 5%;
-              margin: -5% auto auto auto;
-              padding-bottom: 1%;
-          }
-          .logoTIM img, .logoMaisonneuve img
-          {
-              width: 65%;
-              min-width: 90px;
-      
-              justify-self: center;
-          }
-      
-          .divLogo a
-          {
-              margin-left: -2.6rem;
-  
-              img
-              {
-                  margin-top: 3rem;
-              }
-          }
-          .divMaisonneuve a
-          {
-              margin-left: 4rem;
-  
-              img
-              {
-                  margin-top: 3.5rem;
-              }
-          }
-      }
-  
-  }
+        .menuSecondaire {
+            padding-inline-start: 1.7em;
+        }
 
-  /* ======================== STYLES TABLETTE ======= */
-  @media (min-width: 520px) and (max-width: 980px)
-  {
-      header
-      {
-          //background-color: antiquewhite;
-          //Logos
-          .logoHeader
-          {
-              width: 5%;
-              margin: -5% auto auto auto;
-              padding-bottom: 1%;
-          }
-          .logoTIM img, .logoMaisonneuve img
-          {
-              width: 45%;
-              min-width: 80px;
-      
-              justify-self: center;
-          }
-      
-          .divLogo a
-          {
-              margin-left: -2.6rem;
-  
-              img
-              {
-                  margin-top: 2.5rem;
-              }
-          }
-          .divMaisonneuve a
-          {
-              margin-left: 0.5rem;
-  
-              img
-              {
-                  margin-top: 3rem;
-              }
-          }
-      }
-  
-  }
+        ul {
+            list-style: none;
+            display: grid;
+            margin-block-start: 0;
+        }
 
-/* ======================== STYLES MOBILE ======= */
-@media (max-width: 520px) 
-{
-    #header
-    {
+        li {
+            align-self: center;
+        }
 
-        header
-        {
-            //Logos
-            .logoHeader
-            {
-                width: 5%;
-                margin: -5% auto auto auto;
-                padding-bottom: 1%;
+        a {
+            padding: 0.5em 0;
+            text-decoration: none;
+            font-size: 25px;
+            color: $white-off;
+            display: block;
+            transition: 0.3s;
+
+            text {
+                text-align: center;
+                transform: lowercase;
             }
-            .logoTIM img, .logoMaisonneuve img
-            {
-                width: 45%;
-                min-width: 80px;
-        
-                justify-self: center;
+
+            &:hover {
+                color: #fff;
             }
-        
-            .divLogo a
-            {
-                margin-left: -2.2rem;
-    
-                img
-                {
-                    margin-top: 2rem;
-                }
+        }
+
+        .closebtn {
+            font-size: 40px;
+            padding: 0 5% 0 ;
+            align-self: center;
+            justify-self: end;
+            color: $white-off;
+        }
+    }
+
+    .divBandesCouleurs {
+        display: grid;
+        align-self: center;
+
+        .div-bande-couleur-vert {
+            align-self: center;
+
+            img {
+                width: 100%;
             }
-            .divMaisonneuve a
-            {
-                margin-left: -0.6em;
-    
-                img
-                {
-                    margin-top: 2.5rem;
-                }
+        }
+
+        .div-bande-couleur-bleu {
+            align-self: center;
+
+            img {
+                width: 100%;
             }
         }
     }
 
+    .titreReseauxSociaux {
+        align-self: center;
+        justify-self: center;
+        color: $white-off;
+        font-weight: normal;
+        margin-block-end: 0;
+        margin-block-start: 0;
+    }
+
+    .liensMedias {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-inline-start: 0;
+        margin-block-end: 0;
+
+        li {
+            list-style: none;
+            justify-self: center;
+            align-self: center;
+        }
+
+        a {
+            display: block;
+            height: 5.5em;
+            text-align: center;
+        }
+
+
+    }
+
+    /* ======================== STYLES ORDINATEURS ======= */
+    @media (min-width: 1025px) and (max-width: 2560px) {
+        header {
+
+            //Logos
+            .imgLogo {
+                height: 9em;
+                ;
+            }
+
+            .imgMaisonneuve {
+                height: 0em;
+            }
+
+            .openbtn {
+                font-size: 5.5rem;
+            }
+
+            .imgLiensMedias {
+                height: 3.3em;
+            }
+
+            .titreReseauxSociaux {
+                font-size: 1.7em;
+            }
+
+            .aNav {
+                font-size: 1.9em;
+            }
+        }
+
+    }
+
 }
+
+/* ======================== STYLES ORDINATEURS (Petits) ======= */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+
+        //Logos
+        .imgLogo {
+            height: 6em;
+            ;
+        }
+
+        .imgMaisonneuve {
+            height: 0em;
+        }
+
+        .openbtn {
+            font-size: 6rem;
+        }
+
+        .imgLiensMedias {
+            height: 2.7em;
+        }
+
+        .titreReseauxSociaux {
+            font-size: 1.4em;
+        }
+
+        .aNav {
+            font-size: 1.7em;
+        }
+    }
+}
+
+/* ======================== STYLES TABLETTE ======= */
+@media (min-width: 426px) and (max-width: 768px) {
+    header {
+
+        //Logos
+        .imgLogo {
+            height: 5.5em;
+            ;
+        }
+
+        .imgMaisonneuve {
+            height: 0em;
+        }
+
+        .openbtn {
+            font-size: 5rem;
+        }
+
+        .imgLiensMedias {
+            height: 2.9em;
+        }
+    }
+}
+
+/* ======================== STYLES Portable ======= */
+@media (max-width: 425px) {
+    header {
+
+        //Logos
+        .imgLogo {
+            height: 4em;
+            ;
+        }
+
+        .imgMaisonneuve {
+            height: 0em;
+        }
+
+        .openbtn {
+            font-size: 3rem;
+        }
+
+        .imgLiensMedias {
+            height: 1.5em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .titreReseauxSociaux {
+            font-size: 1.2em;
+        }
+
+        .aNav {
+            font-size: 1.7em;
+        }
+    }
+}
+
+/* ======================== animations ======= */
+
+@-webkit-keyframes fade1 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 10;}
+ }
+ 
+ @keyframes fade1 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ .Anim1 {
+    -webkit-animation-name: fade1;
+    animation-name: fade1;
+    animation-delay: 2sec;
+    animation-iteration-count:infinite;
+    animation-duration: 6s;
+ }
+
+ @-webkit-keyframes fade2 {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fade2 {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .Anim2 {
+    -webkit-animation-name: fade2;
+    animation-name: fade2;
+    animation-duration: 6s;
+    animation-delay: 2sec;
+    animation-iteration-count:infinite;
+    margin-left: -201%;
+ }
