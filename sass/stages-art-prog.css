@@ -157,6 +157,9 @@ a {
   color: #A5A5A5;
   position: relative;
   bottom: 33%;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 h3 {
@@ -164,6 +167,8 @@ h3 {
   left: 15%;
   bottom: 30%;
   color: #ffffff;
+  font-family: 'Oxanium', cursive;
+  font-size: 2em;
 }
 
 p {
@@ -172,6 +177,8 @@ p {
   bottom: 10%;
   color: #ffffff;
   line-height: 1.7;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 520px) {
