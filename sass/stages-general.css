@@ -22,12 +22,12 @@
 }
 
 #stagesConteneur h1 {
-  font-family: 'Roboto';
+  font-family: 'Oxanium', cursive;
   font-size: 5em;
   color: #ffffff;
   padding-left: 3%;
   padding-bottom: 0.5%;
-  margin-top: 5%;
+  margin-top: 7%;
   margin-bottom: 0 auto;
   border-left: 0.1em solid;
   border-image-source: linear-gradient(#00B8FF, #00FF9F);
@@ -84,8 +84,9 @@
   justify-content: center;
   text-decoration: none;
   color: #A5A5A5;
-  font-family: 'Roboto';
+  font-family: 'Poiret One', cursive;
   font-size: 2em;
+  font-weight: bold;
 }
 
 #stagesConteneur li:first-child {

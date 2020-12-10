@@ -25,12 +25,12 @@
   }
   
   h1 {
-    font-family: 'Roboto';
+    font-family: 'Oxanium', cursive;
     font-size: 5em;
     color: $blanc;
     padding-left: 3%;
     padding-bottom: 0.5%;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-bottom: 0 auto;
     border-left: 0.1em solid;
     border-image-source: linear-gradient($bleu-site, $vert-site);
@@ -85,8 +85,9 @@
         justify-content: center;
         text-decoration: none;
         color: $gris;
-        font-family: 'Roboto';
+        font-family: 'Poiret One', cursive;
         font-size: 2em;
+        font-weight: bold;
       }
     }
   }
