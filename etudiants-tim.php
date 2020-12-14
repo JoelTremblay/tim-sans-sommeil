@@ -1,23 +1,9 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- custom CSS -->
-  <link rel="stylesheet" href="sass/etudiants-tim.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <title>Hello, world!</title>
-</head>
-
-<body>
-  <!-- header -->
-
-
-  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-
+<?php
+  // Inclut le haut de page.
+  $page = "etudiant-tim";
+  include("Header-navigation.php");
+?>
+<body class="Margin-top">
   <main class="mainEtudiantDeroulant">
     <section>
       <div class="titresRubriques">
@@ -167,13 +153,8 @@
       </div>
     </div>
     <div class="divHoraire">
-      <img class="imagePrincipale" src="medias/images/Horaire-type.jpg" alt="Horaire-type-A18-582">
+      <img class="imagePrincipale" src="medias/images/rsz_1horaire-type.jpg" alt="Horaire-type-A18-582">
     </div>
   </side>
-
-  <!-- footer -->
-
-  <!--<script src="js/fonctions.js"></script>-->
 </body>
-
 </html>
