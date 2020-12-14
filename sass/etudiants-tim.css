@@ -7,7 +7,6 @@ body {
 }
 
 body {
-  display: -ms-grid;
   display: grid;
   grid-template: 'main' 'side';
   background-color: #2A2929;
@@ -19,7 +18,6 @@ body .mainEtudiantDeroulant {
 }
 
 body .mainEtudiantDeroulant section {
-  display: -ms-grid;
   display: grid;
 }
 
@@ -29,23 +27,21 @@ body .mainEtudiantDeroulant section div {
 }
 
 body .mainEtudiantDeroulant section .titresRubriques {
-  -ms-grid-column-align: start;
-      justify-self: start;
+  justify-self: start;
   margin-left: 2vw;
-  -webkit-box-shadow: 0.3em 0.3em 5px #00FFD1;
-          box-shadow: 0.3em 0.3em 5px #00FFD1;
+  box-shadow: 0.3em 0.3em 5px #00FFD1;
 }
 
 body .mainEtudiantDeroulant section .textesRubriques {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   margin-right: 2vw;
-  -webkit-box-shadow: -0.3em 0.3em 5px #00C2FF;
-          box-shadow: -0.3em 0.3em 5px #00C2FF;
+  box-shadow: -0.3em 0.3em 5px #00C2FF;
 }
 
 body .mainEtudiantDeroulant section .textesRubriques p {
-  line-height: 1.5;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 body .mainEtudiantDeroulant section .textesRubriques .capricieux {
@@ -54,16 +50,13 @@ body .mainEtudiantDeroulant section .textesRubriques .capricieux {
 
 body .sideEtudiantFixe {
   background-color: #545353;
-  display: -ms-grid;
   display: grid;
   grid-template: 'MC' 'horaire';
   grid-area: side;
-  -webkit-box-shadow: -1vw 0 10px black;
-          box-shadow: -1vw 0 10px black;
+  box-shadow: -1vw 0 10px black;
 }
 
 body .sideEtudiantFixe .divMotCle {
-  display: -ms-grid;
   display: grid;
   grid-template: 'MC1 MC2';
   grid-area: MC;
@@ -78,8 +71,7 @@ body .sideEtudiantFixe .divMotCle .motsCles1 {
 
 body .sideEtudiantFixe .divMotCle .motsCles1 ul {
   list-style: none;
-  -webkit-padding-start: 2vw;
-          padding-inline-start: 2vw;
+  padding-inline-start: 2vw;
 }
 
 body .sideEtudiantFixe .divMotCle .motsCles2 {
@@ -89,13 +81,11 @@ body .sideEtudiantFixe .divMotCle .motsCles2 {
 body .sideEtudiantFixe .divMotCle .motsCles2 ul {
   list-style: none;
   direction: rtl;
-  -webkit-padding-start: 2vw;
-          padding-inline-start: 2vw;
+  padding-inline-start: 2vw;
 }
 
 body .sideEtudiantFixe .divHoraire {
   grid-area: horaire;
-  display: -ms-grid;
   display: grid;
 }
 
@@ -107,8 +97,6 @@ body .sideEtudiantFixe .divHoraire {
 li {
   margin-bottom: 1vh;
   background-color: #242323;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -119,6 +107,9 @@ li {
 li p {
   margin: 0;
   padding: 0;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 li p:not(:last-child) {
@@ -129,9 +120,11 @@ p {
   color: white;
   font-size: 1.1rem;
   padding: 0vh 1.5em;
-  -webkit-margin-after: 0em;
-          margin-block-end: 0em;
+  margin-block-end: 0em;
   text-justify: inter-word;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 h5 {
@@ -140,6 +133,7 @@ h5 {
   padding-top: 1vh;
   padding-right: 2vh;
   padding-left: 1.5em;
+  font-family: 'Oxanium', cursive;
 }
 
 .imgDeroulant {
@@ -148,12 +142,11 @@ h5 {
 }
 
 .titresDeroulants {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   padding-bottom: 1em;
   padding-top: 1em;
+  font-family: 'Oxanium', cursive;
 }
 
 /* Portrait and Landscape */
@@ -175,9 +168,7 @@ h5 {
   .imagePrincipale {
     width: 51vh;
     height: auto;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    align-self: end;
   }
   .titresRubriques {
     width: 85%;
@@ -221,9 +212,7 @@ h5 {
   .imagePrincipale {
     width: 65vh;
     height: auto;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    align-self: end;
   }
   .titresRubriques {
     width: 75%;
@@ -248,7 +237,6 @@ h5 {
     height: 100%;
   }
   body .sideEtudiantFixe .divMotCle {
-    position: -webkit-sticky;
     position: sticky;
     grid-template: 'MC1 MC2';
   }

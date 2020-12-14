@@ -37,7 +37,9 @@ body {
                 box-shadow: -0.3em 0.3em 5px #00C2FF;
 
                 p {
-                    line-height: 1.5;
+                    font-family: 'Poiret One', cursive;
+                    font-weight: bold;
+                    line-height: 1.7;
                 }
 
                 .capricieux {
@@ -109,6 +111,9 @@ li {
     p {
         margin: 0;
         padding: 0;
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        line-height: 1.7;
     }
 
     p:not(:last-child) {
@@ -122,6 +127,9 @@ p {
     padding: 0vh 1.5em;
     margin-block-end: 0em;
     text-justify: inter-word;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    line-height: 1.7;
 }
 
 h5 {
@@ -130,6 +138,7 @@ h5 {
     padding-top: 1vh;
     padding-right: 2vh;
     padding-left: 1.5em;
+    font-family: 'Oxanium', cursive;
 
 }
 
@@ -143,6 +152,7 @@ h5 {
     margin-block-end: 0;
     padding-bottom: 1em;
     padding-top: 1em;
+    font-family: 'Oxanium', cursive;
 }
 
 

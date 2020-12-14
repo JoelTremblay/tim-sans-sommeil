@@ -4,6 +4,18 @@ html
     height: 100%;
     z-index: -5;
 }
+
+h1, h2, h3, p {
+    font-family: 'Oxanium', cursive;
+  }
+
+p {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    line-height: 1.7;
+    font-size: large;
+}
+
 #accueil
 {
     height: 100%;
@@ -160,6 +172,7 @@ html
             
                 h3
                 {
+                    font-family: 'Oxanium', cursive;
                     padding-bottom: 2%;
                 }
                 ul
@@ -197,6 +210,7 @@ html
         //color: red;
         h2
         {
+            font-family: 'Oxanium', cursive;
             font-size: 0.9em;
         }
         font-size: 0.7rem;

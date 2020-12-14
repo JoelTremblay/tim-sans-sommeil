@@ -21,24 +21,17 @@
   width: 90%;
   margin: auto;
   text-align: center;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 5;
-      grid-template-rows: 5;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5;
   grid-gap: 2%;
 }
 
 #grilleCours .contenuCours .conteneurCours .session {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-      grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-column-gap: 1vw;
-          column-gap: 1vw;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  column-gap: 1vw;
   height: 50vh;
 }
 
@@ -50,8 +43,8 @@
   z-index: 0;
   display: inline;
   text-shadow: 1px 2px gray;
-  -webkit-padding-start: 1em;
-          padding-inline-start: 1em;
+  padding-inline-start: 1em;
+  font-family: 'Oxanium', cursive;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .coursActif {
@@ -79,10 +72,14 @@
   font-size: 0.95vw;
   text-shadow: 1px 1px gray;
   text-align: left;
+  font-family: 'Oxanium', cursive;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours p {
   font-size: 0.85vw;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours p:last-child {
@@ -91,8 +88,7 @@
 
 #grilleCours .contenuCours .conteneurCours .session .cours:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px -3px #00FFD1;
-          box-shadow: 0px -3px #00FFD1;
+  box-shadow: 0px -3px #00FFD1;
 }
 
 /* ======================== STYLES MOBILES ======= */
@@ -124,12 +120,9 @@
   }
   #grilleCours .contenuCours .conteneurCours .session {
     width: 100%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 4vh;
   }
   #grilleCours .contenuCours .conteneurCours .session .numSession {
@@ -137,10 +130,8 @@
     left: 10vw;
   }
   #grilleCours .contenuCours .conteneurCours .session .cours {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    -ms-grid-row: auto;
-        grid-row-start: auto;
+    grid-column-start: 1;
+    grid-row-start: auto;
     width: 75%;
     height: 300px;
     margin: 0 auto 0 auto;

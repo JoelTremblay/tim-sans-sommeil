@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .galerie-page {
@@ -12,22 +11,16 @@
 }
 
 .galerie-page section .galerie {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 600px;
   width: 70vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 auto;
-  -webkit-transform: translateY(55%) translateX(2.5%) rotate(90deg);
-          transform: translateY(55%) translateX(2.5%) rotate(90deg);
+  transform: translateY(55%) translateX(2.5%) rotate(90deg);
 }
 
 .galerie-page section .galerie .item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
   height: auto;
   width: 25%;
   background-color: white;
@@ -36,80 +29,65 @@
 }
 
 .galerie-page section .galerie .item:nth-child(1) {
-  -webkit-transform: translateY(25%) translateX(-75%) rotate(45deg);
-          transform: translateY(25%) translateX(-75%) rotate(45deg);
+  transform: translateY(25%) translateX(-75%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(2) {
-  -webkit-transform: translateY(25%) translateX(-25%) rotate(45deg);
-          transform: translateY(25%) translateX(-25%) rotate(45deg);
+  transform: translateY(25%) translateX(-25%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(3) {
-  -webkit-transform: translateY(25%) translateX(25%) rotate(45deg);
-          transform: translateY(25%) translateX(25%) rotate(45deg);
+  transform: translateY(25%) translateX(25%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(4) {
-  -webkit-transform: translateY(25%) translateX(75%) rotate(45deg);
-          transform: translateY(25%) translateX(75%) rotate(45deg);
+  transform: translateY(25%) translateX(75%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(5) {
-  -webkit-transform: translateY(0%) translateX(0%) rotate(45deg);
-          transform: translateY(0%) translateX(0%) rotate(45deg);
+  transform: translateY(0%) translateX(0%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(6) {
-  -webkit-transform: translateY(0%) translateX(200%) rotate(45deg);
-          transform: translateY(0%) translateX(200%) rotate(45deg);
+  transform: translateY(0%) translateX(200%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(7) {
-  -webkit-transform: translateY(150%) translateX(-200%) rotate(45deg);
-          transform: translateY(150%) translateX(-200%) rotate(45deg);
+  transform: translateY(150%) translateX(-200%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(8) {
-  -webkit-transform: translateY(150%) translateX(0%) rotate(45deg);
-          transform: translateY(150%) translateX(0%) rotate(45deg);
+  transform: translateY(150%) translateX(0%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(9) {
-  -webkit-transform: translateY(125%) translateX(-75%) rotate(45deg);
-          transform: translateY(125%) translateX(-75%) rotate(45deg);
+  transform: translateY(125%) translateX(-75%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(10) {
-  -webkit-transform: translateY(125%) translateX(-25%) rotate(45deg);
-          transform: translateY(125%) translateX(-25%) rotate(45deg);
+  transform: translateY(125%) translateX(-25%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(11) {
-  -webkit-transform: translateY(125%) translateX(25%) rotate(45deg);
-          transform: translateY(125%) translateX(25%) rotate(45deg);
+  transform: translateY(125%) translateX(25%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(12) {
-  -webkit-transform: translateY(125%) translateX(75%) rotate(45deg);
-          transform: translateY(125%) translateX(75%) rotate(45deg);
+  transform: translateY(125%) translateX(75%) rotate(45deg);
 }
 
 .galerie-page section .galerie .item:nth-child(13) {
-  -webkit-transform: translateY(-106.5%) translateX(-125%) rotate(45deg) scale(1.5);
-          transform: translateY(-106.5%) translateX(-125%) rotate(45deg) scale(1.5);
+  transform: translateY(-106.5%) translateX(-125%) rotate(45deg) scale(1.5);
 }
 
 .galerie-page section .galerie .item:nth-child(14) {
   background-color: #00FFD1;
-  -webkit-transform: translateY(-106.5%) translateX(0%) rotate(45deg) scale(1.5);
-          transform: translateY(-106.5%) translateX(0%) rotate(45deg) scale(1.5);
+  transform: translateY(-106.5%) translateX(0%) rotate(45deg) scale(1.5);
 }
 
 .galerie-page section .galerie .item:nth-child(15) {
   background-color: #00C2FF;
-  -webkit-transform: translateY(-106.5%) translateX(125%) rotate(45deg) scale(1.5);
-          transform: translateY(-106.5%) translateX(125%) rotate(45deg) scale(1.5);
+  transform: translateY(-106.5%) translateX(125%) rotate(45deg) scale(1.5);
 }
 
 .galerie-page section .galerie .item:before {
@@ -119,18 +97,19 @@
 }
 
 .galerie-page section .galerie .item:hover .overlay::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .galerie-page section .galerie .item:hover .overlay::after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .galerie-page section .galerie .item p {
   text-align: left;
   font-size: 1.5vmin;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 .galerie-page section .galerie .item .texte::before {
@@ -142,8 +121,7 @@
 }
 
 .galerie-page section .galerie .item .centre {
-  -webkit-transform: rotate(-45deg) translateY(45%);
-          transform: rotate(-45deg) translateY(45%);
+  transform: rotate(-45deg) translateY(45%);
   display: inline-block;
   vertical-align: middle;
 }
@@ -157,17 +135,13 @@
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform: rotate(-45deg) scale(2) translateY(15%);
-          transform: rotate(-45deg) scale(2) translateY(15%);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  transform: rotate(-45deg) scale(2) translateY(15%);
+  backface-visibility: hidden;
+  filter: grayscale(100%);
 }
 
 .galerie-page section .galerie .item .adjust {
-  -webkit-transform: rotate(-45deg) scale(1.5);
-          transform: rotate(-45deg) scale(1.5);
+  transform: rotate(-45deg) scale(1.5);
 }
 
 .galerie-page section .galerie .item .overlay {
@@ -186,9 +160,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: .5s ease-out;
+  transform: scale(0);
   transition: .5s ease-out;
 }
 
@@ -204,21 +176,17 @@
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: .5s ease-out;
+  transform: scale(0);
   transition: .5s ease-out;
 }
 
 @media only screen and (min-width: 981px) {
   .galerie-page section .galerie {
     width: 40vw;
-    -webkit-transform: translateY(1%) rotate(360deg) scale(1.1);
-            transform: translateY(1%) rotate(360deg) scale(1.1);
+    transform: translateY(1%) rotate(360deg) scale(1.1);
   }
   .galerie-page section .galerie .item.texte .centre {
-    -webkit-transform: rotate(-45deg) translateX(10%) translateY(40%);
-            transform: rotate(-45deg) translateX(10%) translateY(40%);
+    transform: rotate(-45deg) translateX(10%) translateY(40%);
     margin-top: 20px;
   }
   .galerie-page section .galerie .item.texte .centre p {
@@ -228,16 +196,13 @@
 
 @media only screen and (max-width: 980px) {
   .galerie-page section .galerie .item img {
-    -webkit-transform: rotate(-135deg) scale(2) translateY(15%);
-            transform: rotate(-135deg) scale(2) translateY(15%);
+    transform: rotate(-135deg) scale(2) translateY(15%);
   }
   .galerie-page section .galerie .item .adjust {
-    -webkit-transform: rotate(-135deg) scale(1.5);
-            transform: rotate(-135deg) scale(1.5);
+    transform: rotate(-135deg) scale(1.5);
   }
   .galerie-page section .galerie .item.texte .centre {
-    -webkit-transform: rotate(-135deg) translateX(-110%) translateY(5%);
-            transform: rotate(-135deg) translateX(-110%) translateY(5%);
+    transform: rotate(-135deg) translateX(-110%) translateY(5%);
   }
 }
 /*# sourceMappingURL=styles.css.map */

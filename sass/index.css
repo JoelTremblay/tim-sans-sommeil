@@ -3,6 +3,17 @@ html {
   z-index: -5;
 }
 
+h1, h2, h3, p {
+  font-family: 'Oxanium', cursive;
+}
+
+p {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
+  font-size: large;
+}
+
 #accueil {
   height: 100%;
   background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.5%, #252525 12.5%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.5%, #131313 37.5%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.5%, #252525 62.5%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.5%, #131313 87.5%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
@@ -44,12 +55,9 @@ html {
   margin: auto;
   background-color: rgba(17, 17, 17, 0.2);
   font-size: 1em;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5;
-      grid-template-columns: 5;
-  -ms-grid-rows: 3;
-      grid-template-rows: 3;
+  grid-template-columns: 5;
+  grid-template-rows: 3;
   grid-gap: 10px;
 }
 
@@ -58,21 +66,17 @@ html {
 }
 
 #accueil #accueilBody #intro > :first-child {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 1;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   grid-row-end: 2;
   margin-right: 20%;
 }
 
 #accueil #accueilBody #intro > :nth-child(2) {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
   grid-column-end: 5;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+  grid-row-start: 3;
   margin-bottom: 7%;
 }
 
@@ -81,21 +85,17 @@ html {
 }
 
 #accueil #accueilBody #poss > :first-child {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   grid-row-end: 2;
   margin-right: 20%;
 }
 
 #accueil #accueilBody #poss > :nth-child(2) {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
   grid-column-end: 5;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+  grid-row-start: 3;
   margin-top: -25%;
 }
 
@@ -106,22 +106,18 @@ html {
 }
 
 #accueil #accueilBody #eleves > :first-child {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 3;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
   margin-right: 20%;
   margin-top: -7%;
 }
 
 #accueil #accueilBody #eleves > :nth-child(2) {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
   grid-column-end: 5;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
 }
 
 #accueil #accueilBody .conteneurCarrousel {
@@ -139,6 +135,7 @@ html {
 }
 
 #accueil #accueilBody .reseauxAccueil .conteneurReseaux h3 {
+  font-family: 'Oxanium', cursive;
   padding-bottom: 2%;
 }
 
@@ -168,6 +165,7 @@ html {
     font-size: 0.7rem;
   }
   #accueilBody h2 {
+    font-family: 'Oxanium', cursive;
     font-size: 0.9em;
   }
   #accueilBody p {
@@ -182,32 +180,24 @@ html {
     background-position: 110% 65%;
   }
   #accueilBody .contenu #intro > :first-child {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-start: 1;
     margin: auto;
   }
   #accueilBody .contenu #intro > :nth-child(2) {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-start: 1;
     margin: 10% auto;
   }
   #accueilBody .contenu #poss > :first-child {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-start: 1;
     margin-left: 50%;
     width: 100%;
   }
   #accueilBody .contenu #poss > :nth-child(2) {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-start: 1;
     margin: auto;
   }
   #accueilBody .contenu #eleves {
@@ -216,17 +206,13 @@ html {
     width: 100%;
   }
   #accueilBody .contenu #eleves > :first-child {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-start: 1;
     margin: 0% 0% 15% 0%;
   }
   #accueilBody .contenu #eleves > :nth-child(2) {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-start: 1;
     width: 50%;
     margin: auto;
   }
