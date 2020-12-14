@@ -18,7 +18,7 @@
 #stagesConteneur .entete-stages {
   background-color: #000000;
   padding-top: 1em;
-  padding-bottom: 4em;
+  padding-bottom: 15%;
 }
 
 #stagesConteneur h1 {
@@ -27,7 +27,7 @@
   color: #ffffff;
   padding-left: 3%;
   padding-bottom: 0.5%;
-  margin-top: 7%;
+  margin-top: 10%;
   margin-bottom: 0 auto;
   border-left: 0.1em solid;
   border-image-source: linear-gradient(#00B8FF, #00FF9F);
@@ -125,6 +125,7 @@
   }
   #stagesConteneur #stages {
     overflow-x: hidden;
+    overflow-y: hidden;
     position: static;
     left: 0;
     top: 0;
@@ -134,10 +135,8 @@
   }
   #stagesConteneur h1 {
     font-size: 200%;
-  }
-  #stagesConteneur .img-entete {
-    width: 100%;
-    height: 100%;
+    margin-top: 20%;
+    margin-bottom: 25%;
   }
   #stagesConteneur .categories {
     background-image: linear-gradient(to bottom right, #303030, #000000);
@@ -161,7 +160,7 @@
     margin-left: 13%;
   }
   #stagesConteneur .ligne-pattern1 {
-    margin-top: 10%;
+    margin-top: 20%;
   }
   #stagesConteneur .ligne-pattern2 {
     display: inline-block;
