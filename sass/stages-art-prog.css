@@ -43,7 +43,11 @@ html {
   height: auto;
   position: relative;
   left: 15%;
+<<<<<<< Updated upstream
   top: 350%;
+=======
+  top: 400%;
+>>>>>>> Stashed changes
   -webkit-animation: fadeIn ease-in 6s infinite;
           animation: fadeIn ease-in 6s infinite;
 }
@@ -53,7 +57,11 @@ html {
   height: auto;
   position: relative;
   right: 19%;
+<<<<<<< Updated upstream
   bottom: 350%;
+=======
+  bottom: 400%;
+>>>>>>> Stashed changes
   -webkit-animation: fadeIn ease-in 6s infinite;
           animation: fadeIn ease-in 6s infinite;
 }
@@ -213,6 +221,19 @@ p {
     display: inline-block;
     overflow: visible;
   }
+<<<<<<< Updated upstream
+=======
+  .liste-compagnies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5%;
+  }
+>>>>>>> Stashed changes
   article {
     overflow-wrap: break-word;
   }
@@ -260,6 +281,21 @@ p {
     border-image-source: linear-gradient(#FF9F00, #A000FF);
     border-image-slice: 1;
     margin-top: 2em;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.25;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

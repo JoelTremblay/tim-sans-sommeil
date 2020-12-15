@@ -17,10 +17,18 @@
       {
         $colonneNum = 1;
         $tailleStr = "";
-        $tailleAdaptee = (13 * count($laSession));
+        $nbCours = count($laSession);
+        $tailleAdaptee = (13 * $nbCours);
         $tailleStr = $tailleAdaptee . "vw";
-        //echo $tailleAdaptee;
-        echo"<div style='grid-row-start: $rangeeNum;' class='session sessionInactive'><h2 class='numSession' style='width: $tailleStr;'>Session ".$rangeeNum.'</h2>';
+
+        $frAdapte = "";
+        for ($i = 0; $i < $nbCours; $i++)
+        {
+          //echo $frAdapte;
+          $frAdapte = $frAdapte . "1fr ";
+        }
+        
+        echo"<div style='grid-row-start: $rangeeNum; grid-template-rows: $frAdapte;' class='session sessionInactive'><h2 class='numSession' style='width: $tailleStr;'>Session ".$rangeeNum.'</h2>';
         foreach ($laSession as $coursDelaSession) 
         {
           $colonneNum++;

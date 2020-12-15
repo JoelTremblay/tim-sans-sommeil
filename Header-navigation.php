@@ -100,7 +100,7 @@
                 </div>
     
                 <div class="divLogo logoHeader logoTIM Anim2">
-                    <a><img src="medias/images/creation.png" alt="" class="imgLogo"></a>
+                    <a href="index.php"><img src="medias/images/creation.png" alt="" class="imgLogo"></a>
                 </div>
     
             </header>
