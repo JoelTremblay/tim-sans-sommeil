@@ -5,6 +5,7 @@ html {
 /* Header */
 #header {
   color: white;
+  display: -ms-grid;
   display: grid;
   width: 100%;
   /* img Logo */
@@ -16,8 +17,10 @@ html {
 
 #header header {
   position: fixed;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   top: 0;
   width: 100%;
   background-color: #242323;
@@ -25,26 +28,35 @@ html {
 }
 
 #header .divLogo {
-  justify-self: center;
-  align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header .divMaisonneuve {
-  justify-self: end;
-  align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header .divLogo a {
+  display: -ms-grid;
   display: grid;
 }
 
 #header .divMaisonneuve a {
+  display: -ms-grid;
   display: grid;
   margin-right: 1em;
 }
 
 #header .divMaisonneuve a .imgMaisonneuve {
-  justify-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
   width: auto;
 }
 
@@ -53,11 +65,13 @@ html {
 }
 
 #header .openbtn {
+  display: -ms-grid;
   display: grid;
   margin-left: 0.2em;
   font-size: 3rem;
   cursor: pointer;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   color: #DFDBD9;
 }
 
@@ -78,29 +92,38 @@ html {
   overflow-x: hidden;
   /* Disable horizontal scroll */
   overflow-y: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
+  display: -ms-grid;
   display: grid;
 }
 
 #header .sidenav .menuPrincipale {
-  padding-inline-start: 1em;
-  margin-block-start: 0em;
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
   font-weight: bold;
 }
 
 #header .sidenav .menuSecondaire {
-  padding-inline-start: 1.7em;
+  -webkit-padding-start: 1.7em;
+          padding-inline-start: 1.7em;
 }
 
 #header .sidenav ul {
   list-style: none;
+  display: -ms-grid;
   display: grid;
-  margin-block-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
 }
 
 #header .sidenav li {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header .sidenav a {
@@ -109,13 +132,15 @@ html {
   font-size: 25px;
   color: #DFDBD9;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: 'Oxanium', cursive;
 }
 
 #header .sidenav a text {
   text-align: center;
-  transform: lowercase;
+  -webkit-transform: lowercase;
+          transform: lowercase;
 }
 
 #header .sidenav a:hover {
@@ -125,18 +150,25 @@ html {
 #header .sidenav .closebtn {
   font-size: 40px;
   padding: 0 5% 0;
-  align-self: center;
-  justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
   color: #DFDBD9;
 }
 
 #header .divBandesCouleurs {
+  display: -ms-grid;
   display: grid;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header .divBandesCouleurs .div-bande-couleur-vert {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header .divBandesCouleurs .div-bande-couleur-vert img {
@@ -144,7 +176,9 @@ html {
 }
 
 #header .divBandesCouleurs .div-bande-couleur-bleu {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header .divBandesCouleurs .div-bande-couleur-bleu img {
@@ -152,32 +186,49 @@ html {
 }
 
 #header .titreReseauxSociaux {
-  align-self: center;
-  justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: #DFDBD9;
   font-weight: normal;
-  margin-block-end: 0;
-  margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
   font-family: 'Oxanium', cursive;
 }
 
 #header .liensMedias {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding-inline-start: 0;
-  margin-block-end: 0;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 #header .liensMedias li {
   list-style: none;
-  justify-self: center;
-  align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header .liensMedias a {
   display: block;
   height: 5.5em;
   text-align: center;
+}
+
+#header .liensMedias .imgLiensMedias {
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
 }
 
 @media (min-width: 1025px) and (max-width: 2560px) {
@@ -264,6 +315,17 @@ html {
 }
 
 /* ======================== animations ======= */
+@-webkit-keyframes fade1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 10;
+  }
+}
 
 @keyframes fade1 {
   0% {
@@ -278,10 +340,26 @@ html {
 }
 
 .Anim1 {
+  -webkit-animation-name: fade1;
   animation-name: fade1;
-  animation-delay: 2sec;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
+  -webkit-animation-delay: 2sec;
+          animation-delay: 2sec;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+@-webkit-keyframes fade2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade2 {
@@ -297,10 +375,14 @@ html {
 }
 
 .Anim2 {
+  -webkit-animation-name: fade2;
   animation-name: fade2;
-  animation-duration: 6s;
-  animation-delay: 2sec;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 2sec;
+          animation-delay: 2sec;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   margin-left: -201%;
 }
 /*# sourceMappingURL=Header-Nav.css.map */

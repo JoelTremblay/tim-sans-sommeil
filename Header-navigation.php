@@ -106,11 +106,11 @@
                 </div>
                 <h3 class="titreReseauxSociaux">Réseaux sociaux</h3>
                 <ul class="liensMedias list-inline">
-                    <li><img class="imgLiensMedias" src="medias/images/logos2/facebook.png" alt="Facebook"></li>
-                    <li><img class="imgLiensMedias" src="medias/images/logos2/linkedin.png" alt="Linkedin"></li>
-                    <li><img class="imgLiensMedias" src="medias/images/logos2/discord.png" alt="Discord"></li>
-                    <li><img class="imgLiensMedias" src="medias/images/logos2/youtube.png" alt="Youtube"></li>
-                    <li><img class="imgLiensMedias" src="medias/images/logos2/instagram.png" alt="Instagream"></li>
+                    <li><a href="https://www.facebook.com/groups/244018972413874/?fref=ts" onclick="window.open(this.href,'_blank');return false;"><img class="imgLiensMedias" src="medias/images/logos2/facebook.png" alt="Facebook" ></a></li>
+                    <li><a href="https://www.linkedin.com/in/tim-maisonneuve-9407b7131/?originalSubdomain=ca" onclick="window.open(this.href,'_blank');return false;"><img class="imgLiensMedias" src="medias/images/logos2/linkedin.png" alt="Linkedin"></a></li>
+                    <li><a href="https://discord.com/channels/349586892762775564/349736437949792257" onclick="window.open(this.href,'_blank');return false;"><img class="imgLiensMedias" src="medias/images/logos2/discord.png" alt="Discord"></a></li>
+                    <li><a href="https://www.youtube.com/user/TIMcreation3D" onclick="window.open(this.href,'_blank');return false;"><img class="imgLiensMedias" src="medias/images/logos2/youtube.png" alt="Youtube"></a></li>
+                    <li><a href="https://www.instagram.com/maisonneuvetim/" onclick="window.open(this.href,'_blank');return false;"><img class="imgLiensMedias" src="medias/images/logos2/instagram.png" alt="Instagram" ></a></li>
                 </ul>
             </nav>
 
@@ -126,15 +126,9 @@
             </div>
 
             <div class="divLogo logoHeader logoTIM Anim2">
-                <a><img src="medias/images/creation.png" alt="" class="imgLogo"></a>
+                <a href="index.php">
+                    <img src="medias/images/creation.png" alt="" class="imgLogo">
+                </a>
             </div>
 
         </header>
-
-    </div>
-    <!-- header -->
-
-    <script src="js/fonctions.js"></script>
-</body>
-
-</html>

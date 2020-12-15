@@ -5,8 +5,9 @@ body {
 }
 
 body {
+  display: -ms-grid;
   display: grid;
-  grid-template: 'main' 'side';
+  grid-template: 'main' 'side';
   background-color: #2A2929;
 }
 
@@ -16,6 +17,7 @@ body .mainEtudiantDeroulant {
 }
 
 body .mainEtudiantDeroulant section {
+  display: -ms-grid;
   display: grid;
 }
 
@@ -23,30 +25,38 @@ body .mainEtudiantDeroulant section div {
   background-color: #242323;
   margin-bottom: 2vh;
   width: 85%;
+  display: -ms-grid;
   display: grid;
 }
 
 body .mainEtudiantDeroulant section div:nth-child(odd) {
-  justify-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
   margin-left: 2vw;
-  box-shadow: 1vw 1vh #00FFD1;
+  -webkit-box-shadow: 1vw 1vh #00FFD1;
+          box-shadow: 1vw 1vh #00FFD1;
 }
 
 body .mainEtudiantDeroulant section div:nth-child(even) {
-  justify-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
   margin-right: 2vw;
-  box-shadow: -1vw 1vh #00C2FF;
+  -webkit-box-shadow: -1vw 1vh #00C2FF;
+          box-shadow: -1vw 1vh #00C2FF;
 }
 
 body .sideEtudiantFixe {
   background-color: #545353;
+  display: -ms-grid;
   display: grid;
-  grid-template: 'MC' 'horaire';
+  grid-template: 'MC' 'horaire';
   grid-area: side;
-  box-shadow: -1vw 0 10px black;
+  -webkit-box-shadow: -1vw 0 10px black;
+          box-shadow: -1vw 0 10px black;
 }
 
 body .sideEtudiantFixe .divMotCle {
+  display: -ms-grid;
   display: grid;
   grid-template: 'MC1 MC2';
   grid-area: MC;
@@ -61,7 +71,8 @@ body .sideEtudiantFixe .divMotCle .motsCles1 {
 
 body .sideEtudiantFixe .divMotCle .motsCles1 ul {
   list-style: none;
-  padding-inline-start: 2vw;
+  -webkit-padding-start: 2vw;
+          padding-inline-start: 2vw;
 }
 
 body .sideEtudiantFixe .divMotCle .motsCles2 {
@@ -74,6 +85,7 @@ body .sideEtudiantFixe .divMotCle .motsCles2 ul {
 
 body .sideEtudiantFixe .divHoraire {
   grid-area: horaire;
+  display: -ms-grid;
   display: grid;
 }
 
@@ -85,6 +97,8 @@ body .sideEtudiantFixe .divHoraire {
 li {
   margin-bottom: 1vh;
   background-color: #242323;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -120,7 +134,8 @@ h5 {
 video {
   width: 70vw;
   height: auto;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -132,7 +147,9 @@ video {
   .imagePrincipale {
     width: 51vh;
     height: auto;
-    align-self: end;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
   video {
     width: 30vw;
@@ -181,7 +198,9 @@ video {
   .imagePrincipale {
     width: 65vh;
     height: auto;
-    align-self: end;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
   video {
     width: 40vw;
@@ -211,6 +230,7 @@ video {
     height: 100%;
   }
   body .sideEtudiantFixe .divMotCle {
+    position: -webkit-sticky;
     position: sticky;
     grid-template: 'MC1 MC2';
   }
