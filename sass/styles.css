@@ -4,6 +4,7 @@
 }
 
 .galerie-page {
+  font-family: 'Poiret One', cursive;
   margin: 0 auto;
   background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.5%, #252525 12.5%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.5%, #131313 37.5%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.5%, #252525 62.5%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.5%, #131313 87.5%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
   background-size: 100% 600%;
@@ -59,6 +60,7 @@
 }
 
 .galerie-page .email {
+  font-family: 'Oxanium', cursive;
   outline: none;
   text-decoration: none;
   font-weight: bolder;
@@ -67,6 +69,10 @@
 
 .galerie-page .email:hover {
   color: #00FFD1;
+}
+
+.galerie-page .nom {
+  font-family: 'Oxanium', cursive;
 }
 
 .galerie-page section .galerie {
@@ -203,7 +209,7 @@
 .galerie-page section .galerie .item p {
   text-align: left;
   font-size: 1.5vmin;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Oxanium', cursive;
   font-weight: bold;
   line-height: 1.7;
 }

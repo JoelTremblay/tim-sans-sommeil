@@ -71,7 +71,7 @@
         </div>
 
         <div style="display: none;" class="card" id="dom">
-            <h1><b>Dominic Girard</b></h1> 
+            <h1 class="nom"><b>Dominic Girard</b></h1> 
             <img src="medias/images/dom.jpg" alt="Avatar">
             <div class="container">
               <br>
@@ -89,7 +89,7 @@
             </div>
         </div>  
         <div style="display: none;" class="card" id="camille">
-            <h1><b>Camille Semaan</b></h1> 
+            <h1 class="nom"><b>Camille Semaan</b></h1> 
             <img src="medias/images/camille.jpg">
             <div class="container">
               <br>
@@ -101,7 +101,7 @@
             </div>
         </div>   
         <div style="display: none;" class="card" id="caroline">
-            <h1><b>Caroline Martin</b></h1> 
+            <h1 class="nom"><b>Caroline Martin</b></h1> 
             <img src="medias/images/caroline.jpg">
             <div class="container">
               <br>
@@ -111,7 +111,7 @@
             </div>
         </div> 
         <div style="display: none;" class="card" id="denis">
-            <h1><b>Denis Pellerin</b></h1> 
+            <h1 class="nom"><b>Denis Pellerin</b></h1> 
             <img src="medias/images/denis.jpg">
             <div class="container">
             <br>
@@ -139,7 +139,7 @@
             </div>
         </div>
         <div style="display: none;" class="card" id="vahik">
-            <h1><b>Vahik Toroussian</b></h1> 
+            <h1 class="nom"><b>Vahik Toroussian</b></h1> 
             <img src="medias/images/vahik.jpg">
             <div class="container">
             <br>
@@ -152,7 +152,7 @@
             </div>
         </div>  
         <div style="display: none;" class="card" id="vincent">
-            <h1><b>Vincent Leblanc</b></h1> 
+            <h1 class="nom"><b>Vincent Leblanc</b></h1> 
             <img src="medias/images/vincent.jpg">
             <div class="container">
             <br>
@@ -168,7 +168,7 @@
             </div>
         </div>   
         <div style="display: none;" class="card" id="eddy">
-            <h1><b>Eddy Martin</b></h1> 
+            <h1 class="nom"><b>Eddy Martin</b></h1> 
             <img src="medias/images/eddy.jpg">
             <div class="container">
             <br>
@@ -183,7 +183,7 @@
             </div>
         </div> 
         <div style="display: none;" class="card" id="greg">
-            <h1><b>Gregory Bony</b></h1> 
+            <h1 class="nom"><b>Gregory Bony</b></h1> 
             <img src="medias/images/greg.jpg">
             <div class="container">
             <br>
@@ -199,7 +199,7 @@
             </div>
         </div> 
         <div style="display: none;" class="card" id="johanne">
-            <h1><b>Johanne Massé</b></h1> 
+            <h1 class="nom"><b>Johanne Massé</b></h1> 
             <img src="medias/images/johanne-gd.jpg">
             <div class="container">
             <br>
@@ -220,7 +220,7 @@
             </div>
         </div>   
         <div style="display: none;" class="card" id="manon">
-            <h1><b>Manon Bertrand</b></h1> 
+            <h1 class="nom"><b>Manon Bertrand</b></h1> 
             <img src="medias/images/manon.jpg">
             <div class="container">
             <br>
@@ -232,7 +232,7 @@
             </div>
         </div> 
         <div style="display: none;" class="card" id="martin">
-            <h1><b>Martin Saint-Pierre</b></h1> 
+            <h1 class="nom"><b>Martin Saint-Pierre</b></h1> 
             <img src="medias/images/martin.jpg">
             <div class="container">
             <br>
@@ -247,7 +247,7 @@
             </div>
         </div> 
         <div style="display: none;" class="card" id="mathieu">
-            <h1><b>Mathieu Dionne</b></h1>
+            <h1 class="nom"><b>Mathieu Dionne</b></h1>
             <img src="medias/images/mathieu.jpg">
             <div class="container">
             <br>
@@ -258,7 +258,7 @@
             </div>
         </div> 
         <div style="display: none;" class="card" id="ahmed">
-            <h1><b>Ahmed Boudjani</b></h1> 
+            <h1 class="nom"><b>Ahmed Boudjani</b></h1> 
             <img src="medias/images/ahmed.jpg">
             <div class="container">
             <br>
