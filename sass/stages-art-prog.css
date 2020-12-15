@@ -43,11 +43,7 @@ html {
   height: auto;
   position: relative;
   left: 15%;
-<<<<<<< Updated upstream
-  top: 350%;
-=======
   top: 400%;
->>>>>>> Stashed changes
   -webkit-animation: fadeIn ease-in 6s infinite;
           animation: fadeIn ease-in 6s infinite;
 }
@@ -57,11 +53,7 @@ html {
   height: auto;
   position: relative;
   right: 19%;
-<<<<<<< Updated upstream
-  bottom: 350%;
-=======
   bottom: 400%;
->>>>>>> Stashed changes
   -webkit-animation: fadeIn ease-in 6s infinite;
           animation: fadeIn ease-in 6s infinite;
 }
@@ -182,7 +174,8 @@ article:nth-child(even) {
 
 .infos {
   height: 100%;
-  margin-left: 1.5%;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 .img-compagnies {
@@ -190,7 +183,7 @@ article:nth-child(even) {
 }
 
 a {
-  margin-left: 12%;
+  margin-left: 15%;
   font-size: large;
   text-decoration: none;
   color: #A5A5A5;
@@ -200,7 +193,7 @@ a {
 
 h3 {
   position: relative;
-  left: 13%;
+  left: 15%;
   bottom: 30%;
   color: #ffffff;
 }
@@ -210,9 +203,10 @@ p {
   position: relative;
   bottom: 10%;
   color: #ffffff;
+  line-height: 1.7;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 520px) {
   html {
     width: 100%;
     height: 100%;
@@ -221,8 +215,6 @@ p {
     display: inline-block;
     overflow: visible;
   }
-<<<<<<< Updated upstream
-=======
   .liste-compagnies {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,7 +225,6 @@ p {
             flex-direction: column;
     margin-top: 5%;
   }
->>>>>>> Stashed changes
   article {
     overflow-wrap: break-word;
   }
@@ -280,22 +271,6 @@ p {
     border: 0.3em solid;
     border-image-source: linear-gradient(#FF9F00, #A000FF);
     border-image-slice: 1;
-    margin-top: 2em;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0.25;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
