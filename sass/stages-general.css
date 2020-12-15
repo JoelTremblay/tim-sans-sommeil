@@ -19,16 +19,16 @@
 #stagesConteneur .entete-stages {
   background-color: #000000;
   padding-top: 1em;
-  padding-bottom: 4em;
+  padding-bottom: 15%;
 }
 
 #stagesConteneur h1 {
-  font-family: 'Roboto';
+  font-family: 'Oxanium', cursive;
   font-size: 5em;
   color: #ffffff;
   padding-left: 3%;
   padding-bottom: 0.5%;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 0 auto;
   border-left: 0.1em solid;
   border-image-source: linear-gradient(#00B8FF, #00FF9F);
@@ -102,8 +102,9 @@
           justify-content: center;
   text-decoration: none;
   color: #A5A5A5;
-  font-family: 'Roboto';
+  font-family: 'Poiret One', cursive;
   font-size: 2em;
+  font-weight: bold;
 }
 
 #stagesConteneur li:first-child {
@@ -144,6 +145,7 @@
   }
   #stagesConteneur #stages {
     overflow-x: hidden;
+    overflow-y: hidden;
     position: static;
     left: 0;
     top: 0;
@@ -153,10 +155,8 @@
   }
   #stagesConteneur h1 {
     font-size: 200%;
-  }
-  #stagesConteneur .img-entete {
-    width: 100%;
-    height: 100%;
+    margin-top: 20%;
+    margin-bottom: 25%;
   }
   #stagesConteneur .categories {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#303030), to(#000000));
@@ -186,7 +186,7 @@
     margin-left: 13%;
   }
   #stagesConteneur .ligne-pattern1 {
-    margin-top: 10%;
+    margin-top: 20%;
   }
   #stagesConteneur .ligne-pattern2 {
     display: inline-block;

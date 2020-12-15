@@ -23,7 +23,7 @@
 #coursParCours .carousel-grid, #coursParCoursBody .carousel-grid {
   display: -ms-grid;
   display: grid;
-  grid-template: 'divTitreCours' 'ficheCours' 'prerequisCours' 'descriptionCours';
+  grid-template: 'divTitreCours' 'ficheCours' 'prerequisCours' 'descriptionCours';
   -ms-grid-rows: 7vh auto auto auto;
       grid-template-rows: 7vh auto auto auto;
   height: 100%;
@@ -121,11 +121,15 @@
   padding: 2vh 2vw;
   text-align: justify;
   text-justify: inter-word;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 #coursParCours h5, #coursParCoursBody h5 {
   color: white;
   font-size: 1.4rem;
+  font-family: 'Oxanium', cursive;
   padding-top: 1vh;
   padding-right: 2vh;
   padding-left: 2vh;
@@ -139,7 +143,7 @@
   #coursParCours .carousel-grid {
     display: -ms-grid;
     display: grid;
-    grid-template: 'divTitreCours divTitreCours' 'prerequisCours ficheCours' 'descriptionCours descriptionCours';
+    grid-template: 'divTitreCours divTitreCours' 'prerequisCours ficheCours' 'descriptionCours descriptionCours';
     -ms-grid-rows: 7vh auto auto;
         grid-template-rows: 7vh auto auto;
     -ms-grid-columns: 1fr 1fr;
@@ -156,7 +160,7 @@
   #coursParCours .carousel-grid {
     display: -ms-grid;
     display: grid;
-    grid-template: 'divTitreCours divTitreCours' 'prerequisCours ficheCours' 'descriptionCours descriptionCours';
+    grid-template: 'divTitreCours divTitreCours' 'prerequisCours ficheCours' 'descriptionCours descriptionCours';
     -ms-grid-rows: 7vh auto auto;
         grid-template-rows: 7vh auto auto;
     -ms-grid-columns: 1fr 1fr;

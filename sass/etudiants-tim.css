@@ -2,12 +2,14 @@ html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  word-spacing: 0.5px;
 }
 
 body {
   display: -ms-grid;
   display: grid;
-  grid-template: 'main' 'side';
+  grid-template: 'main' 'side';
   background-color: #2A2929;
 }
 
@@ -24,30 +26,39 @@ body .mainEtudiantDeroulant section {
 body .mainEtudiantDeroulant section div {
   background-color: #242323;
   margin-bottom: 2vh;
-  width: 85%;
 }
 
-body .mainEtudiantDeroulant section div:nth-child(odd) {
+body .mainEtudiantDeroulant section .titresRubriques {
   -ms-grid-column-align: start;
       justify-self: start;
   margin-left: 2vw;
-  -webkit-box-shadow: 1vw 1vh #00FFD1;
-          box-shadow: 1vw 1vh #00FFD1;
+  -webkit-box-shadow: 0.3em 0.3em 5px #00FFD1;
+          box-shadow: 0.3em 0.3em 5px #00FFD1;
 }
 
-body .mainEtudiantDeroulant section div:nth-child(even) {
+body .mainEtudiantDeroulant section .textesRubriques {
   -ms-grid-column-align: end;
       justify-self: end;
   margin-right: 2vw;
-  -webkit-box-shadow: -1vw 1vh #00C2FF;
-          box-shadow: -1vw 1vh #00C2FF;
+  -webkit-box-shadow: -0.3em 0.3em 5px #00C2FF;
+          box-shadow: -0.3em 0.3em 5px #00C2FF;
+}
+
+body .mainEtudiantDeroulant section .textesRubriques p {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+body .mainEtudiantDeroulant section .textesRubriques .capricieux {
+  padding-bottom: 1.5em;
 }
 
 body .sideEtudiantFixe {
   background-color: #545353;
   display: -ms-grid;
   display: grid;
-  grid-template: 'MC' 'horaire';
+  grid-template: 'MC' 'horaire';
   grid-area: side;
   -webkit-box-shadow: -1vw 0 10px black;
           box-shadow: -1vw 0 10px black;
@@ -79,6 +90,9 @@ body .sideEtudiantFixe .divMotCle .motsCles2 {
 
 body .sideEtudiantFixe .divMotCle .motsCles2 ul {
   list-style: none;
+  direction: rtl;
+  -webkit-padding-start: 2vw;
+          padding-inline-start: 2vw;
 }
 
 body .sideEtudiantFixe .divHoraire {
@@ -107,6 +121,9 @@ li {
 li p {
   margin: 0;
   padding: 0;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 li p:not(:last-child) {
@@ -116,9 +133,13 @@ li p:not(:last-child) {
 p {
   color: white;
   font-size: 1.1rem;
-  padding: 0vh 1vw;
-  text-align: justify;
+  padding: 0vh 1.5em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
   text-justify: inter-word;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 h5 {
@@ -126,12 +147,38 @@ h5 {
   font-size: 1.4rem;
   padding-top: 1vh;
   padding-right: 2vh;
-  padding-left: 2vh;
+  padding-left: 1.5em;
+  font-family: 'Oxanium', cursive;
+}
+
+.imgDeroulant {
+  height: 0;
+  width: 0;
+}
+
+.titresDeroulants {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-family: 'Oxanium', cursive;
+}
+
+/* Portrait and Landscape */
+@media (max-device-width: 767px) {
+  .titresRubriques {
+    width: 85%;
+  }
+  .textesRubriques {
+    width: 85%;
+  }
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
   p {
     font-size: 1.1rem;
   }
@@ -141,6 +188,12 @@ h5 {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+  }
+  .titresRubriques {
+    width: 85%;
+  }
+  .textesRubriques {
+    width: 85%;
   }
   body {
     grid-template: 'main side';
@@ -154,13 +207,6 @@ h5 {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
-  }
-  body .mainEtudiantDeroulant div {
-    width: 50vw;
-  }
-  body .mainEtudiantDeroulant div:nth-child(even) {
-    margin-right: 1vw;
   }
   body .sideEtudiantFixe {
     height: 100%;
@@ -178,7 +224,7 @@ h5 {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-device-width: 1025px) {
   p {
     font-size: 1.3rem;
   }
@@ -188,6 +234,12 @@ h5 {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+  }
+  .titresRubriques {
+    width: 75%;
+  }
+  .textesRubriques {
+    width: 75%;
   }
   body {
     grid-template: 'main side';
@@ -201,13 +253,6 @@ h5 {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
-  }
-  body .mainEtudiantDeroulant div {
-    width: 50vw;
-  }
-  body .mainEtudiantDeroulant div:nth-child(even) {
-    margin-right: 1vw;
   }
   body .sideEtudiantFixe {
     height: 100%;

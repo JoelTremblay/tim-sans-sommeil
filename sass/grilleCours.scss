@@ -57,6 +57,7 @@
                     text-shadow: 1px 2px gray;
                     padding-inline-start: 1em;
                     //margin-block-start: 1.5em;
+                    font-family: 'Oxanium', cursive;
                     //margin-top: 15px;
                 }
 
@@ -96,11 +97,15 @@
                         font-size: 0.95vw;
                         text-shadow: 1px 1px gray;
                         text-align: left;
+                        font-family: 'Oxanium', cursive;
                     }
     
                     p
                     {
                         font-size: 0.85vw;
+                        font-family: 'Poiret One', cursive;
+                        font-weight: bold;
+                        line-height: 1.7;
                     }
                     p:last-child
                     {

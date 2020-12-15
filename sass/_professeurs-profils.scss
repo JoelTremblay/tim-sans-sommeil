@@ -4,15 +4,80 @@
 
 .galerie-page {
     
+    font-family: 'Poiret One', cursive;
     margin: 0 auto;
     background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.50%, #252525 12.50%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.50%, #131313 37.50%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.50%, #252525 62.50%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.50%, #131313 87.50%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
     background-size: 100% 600%;
     background-repeat:no-repeat;
     background-color: #0d0d0d;
 
+    .fancybox-bg {
+        background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.50%, #252525 12.50%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.50%, #131313 37.50%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #131313 50%, #131313 56.25%, #171717 56.25%, #171717 62.50%, #1d1d1d 62.50%, #1d1d1d 68.75%, #212121 68.75%, #212121 75%, #252525 75%, #252525 81.25%, #2c2c2c 81.25%, #2c2c2c 87.50%, #303030 87.50%, #303030 93.75%, #303030 93.75%, #0d0d0d 100%);
+   }
+   
+   .fancybox-stage {
+        top: 44px;
+        bottom: 100px;
+   }
+   
+   .fancybox-inner {
+        right: 0 !important;
+   }
+   
+   .fancybox-thumbs {
+        top: 44px;
+        right: 200px;
+        bottom: 44px;
+        width: 120px;
+        background: transparent;
+   }
+   
+   .fancybox-thumbs>ul>li {
+        max-width: 100%;
+   }
+   
+   .fancybox-caption-wrap {
+        padding: 0 200px;
+        background: transparent;
+   }
+   
+   .fancybox-caption {
+        padding: 0;
+        border: 0;
+        color: #000;
+   }
+
+   .card {
+    background-color: #131313;
+    color: white;
+    border-radius: 30px;
+   }
+
+   .card > img {
+        width: 400px;
+        border-radius: 30px;
+    }
+
+    .email {
+        font-family: 'Oxanium', cursive;
+        outline: none;
+        text-decoration: none;
+        font-weight: bolder;
+        color: #00C2FF;
+    }
+
+    .email:hover {
+        color: #00FFD1;
+    }
+
+    .nom {
+        font-family: 'Oxanium', cursive;
+    }
+
         section {
 
             .galerie {
+                padding-top: 200px;
                 display: flex;
                 max-width:600px;
                 width:70vw;
@@ -32,42 +97,55 @@
                     //boucle 
                     //::after 
                     &:nth-child(1) {
+                        background-color: #00C2FF;
                         transform: translateY(25%) translateX(-75%) rotate(45deg);
                       }
                     &:nth-child(2) {
+                        background-color: #00C2FF;
                         transform: translateY(25%) translateX(-25%) rotate(45deg);
                     }
                     &:nth-child(3) {
+                        background-color: #00C2FF;
                         transform: translateY(25%) translateX(25%) rotate(45deg);
                     }
                     &:nth-child(4) {
+                        background-color: #00C2FF;
                         transform: translateY(25%) translateX(75%) rotate(45deg);
                     }
                     &:nth-child(5) {
+                        background-color: #00C2FF;
                         transform: translateY(0%) translateX(0%) rotate(45deg);
                       }
                     &:nth-child(6) {
+                        background-color: #00C2FF;
                         transform: translateY(0%) translateX(200%) rotate(45deg);
                     }
                     &:nth-child(7) {
+                        background-color: #00C2FF;
                         transform: translateY(150%) translateX(-200%) rotate(45deg);
                     }
                     &:nth-child(8) {
+                        background-color: #00C2FF;
                         transform: translateY(150%) translateX(0%) rotate(45deg);
                     }
                     &:nth-child(9) {
+                        background-color: #00C2FF;
                         transform: translateY(125%) translateX(-75%) rotate(45deg);
                       }
                     &:nth-child(10) {
+                        background-color: #00C2FF;
                         transform: translateY(125%) translateX(-25%) rotate(45deg);
                     }
                     &:nth-child(11) {
+                        background-color: #00C2FF;
                         transform: translateY(125%) translateX(25%) rotate(45deg);
                     }
                     &:nth-child(12) {
+                        background-color: #00C2FF;
                         transform: translateY(125%) translateX(75%) rotate(45deg);
                     }
                     &:nth-child(13) {
+                        background-color: #00FFD1;
                         transform: translateY(-106.5%) translateX(-125%) rotate(45deg) scale(1.5);
                     }
                     &:nth-child(14) {
@@ -75,7 +153,7 @@
                         transform:  translateY(-106.5%) translateX(0%) rotate(45deg) scale(1.5);
                     }
                     &:nth-child(15) {
-                        background-color: #00C2FF;
+                        background-color: #00FFD1;
                         transform: translateY(-106.5%) translateX(125%) rotate(45deg) scale(1.5);
                     }
                     &:before {
@@ -93,6 +171,9 @@
                     p {
                         text-align: left;
                         font-size: 1.5vmin;
+                        font-family: 'Oxanium', cursive;
+                        font-weight: bold;
+                        line-height: 1.7;
                     }
 
                     .texte::before {
@@ -107,6 +188,7 @@
                         transform: rotate(-45deg) translateY(45%);
                         display: inline-block;
                         vertical-align: middle;
+                        color: black;
                     }
 
                     img {
@@ -125,6 +207,14 @@
 
                     .adjust {
                         transform: rotate(-45deg) scale(1.5) ;
+                    }
+
+                    .adjust1 {
+                        transform: rotate(-45deg) scale(2) ;
+                    }
+
+                    .adjust2 {
+                        transform: rotate(-45deg) scale(2.2) ;
                     }
 
                     .overlay {
@@ -186,6 +276,11 @@
     }
 
     @media only screen and (max-width:980px){
+        section .galerie {
+            padding-top: 0;
+            margin-top: 150px;
+        }
+
         section .galerie .item img {
             transform: rotate(-135deg) scale(2) translateY(15%);
         }
@@ -194,8 +289,20 @@
             transform: rotate(-135deg) scale(1.5);
         }
 
+        section .galerie .item .adjust1 {
+            transform: rotate(-135deg) scale(2);
+        }
+
+        section .galerie .item .adjust2 {
+            transform: rotate(-135deg) scale(2.2);
+        }
+
         section .galerie .item.texte .centre { 
             transform: rotate(-135deg) translateX(-110%) translateY(5%);
+        }
+
+        .card > img {
+            width: 50%;
         }
     }
 }

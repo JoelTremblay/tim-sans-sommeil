@@ -52,6 +52,7 @@
   text-shadow: 1px 2px gray;
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
+  font-family: 'Oxanium', cursive;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .coursActif {
@@ -79,10 +80,14 @@
   font-size: 0.95vw;
   text-shadow: 1px 1px gray;
   text-align: left;
+  font-family: 'Oxanium', cursive;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours p {
   font-size: 0.85vw;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours p:last-child {

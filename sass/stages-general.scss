@@ -21,16 +21,16 @@
   .entete-stages {
     background-color: $noir;
     padding-top: 1em;
-    padding-bottom: 4em;
+    padding-bottom: 15%;
   }
   
   h1 {
-    font-family: 'Roboto';
+    font-family: 'Oxanium', cursive;
     font-size: 5em;
     color: $blanc;
     padding-left: 3%;
     padding-bottom: 0.5%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 0 auto;
     border-left: 0.1em solid;
     border-image-source: linear-gradient($bleu-site, $vert-site);
@@ -85,8 +85,9 @@
         justify-content: center;
         text-decoration: none;
         color: $gris;
-        font-family: 'Roboto';
+        font-family: 'Poiret One', cursive;
         font-size: 2em;
+        font-weight: bold;
       }
     }
   }
@@ -128,6 +129,7 @@
   
     #stages {
       overflow-x: hidden;
+      overflow-y: hidden;
       position: static;
       left:0;
       top:0;
@@ -138,12 +140,14 @@
   
     h1 {
       font-size: 200%;
+      margin-top: 20%;
+      margin-bottom: 25%;
     }
   
-    .img-entete {
-      width: 100%;
-      height: 100%;
-    }
+    // .img-entete {
+    //   width: 100%;
+    //   height: 100%;
+    // }
   
     .categories {
       background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
@@ -173,7 +177,7 @@
     }
   
     .ligne-pattern1 {
-      margin-top: 10%;
+      margin-top: 20%;
     }
   
     .ligne-pattern2 {

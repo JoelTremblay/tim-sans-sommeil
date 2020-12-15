@@ -4,6 +4,17 @@ html {
   overflow-x: hidden;
 }
 
+h1, h2, h3, p {
+  font-family: 'Oxanium', cursive;
+}
+
+p {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  line-height: 1.7;
+  font-size: large;
+}
+
 #accueil {
   height: 100%;
   background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.5%, #252525 12.5%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.5%, #131313 37.5%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.5%, #252525 62.5%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.5%, #131313 87.5%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
@@ -64,7 +75,7 @@ html {
 
 #accueil #accueilBody .motifLignes #ligneFond_4 {
   margin-top: -30vw;
-  top: 20vw;
+  top: 25vw;
   right: 0vw;
 }
 
@@ -179,6 +190,7 @@ html {
 }
 
 #accueil #accueilBody .reseauxAccueil .conteneurReseaux h3 {
+  font-family: 'Oxanium', cursive;
   padding-bottom: 2%;
 }
 
@@ -203,19 +215,29 @@ html {
 }
 
 @media screen and (max-width: 1000px) {
-  #accueil #accueilBody .motifLignes #ligneFond_1 {
+  #accueil {
+    font-size: 0.7rem;
+  }
+  #accueil #accueilBody {
+    font-family: 'Oxanium', cursive;
+    font-size: 0.9em;
+  }
+  #accueil p {
+    white-space: pre-line;
+  }
+  #accueil .motifLignes #ligneFond_1 {
     top: 50vw;
     right: 0vw;
   }
-  #accueil #accueilBody .motifLignes #ligneFond_2 {
+  #accueil .motifLignes #ligneFond_2 {
     top: 58vw;
     right: 0vw;
   }
-  #accueil #accueilBody .motifLignes #ligneFond_3 {
+  #accueil .motifLignes #ligneFond_3 {
     top: 35vw;
     right: 10vw;
   }
-  #accueil #accueilBody .motifLignes #ligneFond_4 {
+  #accueil .motifLignes #ligneFond_4 {
     top: 50vw;
   }
 }
