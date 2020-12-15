@@ -13,7 +13,7 @@
 }
 
 #grilleCours .contenuCours {
-  margin-top: 5%;
+  margin-top: 144px;
   padding-bottom: 10%;
 }
 
@@ -21,17 +21,24 @@
   width: 90%;
   margin: auto;
   text-align: center;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 5;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 5;
+      grid-template-rows: 5;
   grid-gap: 2%;
 }
 
 #grilleCours .contenuCours .conteneurCours .session {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: 1fr;
-  column-gap: 1vw;
+  -ms-grid-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-column-gap: 1vw;
+          column-gap: 1vw;
   height: 50vh;
 }
 
@@ -43,7 +50,8 @@
   z-index: 0;
   display: inline;
   text-shadow: 1px 2px gray;
-  padding-inline-start: 1em;
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
   font-family: 'Oxanium', cursive;
 }
 
@@ -68,7 +76,7 @@
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours h3 {
-  height: 30%;
+  height: 35%;
   font-size: 0.95vw;
   text-shadow: 1px 1px gray;
   text-align: left;
@@ -88,7 +96,8 @@
 
 #grilleCours .contenuCours .conteneurCours .session .cours:hover {
   cursor: pointer;
-  box-shadow: 0px -3px #00FFD1;
+  -webkit-box-shadow: 0px -3px #DF00A9;
+          box-shadow: 0px -3px #DF00A9;
 }
 
 /* ======================== STYLES MOBILES ======= */
@@ -120,18 +129,21 @@
   }
   #grilleCours .contenuCours .conteneurCours .session {
     width: 100%;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 4vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-bottom: 20vh;
   }
   #grilleCours .contenuCours .conteneurCours .session .numSession {
     width: 80% !important;
     left: 10vw;
   }
   #grilleCours .contenuCours .conteneurCours .session .cours {
-    grid-column-start: 1;
-    grid-row-start: auto;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: auto;
+        grid-row-start: auto;
     width: 75%;
     height: 300px;
     margin: 0 auto 0 auto;
@@ -149,7 +161,7 @@
     font-size: 3vw;
   }
   #grilleCours .contenuCours .conteneurCours .session div:first-of-type {
-    margin: 10vh auto 0 auto;
+    margin: 10vh auto 25vh auto;
   }
 }
 /*# sourceMappingURL=grilleCours.css.map */

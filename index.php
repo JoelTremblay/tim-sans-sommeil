@@ -7,15 +7,21 @@
 <div id="accueil">
     <div id="accueilBody">
         <br><br><br><br><br>
+        <section class="motifLignes">
+            <img src="medias/images/motifs_accueil/ligne_0.png" id="ligneFond_1"></img>
+            <img src="medias/images/motifs_accueil/ligne_1.png" id="ligneFond_2"></img>
+            <img src="medias/images/motifs_accueil/ligne_2.png" id="ligneFond_3"></img>
+            <img src="medias/images/motifs_accueil/ligne_3.png" id="ligneFond_4"></img>
+        </section>
         <div class="contenu">
-        <div id="logoSite">
-            <img src="medias/images/timLogo.png" alt="">
-        </div>
+            <div id="logoSite">
+                <img src="medias/images/timLogo.png" alt="">
+            </div>
             <section class="section-principale">
                 <div class="presentation" id="intro">
                     <div>
                         <h1>Bienvenue au TIM !</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Maisonneuve est le seul cégep sur l’Île de Montréal à offrir ce programme qui vous offre une immersion dans le monde du jeu 2D/3D, du Web, des technologies mobiles et des médias numériques, tout en apprenant différents langages de programmation</p>
                     </div>
                     <img src="medias/images/refImage1.jpg" alt="">
                 </div>
@@ -23,17 +29,16 @@
                     <img src="medias/images/refImage5.jpg" alt="">
                     <div>
                         <h2>Au TIM vous pouvez...</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid optio sequi incidunt cupiditate doloribus recusandae, non illum nostrum delectus, eius ipsam veritatis soluta ratione necessitatibus accusantium laudantium dolor. Illum?</p>
+                        <p>Dans ce programme, vous apprendrez à identifier, analyser, imaginer, réaliser et coordonner un projet multimédia et les différentes étapes de production qui y sont liées tels que la médiatisation, la conception, l’intégration et l'environnement professionnel</p>
                     </div>
                 </div>
                 <div class="presentation" id="eleves">
                     <div>
                         <h2>Et aussi...</h2>
-                        <p>Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. A cras semper auctor neque vitae tempus. Diam vel quam elementum pulvinar etiam non. Malesuada proin libero nunc consequat interdum varius sit amet. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam. </p>
+                        <p>Maisonneuve soutient ses étudiants dans la mise en pratique de leurs apprentissages. Comme étudiant, vous pourrez compter sur l’aide des enseignants et sur des installations à la fine pointe de la technologie.</p>
                     </div>
                     <img src="medias/images/refImage6.jpg" alt="">
-                </div>
-    
+                </div> 
                 <div class="conteneurCarrousel">
                     <div id="citation">
                         <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
@@ -42,15 +47,15 @@
                                 <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="svg/loading/static-svg/spin.svg" />
                             </div>
                             <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-                                <div>
-                                    <img data-u="image" src="medias/images/refImage2.jpg" />
-                                </div>
-                                <div>
-                                    <img data-u="image" src="medias/images/refImage3.jpg" />
-                                </div>
-                                <div>
-                                    <img data-u="image" src="medias/images/refImage4.png" />
-                                </div>
+                            <?php
+                                    $dossier = "medias/images/Carrousel/";
+                                    $images = glob($dossier . "/*.jpg");
+                                    
+                                    foreach($images as $image)
+                                    {
+                                      echo '<div><img data-u="image" src='."$image".' /></div>';
+                                    }
+                                ?>
                             </div>
                             <!-- Bullet Navigator -->
                             <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
@@ -79,7 +84,7 @@
         </div>
         <div class="reseauxAccueil">
             <div class="conteneurReseaux">
-                <h3>Réseaux Sociaux...</h3>
+                <h3>Suivez nos réseaux sociaux !</h3>
                 <ul>
                     <br>
                     <li><a href="" target="_blank"><img src="medias/images/logos/discord.png" alt=""></a></li>
