@@ -3,12 +3,15 @@ html
 {
     height: 100%;
     z-index: -5;
+
+    overflow-x: hidden;
 }
+
 #accueil
 {
     height: 100%;
     background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.50%, #252525 12.50%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.50%, #131313 37.50%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.50%, #252525 62.50%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.50%, #131313 87.50%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
-    background-size: 100% 150%;
+    background-size: 100% 250%;
     background-repeat:no-repeat;
     background-color: #0d0d0d;
 
@@ -19,7 +22,7 @@ html
         background-position: 0px -55px;
         background-size: 100%;
         margin-top: 0%;
-
+        
         color: #ffffff;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         //Debut des elements body----------------------------------
@@ -31,123 +34,166 @@ html
         #logoSite img
         {
             width: 90%;
-            margin: auto auto 15% auto;
+            margin: auto auto 45% auto;
+        }
+
+        .motifLignes
+        {
+            height: 0;
+            img
+            {
+                position: relative;
+                z-index: 0;
+                width: 100vw;
+            }
+
+            #ligneFond_1
+            {
+                //top: 70%;
+                //left: 16%;
+                top: 30vw;
+                right: 0vw;
+            }
+            #ligneFond_2
+            {
+                margin-top: -700vh;
+                top: 40vw;
+                right: 0vw;
+            }
+            #ligneFond_3
+            {
+                margin-top: -10vw;
+                top: 16vw;
+                right: 15vw;
+                width: 145vw;
+                max-width: 2100px;
+                min-width: 800px;
+            }
+            #ligneFond_4
+            {
+                margin-top: -30vw;
+                top: 20vw;
+                right: 0vw;
+            }
         }
         
         .contenu
         {
             margin-top: 15%;
-            background-image: url("../medias/images/ligne-pattern.png");
+            /*background-image: url("../medias/images/ligne-pattern.png");
+            //background-image: none;
             background-repeat:no-repeat;
             background-position: 100% 0%;
             background-size: 88%;
-            //background-color: //;
+            //background-color: //;*/
+            *
+            {
+                z-index: 1;
+            }
+            .presentation
+            {
+                width: 88%;
+                margin: auto;
+            
+                background-color: rgba(17, 17, 17, 0.2);
+            
+                font-size: 1rem;
+            
+                display: grid;
+                grid-template-columns: 5;
+                grid-template-rows: 3;
+                grid-gap: 10px;
+            }
+            .presentation img
+            {
+                width: 80%;
+            }
+            
+            #intro > :first-child
+            {
+                //background-color: salmon;;
+            
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            
+                margin-right: 20%;
+            
+            }
+            #intro > :nth-child(2)
+            {
+                //background-color: darkkhaki;;
+            
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 3;
+            
+                margin-bottom: 7%;
+                margin-top: -16%;
+            }
+            
+            #poss > :first-child
+            {
+                //background-color: salmon;;
+            
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            
+                margin-right: 20%;
+            
+            }
+            #poss > :nth-child(2)
+            {
+                //background-color: darkkhaki;;
+            
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 3;
+            
+                margin-top: -25%;
+            }
+            
+            #eleves 
+            {
+                padding-top: 10%;
+                width: 80%;
+                margin: auto;
+            }
+            #eleves > :first-child
+            {
+                //background-color: salmon;;
+            
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            
+                margin-right: 20%;
+                margin-top: -7%;
+            
+            }
+            #eleves > :nth-child(2)
+            {
+                //background-color: darkkhaki;;
+            
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 1;
+            
+            }
+
+            .conteneurCarrousel
+            {
+                width: 50%;
+                margin: 10% auto auto auto;
+            }
+            
         }
         
         
-        .presentation
-        {
-            width: 88%;
-            margin: auto;
-        
-            background-color: rgba(17, 17, 17, 0.2);
-        
-            font-size: 1em;
-        
-            display: grid;
-            grid-template-columns: 5;
-            grid-template-rows: 3;
-            grid-gap: 10px;
-        }
-        .presentation img
-        {
-            width: 80%;
-        }
-        
-        #intro > :first-child
-        {
-            //background-color: salmon;;
-        
-            grid-column-start: 1;
-            grid-column-end: 1;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        
-            margin-right: 20%;
-        
-        }
-        #intro > :nth-child(2)
-        {
-            //background-color: darkkhaki;;
-        
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 3;
-        
-            margin-bottom: 7%;
-        }
-        #intro > :nth-child(2)
-        {
-            margin-top: -16%;
-        }
-        
-        #poss > :first-child
-        {
-            //background-color: salmon;;
-        
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        
-            margin-right: 20%;
-        
-        }
-        #poss > :nth-child(2)
-        {
-            //background-color: darkkhaki;;
-        
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 3;
-        
-            margin-top: -25%;
-        }
-        
-        #eleves 
-        {
-            padding-top: 10%;
-            width: 80%;
-            margin: auto;
-        }
-        #eleves > :first-child
-        {
-            //background-color: salmon;;
-        
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        
-            margin-right: 20%;
-            margin-top: -7%;
-        
-        }
-        #eleves > :nth-child(2)
-        {
-            //background-color: darkkhaki;;
-        
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 1;
-        
-        }
-        
-        .conteneurCarrousel
-        {
-            width: 50%;
-            margin: 10% auto auto auto;
-        }
         
         .reseauxAccueil
         {
@@ -168,17 +214,18 @@ html
                     margin: auto;
                     list-style: none;
                     padding-bottom: 10%;
+                    padding-left: 0;
             
                     li
                     {
                         display: inline-block;
-                        width: 15%;
-                        margin: auto;
+                        width: 2vw;
+                        margin: auto 8px;
             
                         img
                         {
                             cursor: pointer;
-                            min-width: 20px;
+                            min-width: 25px;
                             margin: auto;
                         }
                     }
@@ -188,96 +235,335 @@ html
     }
 }
 
-@media (max-width: 520px) 
+@media screen and (max-width: 1000px)
 {
-    #accueilBody
+    #accueil
     {
-        text-align: center;
-        background-position: 0px 0px;
-        //color: red;
-        h2
+        #accueilBody
         {
-            font-size: 0.9em;
+            .motifLignes
+            {
+                #ligneFond_1
+                {
+                    //top: 70%;
+                    //left: 16%;
+                    top: 50vw;
+                    right: 0vw;
+                }
+                #ligneFond_2
+                {
+                    top: 58vw;
+                    right: 0vw;
+                }
+                #ligneFond_3
+                {
+                    top: 35vw;
+                    right: 10vw;
+                }
+                #ligneFond_4
+                {
+                    top: 50vw;
+                }
+            }
         }
-        font-size: 0.7rem;
-        p {
-            white-space: pre-line;
-        }
+    }
+}
 
-        #logoSite 
+@media screen and (max-width: 750px)
+{
+    #accueil
+    {
+        #accueilBody
         {
-            margin: auto auto 5% auto;
+            .motifLignes
+            {
+                #ligneFond_1
+                {
+                    //top: 70%;
+                    //left: 16%;
+                    top: 65vw;
+                    right: 0vw;
+                }
+                #ligneFond_2
+                {
+                    top: 70vw;
+                }
+                #ligneFond_3
+                {
+                    top: 55vw;
+                    right: 10vw;
+                }
+                #ligneFond_4
+                {
+                    top: 80vw;
+                }
+            }
         }
+    }
+}
 
-        .contenu
+@media screen and (max-width: 600px) 
+{
+    #accueil
+    {
+        background-size: 100% 200%;
+        #accueilBody
         {
-            margin-top: 40%;
-            background-image: url("../medias/images/ligne-pattern2.png");
-            background-position: 110% 65%;
+            text-align: center;
+            background-position: 0vh 12vh;
 
-            #intro > :first-child
+            //color: red;
+            $minTitre: calc(15px + 1.5vw);
+            h1
             {
-                //background-color: salmon;;
-                grid-row-start: 1;
-                grid-column-start: 1;
-    
-                margin: auto;
+                font-size: $minTitre;
             }
-            #intro > :nth-child(2)
+            h2
             {
-                //background-color: darkkhaki;;
-                grid-row-start: 3;
-                grid-column-start: 1;
-    
-                margin: 10% auto;
+                font-size: 4vw;
+            }
+
+            p 
+            {
+                font-size: 3vw;
+                white-space: pre-line;
+            }
+
+            .motifLignes
+            {
+                #ligneFond_1
+                {
+                    //top: 70%;
+                    //left: 16%;
+                    margin-top: 50vw;
+                    top: 80vw;
+                    right: 0vw;
+                }
+                #ligneFond_2
+                {
+                    top: 100vw;
+                    width: 130vw;
+                    right: 10vw;
+                }
+                #ligneFond_3
+                {
+                    margin-top: 60vw;
+                    top: 55vw;
+                    right: 10vw;
+                }
+                #ligneFond_4
+                {
+                    margin-top: 30vw;
+                    top: 110vw;
+                }
             }
     
-            #poss > :first-child
+            #logoSite 
             {
-                //background-color: salmon;;
-    
-                grid-row-start: 1;
-                grid-column-start: 1;
-    
-                margin-left: 50%;
-                width: 100%;
-            }
-            #poss > :nth-child(2)
-            {
-                //background-color: darkkhaki;;
-                grid-row-start: 2;
-                grid-column-start: 1;
-    
-                margin: auto;
+                margin: auto auto 25vh auto;
             }
     
-            #eleves 
+            .contenu
             {
-                padding-top: 10%;
-                margin: auto;
-                width: 100%;
+                position: relative;
+                z-index: 1 !important;
+                margin-top: 40%;
+                //background-image: url("../medias/images/ligne-pattern2.png");
+                background-image: none;
+                background-position: 110% 65%;
+                text-align: center;
+    
+                .presentation
+                {
+                    display: inline-block;
+
+                    p
+                    {
+                        max-width: 65vw;
+                        margin: auto;
+                    }
+                }
+                #intro > :first-child
+                {
+                    margin: auto;
+                }
+    
+                #intro > :nth-child(2)
+                {
+                    margin: 5vw auto 15vw auto;
+                }
+        
+                #poss > :first-child
+                {
+                    //background-color: salmon;;
+                    width: 100%;
+                    margin: 2.5vw auto 2.5vw auto;
+                }
+                #poss > :nth-child(2)
+                {
+                    //background-color: darkkhaki;;
+                    margin: auto auto 7.5vw auto;
+                }
+        
+                #eleves 
+                {
+                    padding-top: 10%;
+                    margin: auto;
+                    width: 100%;
+                }
+                #eleves > :first-child
+                {
+                    //background-color: salmon;;
+                    margin: 0% 0% 15% 0%;
+        
+                }
+                #eleves > :nth-child(2)
+                {
+                    //background-color: darkkhaki;;
+                    width: 50%;
+                    margin: auto auto 5vw auto;
+                }
             }
-            #eleves > :first-child
+    
+    
+        }
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    #accueil
+    {
+        #accueilBody
+        {
+            .motifLignes
             {
-                //background-color: salmon;;
-                grid-row-start: 1;
-                grid-column-start: 1;
-    
-                margin: 0% 0% 15% 0%;
-    
-            }
-            #eleves > :nth-child(2)
-            {
-                //background-color: darkkhaki;;
-                grid-row-start: 3;
-                grid-column-start: 1;
-    
-                width: 50%;
-                margin: auto;
-    
+                #ligneFond_1
+                {
+                    top: 90vw;
+                    //min-width: 410px;
+                }
+                #ligneFond_2
+                {
+                    top: 110vw;
+                    right: 10vw;
+                    width: 160vw;
+                    max-width: 650px;
+                    //min-width: 540px;
+                }
+                #ligneFond_3
+                {
+                    top: 55vw;
+                    right: 10vw;
+                }
+                #ligneFond_4
+                {
+                    margin-top: 30vw;
+                    top: 105vw;
+                }
             }
         }
+    }
+}
 
+@media screen and (max-width: 440px)
+{
+    #accueil
+    {
+        #accueilBody
+        {
+            .motifLignes
+            {
+                #ligneFond_1
+                {
+                    top: 100vw;
+                    //min-width: 410px;
+                }
+                #ligneFond_2
+                {
+                    top: 120vw;
+                    right: 18vw;
+                    width: 160vw;
+                }
+                #ligneFond_3
+                {
+                    top: 105vw;
+                    right: 10vw;
+                }
+                #ligneFond_4
+                {
+                    margin-top: 30vw;
+                    top: 90vw;
+                }
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 340px)
+{
+    #accueil
+    {
+        #accueilBody
+        {
+            .motifLignes
+            {
+                #ligneFond_1
+                {
+                    top: 100vw;
+                    //min-width: 410px;
+                }
+                #ligneFond_2
+                {
+                    top: 140vw;
+                    right: 15vw;
+                    width: 140vw;
+                }
+                #ligneFond_3
+                {
+                    top: 105vw;
+                    right: 10vw;
+                }
+                #ligneFond_4
+                {
+                    margin-top: 30vw;
+                    top: 80vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 240px)
+{
+    #accueil
+    {
+        #accueilBody
+        {
+            .motifLignes
+            {
+                #ligneFond_1
+                {
+                    top: 140vw;
+                    //min-width: 410px;
+                }
+                #ligneFond_2
+                {
+                    top: 175vw;
+                    right: 20vw;
+                    width: 160vw;
+                }
+                #ligneFond_3
+                {
+                    top: 105vw;
+                    right: 10vw;
+                }
+                #ligneFond_4
+                {
+                    margin-top: 30vw;
+                    top: 45vw;
+                }
+            }
+        }
     }
 }

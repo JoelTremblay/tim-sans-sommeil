@@ -2,6 +2,10 @@
 /* ======================== STYLES GÉNÉRAUX ======= */
 #grilleCours {
   width: 100%;
+  background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.5%, #252525 12.5%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.5%, #131313 37.5%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.5%, #252525 62.5%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.5%, #131313 87.5%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
+  background-size: 100% 300%;
+  background-repeat: no-repeat;
+  background-color: #0d0d0d;
   background-color: #0d0d0d;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,7 +13,7 @@
 }
 
 #grilleCours .contenuCours {
-  margin-top: 5%;
+  margin-top: 144px;
   padding-bottom: 10%;
 }
 
@@ -33,17 +37,33 @@
       grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  -webkit-column-gap: 1vw;
+          column-gap: 1vw;
   height: 50vh;
 }
 
 #grilleCours .contenuCours .conteneurCours .session h2 {
   background-color: #00C2FF;
   height: 15vh;
-  width: 80vw;
   position: absolute;
   text-align: left;
   z-index: 0;
   display: inline;
+  text-shadow: 1px 2px gray;
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+}
+
+#grilleCours .contenuCours .conteneurCours .session .coursActif {
+  height: 75%;
+}
+
+#grilleCours .contenuCours .conteneurCours .session .coursInactif {
+  height: 20vh;
+}
+
+#grilleCours .contenuCours .conteneurCours .session .coursInactif p {
+  display: none;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours {
@@ -51,26 +71,28 @@
   background-color: #E86F6F;
   width: 100%;
   margin-top: 10vh;
+  padding: 15px;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours h3 {
-  height: 30%;
-  font-size: 2.3vh;
+  height: 35%;
+  font-size: 0.95vw;
   text-shadow: 1px 1px gray;
+  text-align: left;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours p {
-  font-size: 2.3vh;
+  font-size: 0.85vw;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours p:last-child {
-  font-size: 2vh;
+  font-size: 0.75vw;
 }
 
 #grilleCours .contenuCours .conteneurCours .session .cours:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px -3px #00FFD1;
-          box-shadow: 0px -3px #00FFD1;
+  -webkit-box-shadow: 0px -3px #DF00A9;
+          box-shadow: 0px -3px #DF00A9;
 }
 
 /* ======================== STYLES MOBILES ======= */
@@ -81,33 +103,60 @@
     padding-bottom: 15%;
   }
   #grilleCours .contenuCours .conteneurCours {
-    width: 40%;
+    width: 80%;
     margin: auto;
     text-align: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 6;
-        grid-template-rows: 6;
+    display: inline;
   }
-  #grilleCours .contenuCours .conteneurCours .session {
-    margin-bottom: 5vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  #grilleCours .contenuCours .conteneurCours .sessionActive {
+    height: 50%;
+    margin-bottom: 1vh;
   }
-  #grilleCours .contenuCours .conteneurCours .session h2 {
+  #grilleCours .contenuCours .conteneurCours .sessionActive .cours {
+    display: inherit;
+  }
+  #grilleCours .contenuCours .conteneurCours .sessionInactive {
+    height: 50%;
+    margin-bottom: 1vh;
+  }
+  #grilleCours .contenuCours .conteneurCours .sessionInactive .cours {
     display: none;
   }
-  #grilleCours .contenuCours .conteneurCours .session .cours {
-    width: 30vw;
-    height: 50vh;
-    margin-bottom: 5vh;
+  #grilleCours .contenuCours .conteneurCours .session {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-bottom: 20vh;
   }
-  #grilleCours .contenuCours .conteneurCours .session .cours:hover {
-    -webkit-box-shadow: 1px -2px #00FFD1;
-            box-shadow: 1px -2px #00FFD1;
-    width: 105%;
+  #grilleCours .contenuCours .conteneurCours .session .numSession {
+    width: 80% !important;
+    left: 10vw;
+  }
+  #grilleCours .contenuCours .conteneurCours .session .cours {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    width: 75%;
+    height: 300px;
+    margin: 0 auto 0 auto;
+  }
+  #grilleCours .contenuCours .conteneurCours .session .cours h3 {
+    height: 20%;
+    font-size: 4.2vw;
+    text-align: center;
+  }
+  #grilleCours .contenuCours .conteneurCours .session .cours p {
+    font-size: 3.5vw;
+    display: inherit;
+  }
+  #grilleCours .contenuCours .conteneurCours .session .cours p:last-child {
+    font-size: 3vw;
+  }
+  #grilleCours .contenuCours .conteneurCours .session div:first-of-type {
+    margin: 10vh auto 25vh auto;
   }
 }
 /*# sourceMappingURL=grilleCours.css.map */

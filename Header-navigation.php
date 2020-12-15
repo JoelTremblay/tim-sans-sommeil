@@ -58,29 +58,33 @@
                 <nav id="mySidenav" class="sidenav" role="navigation">
                     <a href="javascript:void(0)" class="closebtn">&times;</a>
                     <ul class="menuPrincipale">
-                        <li><a href="grilleCours.php">Grille Cours</a></li>
-                        <li><a href="coursParCours.php">Cours</a></li>
-                        <li><a href="professeurs.php">Professeurs</a></li>
-                        <li><a href="#">Évenements</a></li>
-                        <li><a href="etudiants-tim.html">Étudiants</a></li>
-                        <li><a href="projets.php">Projets</a></li>
-                        <li><a href="stages.php">Stages</a></li>
+                        <li><a class="aNav" href="grilleCours.php">Grille Cours</a></li>
+                        <li><a class="aNav" href="professeurs.php">Professeurs</a></li>
+                        <li><a class="aNav" href="etudiants-tim.html">Étudiants</a></li>
+                        <li><a class="aNav" href="projets.php">Projets</a></li>
+                        <li><a class="aNav" href="stages.php">Stages</a></li>
                     </ul>
                     
                     <ul class="menuSecondaire">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
+                        <!-- ?php 
+                        if ($page == "accueil") echo'medias/images/timLogo.png';
+                        else if ($page == "grilleCours") echo'medias/images/timLogo_Prog.png';
+                        else echo'medias/images/prog.png';
+                        ? -->
+                        <li><a class="aNav" href="#">Qu'est-ce que le Tim</a></li>
+                        <li><a class="aNav" href="#">Comité étudiant</a></li>
                     </ul>
-                    <div class="bande-couleur-vert"><img src="medias/images/vector 10.png"></div>
-                    <div class="bande-couleur-bleu"><img src="medias/images/vector 11.png"></div>
-                    <a>Réseaux sociaux</a>
+                    <div class="divBandesCouleurs">
+                        <div class="div-bande-couleur-vert"><img class="bande-couleur-vert" src="medias/images/vector 10.png"></div>
+                        <div class="div-bande-couleur-bleu"><img class="bande-couleur-bleu" src="medias/images/vector 11.png"></div>
+                    </div>
+                    <h3 class="titreReseauxSociaux">Réseaux sociaux</h3>
                     <ul class="liensMedias list-inline">
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
+                        <li><img class="imgLiensMedias" src="medias/images/logos2/facebook.png" alt="Facebook"></li>
+                        <li><img class="imgLiensMedias" src="medias/images/logos2/linkedin.png" alt="Linkedin"></li>
+                        <li><img class="imgLiensMedias" src="medias/images/logos2/discord.png" alt="Discord"></li>
+                        <li><img class="imgLiensMedias" src="medias/images/logos2/youtube.png" alt="Youtube"></li>
+                        <li><img class="imgLiensMedias" src="medias/images/logos2/instagram.png" alt="Instagream"></li>
                     </ul>
                 </nav>
                 
@@ -89,26 +93,18 @@
     
                 
                 <!-- logo TIM -->
-                <div class="divLogo logoHeader logoTIM">
+                <div class="divLogo logoHeader logoTIM Anim1">
                     <a href="index.php">
-                        <img src="<?php 
-                        if ($page == "accueil") echo'medias/images/timLogo.png';
-                        else if ($page == "grilleCours") echo'medias/images/timLogo_Prog.png';
-                        else echo'medias/images/timLogo.png';
-                        ?>" alt="" class="imgLogo">
+                        <img src="medias/images/prog.png" class="imgLogo">
                     </a>
                 </div>
     
-                <!-- logo Maisonneuve -->
-                <div class="divMaisonneuve logoHeader logoMaisonneuve">
-                    <a href="https://www.cmaisonneuve.qc.ca/" target="_blank"><img src="medias/images/logoMaisonneuve.png" alt="" class="imgMaisonneuve"></a>
+                <div class="divLogo logoHeader logoTIM Anim2">
+                    <a href="index.php"><img src="medias/images/creation.png" alt="" class="imgLogo"></a>
                 </div>
     
             </header>
-    
-            <div id="main">
-                ...
-            </div>
+            
         </div>
         <!-- header -->
         

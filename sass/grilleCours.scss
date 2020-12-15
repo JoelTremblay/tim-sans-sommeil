@@ -4,6 +4,11 @@
 #grilleCours
 {
     width: 100%;
+    background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.50%, #252525 12.50%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.50%, #131313 37.50%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.50%, #252525 62.50%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.50%, #131313 87.50%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
+    background-size: 100% 300%;
+    background-repeat:no-repeat;
+    background-color: #0d0d0d;
+
     background-color: #0d0d0d;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -11,7 +16,7 @@
     z-index: -2;
     .contenuCours
     {
-        margin-top: 5%;
+        margin-top: 144px;
         padding-bottom: 10%;
     
     
@@ -29,11 +34,13 @@
     
             .session
             {
+                //margin-top: 45px;
                 //background-color: #00C2FF;
                 
                 display: grid;
                 grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
                 grid-template-rows: 1fr;
+                column-gap: 1vw;
     
                 height: 50vh;
     
@@ -42,17 +49,36 @@
                     background-color: #00C2FF;
                     //margin-bottom: 5vh;
                     height: 15vh;
-                    width: 80vw;
+                    //width: 80vw;
                     position: absolute;
                     text-align: left;
                     z-index: 0;
                     display: inline;
+                    text-shadow: 1px 2px gray;
+                    padding-inline-start: 1em;
+                    //margin-block-start: 1.5em;
+                    //margin-top: 15px;
+                }
+
+                .coursActif
+                {
+                    height: 75%;
+                }
+                .coursInactif
+                {
+                    height: 20vh;
+
+                    p
+                    {
+                        display: none;
+                    }
                 }
     
                 .cours
                 {
                     z-index: 1;
                     background-color: #E86F6F;
+                    //background-color: #DF00A9;
             
                     //height: 120px;
                     width: 100%;
@@ -62,27 +88,29 @@
     
                     //border: 2px solid #00C2FF;
                     //border-right: 2px solid #00C2FF;
+                    padding: 15px;
     
                     h3
                     {
-                        height: 30%;
-                        font-size: 2.3vh;
+                        height: 35%;
+                        font-size: 0.95vw;
                         text-shadow: 1px 1px gray;
+                        text-align: left;
                     }
     
                     p
                     {
-                        font-size: 2.3vh;
+                        font-size: 0.85vw;
                     }
                     p:last-child
                     {
-                        font-size: 2vh;
+                        font-size: 0.75vw;
                     }
                 }
                 .cours:hover
                 {
                     cursor: pointer;
-                    box-shadow: 0px -3px #00FFD1;
+                    box-shadow: 0px -3px #DF00A9;;
                 }
             }
         
@@ -106,41 +134,80 @@
     
             .conteneurCours
             {
-                width: 40%;
+                width: 80%;
                 margin: auto;
             
                 text-align: center;
-            
-                display: grid;
-                grid-template-rows: 6;
-                //grid-gap: 2%;
-    
-                .session
+
+                display: inline;
+
+                .sessionActive
                 {
-                    margin-bottom: 5vh;
-    
-                    display: grid;
-                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-                    h2
+                    height: 50%;
+                    margin-bottom: 1vh;
+                    .cours
+                    {
+                        display: inherit;
+                    }
+                }
+                .sessionInactive
+                {
+                    height: 50%;
+                    margin-bottom: 1vh;
+                    .cours
                     {
                         display: none;
                     }
-        
+                }
+
+                .session
+                {
+                    width: 100%;
+    
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    //grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    //row-gap: 4vh;
+                    margin-bottom: 20vh;
+
+                    .numSession
+                    {
+                        width: 80% !important;
+                        left: 10vw;
+                    }
+
                     .cours
                     {
+                        grid-column-start: 1;
+                        grid-row-start: auto;
                         //background-color: wheat;
-                
+                        
                         //height: 120px;
-                        width: 30vw;
-                        height: 50vh;
-    
-                        margin-bottom: 5vh;
+                        width: 75%;
+                        height: 300px;
+                        margin: 0 auto 0 auto;
+                        //row-gap: 6vh;
+                        //padding: 10px;
+                        
+                        h3
+                        {
+                            height: 20%;
+                            font-size: 4.2vw;
+                            text-align: center;
+                        }
+                        p
+                        {
+                            font-size: 3.5vw;
+                            display: inherit;
+                        }
+                        p:last-child
+                        {
+                            font-size: 3vw;
+                        }
                     }
-                    .cours:hover
+                    div:first-of-type
                     {
-                        box-shadow: 1px -2px #00FFD1;
-        
-                        width: 105%;
+                        margin: 10vh auto 25vh auto;
                     }
                     
                 }
