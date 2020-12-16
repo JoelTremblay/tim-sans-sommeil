@@ -35,9 +35,13 @@
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
                 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>';
             }
-            else if ($page == "stages-art" || "stages-prog")
+            else if ($page == "stages-art" || $page == "stages-prog")
             {
                 echo'<link rel="stylesheet" href="../tim-sans-sommeil/sass/stages-art-prog.css">';
+            }
+            else if ($page == "etudiant-tim")
+            {
+                echo '<link rel="stylesheet" href="sass/etudiants-tim.css">';
             }
             echo '<link rel="stylesheet" href="sass/footer.css">';
         ?>
@@ -63,7 +67,7 @@
                 <ul class="menuPrincipale">
                     <li><a class="aNav" href="grilleCours.php">Grille Cours</a></li>
                     <li><a class="aNav" href="professeurs.php">Professeurs</a></li>
-                    <li><a class="aNav" href="etudiants-tim.html">Étudiants</a></li>
+                    <li><a class="aNav" href="etudiants-tim.php">Étudiants</a></li>
                     <li><a class="aNav" href="projets.php">Projets</a></li>
                     <li><a class="aNav" href="stages.php">Stages</a></li>
                 </ul>

@@ -6,29 +6,29 @@ body {
   word-spacing: 0.5px;
 }
 
-body {
+.marginTop {
   display: -ms-grid;
   display: grid;
-  grid-template: 'main' 'side';
+  grid-template: 'main' 'side';
   background-color: #2A2929;
 }
 
-body .mainEtudiantDeroulant {
+.marginTop .mainEtudiantDeroulant {
   background-image: url(../medias/images/Group1motifsGroupEtudiant.png);
   grid-area: main;
 }
 
-body .mainEtudiantDeroulant section {
+.marginTop .mainEtudiantDeroulant section {
   display: -ms-grid;
   display: grid;
 }
 
-body .mainEtudiantDeroulant section div {
+.marginTop .mainEtudiantDeroulant section div {
   background-color: #242323;
   margin-bottom: 2vh;
 }
 
-body .mainEtudiantDeroulant section .titresRubriques {
+.marginTop .mainEtudiantDeroulant section .titresRubriques {
   -ms-grid-column-align: start;
       justify-self: start;
   margin-left: 2vw;
@@ -36,7 +36,7 @@ body .mainEtudiantDeroulant section .titresRubriques {
           box-shadow: 0.3em 0.3em 5px #00FFD1;
 }
 
-body .mainEtudiantDeroulant section .textesRubriques {
+.marginTop .mainEtudiantDeroulant section .textesRubriques {
   -ms-grid-column-align: end;
       justify-self: end;
   margin-right: 2vw;
@@ -44,27 +44,27 @@ body .mainEtudiantDeroulant section .textesRubriques {
           box-shadow: -0.3em 0.3em 5px #00C2FF;
 }
 
-body .mainEtudiantDeroulant section .textesRubriques p {
+.marginTop .mainEtudiantDeroulant section .textesRubriques p {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   line-height: 1.7;
 }
 
-body .mainEtudiantDeroulant section .textesRubriques .capricieux {
+.marginTop .mainEtudiantDeroulant section .textesRubriques .capricieux {
   padding-bottom: 1.5em;
 }
 
-body .sideEtudiantFixe {
+.marginTop .sideEtudiantFixe {
   background-color: #545353;
   display: -ms-grid;
   display: grid;
-  grid-template: 'MC' 'horaire';
+  grid-template: 'MC' 'horaire';
   grid-area: side;
   -webkit-box-shadow: -1vw 0 10px black;
           box-shadow: -1vw 0 10px black;
 }
 
-body .sideEtudiantFixe .divMotCle {
+.marginTop .sideEtudiantFixe .divMotCle {
   display: -ms-grid;
   display: grid;
   grid-template: 'MC1 MC2';
@@ -74,28 +74,28 @@ body .sideEtudiantFixe .divMotCle {
   background-repeat: no-repeat, no-repeat;
 }
 
-body .sideEtudiantFixe .divMotCle .motsCles1 {
+.marginTop .sideEtudiantFixe .divMotCle .motsCles1 {
   grid-area: MC1;
 }
 
-body .sideEtudiantFixe .divMotCle .motsCles1 ul {
+.marginTop .sideEtudiantFixe .divMotCle .motsCles1 ul {
   list-style: none;
   -webkit-padding-start: 2vw;
           padding-inline-start: 2vw;
 }
 
-body .sideEtudiantFixe .divMotCle .motsCles2 {
+.marginTop .sideEtudiantFixe .divMotCle .motsCles2 {
   grid-area: MC2;
 }
 
-body .sideEtudiantFixe .divMotCle .motsCles2 ul {
+.marginTop .sideEtudiantFixe .divMotCle .motsCles2 ul {
   list-style: none;
   direction: rtl;
   -webkit-padding-start: 2vw;
           padding-inline-start: 2vw;
 }
 
-body .sideEtudiantFixe .divHoraire {
+.marginTop .sideEtudiantFixe .divHoraire {
   grid-area: horaire;
   display: -ms-grid;
   display: grid;
