@@ -3,7 +3,7 @@
   $page = "stages-art";
   include("Header-navigation.php");
 ?>
-<body id="stages-art">
+<section id="stages-art">
   <main class="liste-compagnies">
     <div class="vecteurs">
       <img class="ligne-pattern1" src="../tim-sans-sommeil/medias/images/ligne-pattern-art1.png" alt="">
@@ -57,7 +57,7 @@
       <img class="ligne-pattern4" src="../tim-sans-sommeil/medias/images/ligne-pattern-art2.png" alt="">
     </div>
   </main>
-</body>
+</section>
 <?php
   // Inclut le haut de page.
   include("footer.php");

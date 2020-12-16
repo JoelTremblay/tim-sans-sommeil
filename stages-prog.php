@@ -3,7 +3,7 @@
   $page = "stages-prog";
   include("Header-navigation.php");
 ?>
-<body id="stages-prog">
+<section id="stages-prog">
   <main class="liste-compagnies">
     <div class="vecteurs">
       <img class="motifs1" src="../tim-sans-sommeil/medias/images/motifs.png" alt="">
@@ -58,7 +58,7 @@
       <img class="motifs4" src="../tim-sans-sommeil/medias/images/motifs2.png" alt="">
     </div>
   </main>
-</body>
+</section>
 <?php
   // Inclut le haut de page.
   include("footer.php");
