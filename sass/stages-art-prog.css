@@ -1,7 +1,6 @@
 html {
   width: 100%;
   height: auto;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#303030), to(#000000));
   background-image: linear-gradient(to bottom right, #303030, #000000);
   overflow-x: hidden;
   margin-top: 60px;
@@ -17,23 +16,15 @@ html {
 
 #stages-art .vecteurs, #stages-prog .vecteurs {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   z-index: -1;
 }
 
 #stages-art .vecteurs2, #stages-prog .vecteurs2 {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   z-index: -1;
 }
 
@@ -110,25 +101,18 @@ html {
 }
 
 #stages-art .liste-compagnies, #stages-prog .liste-compagnies {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #stages-art article:nth-child(odd), #stages-prog article:nth-child(odd) {
   margin-left: 25%;
-  -webkit-animation: zoomIn ease 1s;
-          animation: zoomIn ease 1s;
+  animation: zoomIn ease 1s;
 }
 
 #stages-art article:nth-child(even), #stages-prog article:nth-child(even) {
   margin-left: 11%;
-  -webkit-animation: zoomIn ease 1s;
-          animation: zoomIn ease 1s;
+  animation: zoomIn ease 1s;
 }
 
 #stages-art .art, #stages-prog .art {
@@ -200,8 +184,6 @@ html {
     overflow: visible;
   }
   #stages-art .liste-compagnies, #stages-prog .liste-compagnies {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     margin-top: 15%;
@@ -254,20 +236,6 @@ html {
     border-image-source: linear-gradient(#FF9F00, #A000FF);
     border-image-slice: 1;
   }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0.25;
-    }
-    25% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.25;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   @keyframes fadeIn {
     0% {
       opacity: 0.25;
@@ -282,24 +250,12 @@ html {
       opacity: 1;
     }
   }
-  @-webkit-keyframes zoomIn {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
   @keyframes zoomIn {
     0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
+      transform: scale(0);
     }
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      transform: scale(1);
     }
   }
 }
