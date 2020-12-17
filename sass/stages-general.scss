@@ -6,6 +6,7 @@
   height: 100%;
   background-image: linear-gradient(to bottom right, $debut-gradient, $noir);
   background-repeat: no-repeat;
+  overflow: hidden;
   
   #stages 
   {
@@ -107,7 +108,7 @@
   .ligne-pattern1 {
     position: relative;
     right:  23%;
-    bottom: 47em;
+    bottom: 45em;
     width: 125%;
     animation: fadeIn3 ease 6s infinite;
   }

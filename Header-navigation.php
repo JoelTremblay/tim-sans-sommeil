@@ -91,9 +91,9 @@
                                     else if ($page == "etudiants") echo' ';
                                     else if ($page == "professeurs") echo' ';
                                     else if ($page == "projets") echo' ';
-                                    else if ($page == "stages") echo'Programation';
-                                    else if ($page == "stages-art") echo'Programation';
-                                    else if ($page == "stages-prog") echo'Programation';
+                                    else if ($page == "stages") echo'Programmation';
+                                    else if ($page == "stages-art") echo'Programmation';
+                                    else if ($page == "stages-prog") echo'Programmation';
                                 ?>
                         </a>
                     </li>
