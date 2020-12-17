@@ -37,7 +37,7 @@
             }
             else if ($page == "stages-art" || $page == "stages-prog")
             {
-                echo'<link rel="stylesheet" href="../tim-sans-sommeil/sass/stages-art-prog.css">';
+                echo'<link rel="stylesheet" href="sass/stages-art-prog.css">';
             }
             else if ($page == "etudiant-tim")
             {
