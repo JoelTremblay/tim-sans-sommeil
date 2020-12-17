@@ -6,6 +6,14 @@ html {
   margin-top: 60px;
 }
 
+#stages-art, #stages-prog {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
 #stages-art .vecteurs, #stages-prog .vecteurs {
   width: 100vw;
   display: flex;
@@ -25,7 +33,7 @@ html {
   height: auto;
   position: relative;
   right: 19%;
-  top: 17em;
+  top: 20em;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -33,8 +41,8 @@ html {
   width: 30%;
   height: auto;
   position: relative;
-  left: 15%;
-  top: 400%;
+  left: 10%;
+  top: 55em;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -43,7 +51,7 @@ html {
   height: auto;
   position: relative;
   right: 19%;
-  bottom: 400%;
+  bottom: 55em;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -51,8 +59,8 @@ html {
   width: 30%;
   height: auto;
   position: relative;
-  left: 15%;
-  bottom: 175%;
+  left: 10%;
+  bottom: 23em;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -61,7 +69,7 @@ html {
   height: auto;
   position: relative;
   right: 10%;
-  top: 150%;
+  top: 25em;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -70,7 +78,7 @@ html {
   height: auto;
   position: relative;
   left: 5%;
-  top: 300%;
+  top: 58em;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -79,7 +87,7 @@ html {
   height: auto;
   position: relative;
   right: 10%;
-  bottom: 300%;
+  bottom: 58em;
   animation: fadeIn ease-in 6s infinite;
 }
 
@@ -88,24 +96,8 @@ html {
   height: auto;
   position: relative;
   left: 5%;
-  bottom: 125%;
+  bottom: 25em;
   animation: fadeIn ease-in 6s infinite;
-}
-
-#stages-art #stages-art, #stages-prog #stages-art {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  overflow-x: hidden;
-}
-
-#stages-art #stages-prog, #stages-prog #stages-prog {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  overflow-x: hidden;
 }
 
 #stages-art .liste-compagnies, #stages-prog .liste-compagnies {
@@ -194,7 +186,7 @@ html {
   #stages-art .liste-compagnies, #stages-prog .liste-compagnies {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 15%;
   }
   #stages-art article, #stages-prog article {
     overflow-wrap: break-word;
