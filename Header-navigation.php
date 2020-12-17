@@ -53,14 +53,8 @@
 
 </head>
 
-<body <?php 
-            if ($page == "galerie-page")
-            {
-                echo'class="galerie-page"';
-            }
-        ?>>
+<body <?php if ($page == "galerie-page"){echo'class="galerie-page"';}?>>
     <div id="header">
-
         <header>
             <nav id="mySidenav" class="sidenav" role="navigation">
                 <a href="javascript:void(0)" class="closebtn">&times;</a>
@@ -136,3 +130,4 @@
             </div>
 
         </header>
+    </div>
