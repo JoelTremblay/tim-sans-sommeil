@@ -13,14 +13,16 @@ $gray-header: #242323;
 $gray-shine: #3C3735;
 $white-off: #DFDBD9;
 
-#header {
+#header 
+{
     color: white;
     display: grid;
     // grid-template-rows: 1fr 5fr;
     // height: 100%;
     width: 100%;
 
-    header {
+    header 
+    {
         position: fixed;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

@@ -4,8 +4,7 @@
   include("Header-navigation.php");
 
 ?>
-<div id="grilleCours">
-  <section class="contenuCours">
+<section class="contenuCours">
     <div class="conteneurCours">
     <?php
       $coursJSONString = file_get_contents("data/grilleDeCours.json");
@@ -42,7 +41,6 @@
     ?>
     </div>
   </section>
-</div>
 <?php
   include("footer.php");
 ?>

@@ -1,23 +1,21 @@
 @charset "utf-8";
 /* ======================== STYLES GÉNÉRAUX ======= */
 
-#grilleCours
+.contenuCours
 {
     width: 100%;
     background-image: linear-gradient(157deg, #303030 6.25%, #2c2c2c 6.25%, #2c2c2c 12.50%, #252525 12.50%, #252525 18.75%, #212121 18.75%, #212121 25%, #1d1d1d 25%, #1d1d1d 31.25%, #171717 31.25%, #171717 37.50%, #131313 37.50%, #131313 43.75%, #0d0d0d 43.75%, #0d0d0d 50%, #303030 50%, #303030 56.25%, #2c2c2c 56.25%, #2c2c2c 62.50%, #252525 62.50%, #252525 68.75%, #212121 68.75%, #212121 75%, #1d1d1d 75%, #1d1d1d 81.25%, #171717 81.25%, #171717 87.50%, #131313 87.50%, #131313 93.75%, #0d0d0d 93.75%, #0d0d0d 100%);
     background-size: 100% 300%;
     background-repeat:no-repeat;
     background-color: #0d0d0d;
-
+    
     background-color: #0d0d0d;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    
     z-index: -2;
-    .contenuCours
-    {
-        margin-top: 144px;
-        padding-bottom: 10%;
+    margin-top: 144px;
+    padding-bottom: 10%;
     
     
         .conteneurCours
@@ -122,100 +120,95 @@
             
         }
     }
-}
 
 
 /* ======================== STYLES MOBILES ======= */
 @media (max-width: 600px) 
 {
-    #grilleCours
+    .contenuCours
     {
+        margin-top: 15%;
+        margin-bottom: 10%;
+        padding-bottom: 15%;
 
-        .contenuCours
+        .conteneurCours
         {
-            margin-top: 20%;
-            margin-bottom: 10%;
-            padding-bottom: 15%;
-    
-            .conteneurCours
+            width: 80%;
+            margin: auto;
+        
+            text-align: center;
+
+            display: inline;
+
+            .sessionActive
             {
-                width: 80%;
-                margin: auto;
-            
-                text-align: center;
-
-                display: inline;
-
-                .sessionActive
+                height: 50%;
+                margin-bottom: 1vh;
+                .cours
                 {
-                    height: 50%;
-                    margin-bottom: 1vh;
-                    .cours
+                    display: inherit;
+                }
+            }
+            .sessionInactive
+            {
+                height: 50%;
+                margin-bottom: 1vh;
+                .cours
+                {
+                    display: none;
+                }
+            }
+
+            .session
+            {
+                width: 100%;
+
+                display: grid;
+                grid-template-columns: 1fr;
+                //grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                //row-gap: 4vh;
+                margin-bottom: 20vh;
+
+                .numSession
+                {
+                    width: 80% !important;
+                    left: 10vw;
+                }
+
+                .cours
+                {
+                    grid-column-start: 1;
+                    grid-row-start: auto;
+                    //background-color: wheat;
+                    
+                    //height: 120px;
+                    width: 75%;
+                    height: 300px;
+                    margin: 0 auto 0 auto;
+                    //row-gap: 6vh;
+                    //padding: 10px;
+                    
+                    h3
                     {
+                        height: 20%;
+                        font-size: 4.2vw;
+                        text-align: center;
+                    }
+                    p
+                    {
+                        font-size: 3.5vw;
                         display: inherit;
                     }
+                    p:last-child
+                    {
+                        font-size: 3vw;
+                    }
                 }
-                .sessionInactive
+                div:first-of-type
                 {
-                    height: 50%;
-                    margin-bottom: 1vh;
-                    .cours
-                    {
-                        display: none;
-                    }
+                    margin: 10vh auto 25vh auto;
                 }
-
-                .session
-                {
-                    width: 100%;
-    
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    //grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-                    //row-gap: 4vh;
-                    margin-bottom: 20vh;
-
-                    .numSession
-                    {
-                        width: 80% !important;
-                        left: 10vw;
-                    }
-
-                    .cours
-                    {
-                        grid-column-start: 1;
-                        grid-row-start: auto;
-                        //background-color: wheat;
-                        
-                        //height: 120px;
-                        width: 75%;
-                        height: 300px;
-                        margin: 0 auto 0 auto;
-                        //row-gap: 6vh;
-                        //padding: 10px;
-                        
-                        h3
-                        {
-                            height: 20%;
-                            font-size: 4.2vw;
-                            text-align: center;
-                        }
-                        p
-                        {
-                            font-size: 3.5vw;
-                            display: inherit;
-                        }
-                        p:last-child
-                        {
-                            font-size: 3vw;
-                        }
-                    }
-                    div:first-of-type
-                    {
-                        margin: 10vh auto 25vh auto;
-                    }
-                    
-                }
+                
             }
         }
     }

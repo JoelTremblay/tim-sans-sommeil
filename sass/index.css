@@ -288,6 +288,7 @@ p {
     right: 10vw;
   }
   #accueil #accueilBody .motifLignes #ligneFond_3 {
+    display: none;
     margin-top: 60vw;
     top: 55vw;
     right: 10vw;
