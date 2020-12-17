@@ -1,6 +1,7 @@
 html {
   width: 100%;
   height: auto;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#303030), to(#000000));
   background-image: linear-gradient(to bottom right, #303030, #000000);
   overflow-x: hidden;
   margin-top: 60px;
@@ -9,22 +10,34 @@ html {
 #stages-art, #stages-prog {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow-x: hidden;
 }
 
 #stages-art .vecteurs, #stages-prog .vecteurs {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: -1;
 }
 
 #stages-art .vecteurs2, #stages-prog .vecteurs2 {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: -1;
 }
 
@@ -34,7 +47,8 @@ html {
   position: relative;
   right: 19%;
   top: 20em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .ligne-pattern2, #stages-prog .ligne-pattern2 {
@@ -43,7 +57,8 @@ html {
   position: relative;
   left: 10%;
   top: 55em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .ligne-pattern3, #stages-prog .ligne-pattern3 {
@@ -52,7 +67,8 @@ html {
   position: relative;
   right: 19%;
   bottom: 55em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .ligne-pattern4, #stages-prog .ligne-pattern4 {
@@ -61,7 +77,8 @@ html {
   position: relative;
   left: 10%;
   bottom: 23em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .motifs1, #stages-prog .motifs1 {
@@ -70,7 +87,8 @@ html {
   position: relative;
   right: 10%;
   top: 25em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .motifs2, #stages-prog .motifs2 {
@@ -79,7 +97,8 @@ html {
   position: relative;
   left: 5%;
   top: 58em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .motifs3, #stages-prog .motifs3 {
@@ -88,7 +107,8 @@ html {
   position: relative;
   right: 10%;
   bottom: 58em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .motifs4, #stages-prog .motifs4 {
@@ -97,22 +117,30 @@ html {
   position: relative;
   left: 5%;
   bottom: 25em;
-  animation: fadeIn ease-in 6s infinite;
+  -webkit-animation: fadeIn ease-in 6s infinite;
+          animation: fadeIn ease-in 6s infinite;
 }
 
 #stages-art .liste-compagnies, #stages-prog .liste-compagnies {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #stages-art article:nth-child(odd), #stages-prog article:nth-child(odd) {
   margin-left: 25%;
-  animation: zoomIn ease 1s;
+  -webkit-animation: zoomIn ease 1s;
+          animation: zoomIn ease 1s;
 }
 
 #stages-art article:nth-child(even), #stages-prog article:nth-child(even) {
   margin-left: 11%;
-  animation: zoomIn ease 1s;
+  -webkit-animation: zoomIn ease 1s;
+          animation: zoomIn ease 1s;
 }
 
 #stages-art .art, #stages-prog .art {
@@ -184,8 +212,13 @@ html {
     overflow: visible;
   }
   #stages-art .liste-compagnies, #stages-prog .liste-compagnies {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 15%;
   }
   #stages-art article, #stages-prog article {
@@ -236,6 +269,20 @@ html {
     border-image-source: linear-gradient(#FF9F00, #A000FF);
     border-image-slice: 1;
   }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0.25;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.25;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @keyframes fadeIn {
     0% {
       opacity: 0.25;
@@ -250,12 +297,24 @@ html {
       opacity: 1;
     }
   }
-  @keyframes zoomIn {
+  @-webkit-keyframes zoomIn {
     0% {
-      transform: scale(0);
+      -webkit-transform: scale(0);
+              transform: scale(0);
     }
     100% {
-      transform: scale(1);
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes zoomIn {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
   }
 }

@@ -7,7 +7,7 @@ body {
 body {
   display: -ms-grid;
   display: grid;
-  grid-template: 'main' 'side';
+  grid-template: 'main' 'side';
   background-color: #2A2929;
 }
 
@@ -49,7 +49,7 @@ body .sideEtudiantFixe {
   background-color: #545353;
   display: -ms-grid;
   display: grid;
-  grid-template: 'MC' 'horaire';
+  grid-template: 'MC' 'horaire';
   grid-area: side;
   -webkit-box-shadow: -1vw 0 10px black;
           box-shadow: -1vw 0 10px black;
